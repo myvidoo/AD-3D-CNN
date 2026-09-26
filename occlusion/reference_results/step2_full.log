@@ -1,0 +1,51 @@
+================================================================================
+Step 2  Occlusion inference
+================================================================================
+[INFO] Locked configuration: Run 128
+[OK] device = cuda | Run 128 densenet169 attn = axial
+[OK] 5-fold models loaded (2.6s)
+[OK] masks: MTL=31764  hippocampus=11263  C1(cort_23)=32849  sphere=31910  brain=1735619
+
+[dose levels] inward shrinkage by Euclidean distance to the MTL boundary
+  within-MTL distance quantiles: 25%=1.00  50%=2.00  75%=3.00  max=8.83 mm
+  distance values (integer mm): [1.    1.414 1.732 2.    2.236 2.449 2.828 3.    3.162 3.317 3.464 3.606] ...
+  d25  closest  25% of voxels to the boundary → voxels=  7941  threshold distance≥3.0 mm  (0.4575% of whole brain)
+  d40  closest  40% of voxels to the boundary → voxels= 12706  threshold distance≥2.2 mm  (0.7321% of whole brain)
+  d60  closest  60% of voxels to the boundary → voxels= 19058  threshold distance≥1.4 mm  (1.0981% of whole brain)
+  d80  closest  80% of voxels to the boundary → voxels= 25411  threshold distance≥1.0 mm  (1.4641% of whole brain)
+  d100 closest 100% of voxels to the boundary → voxels= 31764  threshold distance≥1.0 mm  (1.8301% of whole brain)
+  ✔ dose-level volumes strictly increasing: [7941, 12706, 19058, 25411, 31764]
+
+[condition table] 10 conditions in total
+  MTL_d100_F1const             mask=d100  voxels= 31764  fill=const
+  MTL_d80_F1const              mask=d80   voxels= 25411  fill=const
+  MTL_d60_F1const              mask=d60   voxels= 19058  fill=const
+  MTL_d40_F1const              mask=d40   voxels= 12706  fill=const
+  MTL_d25_F1const              mask=d25   voxels=  7941  fill=const
+  MTL_d100_F2noise             mask=d100  voxels= 31764  fill=noise
+  MTL_d100_F3transplant        mask=d100  voxels= 31764  fill=transplant
+  C1_cort_23_F1const           mask=c1    voxels= 32849  fill=const
+  C2_ball_F1const              mask=ball  voxels= 31910  fill=const
+  C3_hipp_F1const              mask=hipp  voxels= 11263  fill=const
+
+[preload] loading 144 images into memory...
+[OK] 144 cases loaded (11.6s), single-case shape (1, 182, 218, 182)
+
+[inference] starting the occlusion sweep ...
+  progress 200/1440 (13.9%)  elapsed 33s  remaining ~202s
+  progress 400/1440 (27.8%)  elapsed 64s  remaining ~167s
+  progress 600/1440 (41.7%)  elapsed 96s  remaining ~135s
+  progress 800/1440 (55.6%)  elapsed 128s  remaining ~102s
+  progress 1000/1440 (69.4%)  elapsed 160s  remaining ~70s
+  progress 1200/1440 (83.3%)  elapsed 192s  remaining ~38s
+  progress 1400/1440 (97.2%)  elapsed 225s  remaining ~6s
+
+[OK] inference complete, 1440 records in total, 3.9 minutes
+saved: <WORKSPACE>/27_occlusion_experiment/results/occlusion_raw.npz
+saved: <WORKSPACE>/27_occlusion_experiment/results/occlusion_meta.json
+
+[self-check] this run's p0 against the Step0 baseline
+       max|Δp|        = 0.00e+00
+       argmax mismatches = 0 / 144
+       verdict: ✓ exactly identical to Step0 (deterministic algorithms aligned)
+================================================================================

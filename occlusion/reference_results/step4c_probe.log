@@ -1,0 +1,42 @@
+========================================================================================
+Step 4c  cross-process determinism probe
+========================================================================================
+[INFO] locked configuration: Run 128
+[OK] 5-fold model loaded | device = cuda
+[OK] 3 probe samples
+environment fingerprint: {'pid': 2948, 't': '2026-09-17 00:10:02', 'torch': '2.13.0.dev20260418+cu132', 'cudnn': 92000, 'numpy': '1.26.4', 'gpu': 'NVIDIA GeForce RTX 5090 D', 'mem_total_gb': 34.2, 'mem_alloc_after_load_gb': 0.458, 'use_det': True, 'cublas_cfg': ':4096:8'}
+  ADNI-0156_S_PB43C7E_MCI_M_Accelerated_SAG_IR-SPGR_ws        A(repeat) 0.00e+00 | B(reread) 0.00e+00 | C(alternate path) 0.00e+00 | p0.top1=0.544743 argmax=1
+  ADNI-1608_S_PCDBC60_AD_F_MPRAGE_SENSE2_ws                   A(repeat) 0.00e+00 | B(reread) 0.00e+00 | C(alternate path) 0.00e+00 | p0.top1=0.545170 argmax=2
+  ADNI-1040_S_PB8AEC4_CN_F_Accelerated_Sagittal_MPRAGE_(MS A(repeat) 0.00e+00 | B(reread) 0.00e+00 | C(alternate path) 0.00e+00 | p0.top1=1.000000 argmax=0
+
+appended: <WORKSPACE>/27_occlusion_experiment/results/det_probe.jsonl (0 history records)
+
+========================================================================================
+D  cross-process comparison
+========================================================================================
+  this is run 1, no reference yet. **Please run this script again**.
+========================================================================================
+========================================================================================
+Step 4c  cross-process determinism probe
+========================================================================================
+[INFO] locked configuration: Run 128
+[OK] 5-fold model loaded | device = cuda
+[OK] 3 probe samples
+environment fingerprint: {'pid': 4452, 't': '2026-09-17 00:10:16', 'torch': '2.13.0.dev20260418+cu132', 'cudnn': 92000, 'numpy': '1.26.4', 'gpu': 'NVIDIA GeForce RTX 5090 D', 'mem_total_gb': 34.2, 'mem_alloc_after_load_gb': 0.458, 'use_det': True, 'cublas_cfg': ':4096:8'}
+  ADNI-0156_S_PB43C7E_MCI_M_Accelerated_SAG_IR-SPGR_ws        A(repeat) 0.00e+00 | B(reread) 0.00e+00 | C(alternate path) 0.00e+00 | p0.top1=0.544743 argmax=1
+  ADNI-1608_S_PCDBC60_AD_F_MPRAGE_SENSE2_ws                   A(repeat) 0.00e+00 | B(reread) 0.00e+00 | C(alternate path) 0.00e+00 | p0.top1=0.545170 argmax=2
+  ADNI-1040_S_PB8AEC4_CN_F_Accelerated_Sagittal_MPRAGE_(MS A(repeat) 0.00e+00 | B(reread) 0.00e+00 | C(alternate path) 0.00e+00 | p0.top1=1.000000 argmax=0
+
+appended: <WORKSPACE>/27_occlusion_experiment/results/det_probe.jsonl (1 history record)
+
+========================================================================================
+D  cross-process comparison
+========================================================================================
+  reference process: pid=2948  2026-09-17 00:10:02  cudnn=92000  mem_alloc_load=0.458GB
+  this      process: pid=4452  2026-09-17 00:10:16  cudnn=92000  mem_alloc_load=0.458GB
+  ADNI-0156_S_PB43C7E_MCI_M_Accelerated_SAG_IR-SPGR_ws        cross-process max|Δp0| = 0.000e+00  argmax 1 vs 1
+  ADNI-1608_S_PCDBC60_AD_F_MPRAGE_SENSE2_ws                   cross-process max|Δp0| = 0.000e+00  argmax 2 vs 2
+  ADNI-1040_S_PB8AEC4_CN_F_Accelerated_Sagittal_MPRAGE_(MS cross-process max|Δp0| = 0.000e+00  argmax 0 vs 0
+
+  ★ verdict: cross-process p0 is bit-identical (=0) → the difference must come from a script/invocation difference, further investigation needed
+========================================================================================

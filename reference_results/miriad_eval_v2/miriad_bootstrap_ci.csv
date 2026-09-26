@@ -1,0 +1,8 @@
+Metric,Value
+AUC (AD vs HC),0.8790170132325141
+Bootstrap_CI_low,0.793
+Bootstrap_CI_high,0.953
+N_bootstrap,2000.0
+Seed,42.0
+Bootstrap_CI_low_full_precision,0.7929820415879016
+Bootstrap_CI_high_full_precision,0.9527646502835537

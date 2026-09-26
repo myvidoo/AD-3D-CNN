@@ -1,0 +1,55 @@
+[data] structural_panel.csv (1170, 42)  cohort {'ADNI': 954, 'OASIS2': 147, 'MIRIAD': 69}
+[demographics] after merging ADNI, missing age 0/954
+[split] fixed test set 144 cases
+[samples] 810 non-test cases  144 test cases  classes {0: 48, 1: 48, 2: 48}
+[5-fold] outer split, validation per fold [162, 162, 162, 162, 162] (main model fold_splits=5)
+
+[inner parameter selection] using only the 810 non-test cases, inner 5-fold (seed=2026)
+  B1 age+sex LR               grid 3 → selected {'C': 1.0}
+  B2 structural panel LR      grid 3 → selected {'C': 0.1}
+  B3 structural panel SVM     grid 9 → selected {'C': 1.0, 'gamma': 'scale'}
+  B4 panel+demo LR            grid 3 → selected {'C': 0.1}
+  B5 panel+demo SVM           grid 9 → selected {'C': 10.0, 'gamma': 0.01}
+
+[control] untuned (original protocol C=1.0 / gamma=scale)
+  B1 age+sex LR               Acc=0.3819  macroF1=0.3590  macroAUC=0.5284
+  B2 structural panel LR      Acc=0.5208  macroF1=0.5137  macroAUC=0.6935
+  B3 structural panel SVM     Acc=0.4861  macroF1=0.4822  macroAUC=0.6492
+  B4 panel+demo LR            Acc=0.5069  macroF1=0.4990  macroAUC=0.7072
+  B5 panel+demo SVM           Acc=0.5139  macroF1=0.5054  macroAUC=0.6751
+
+[main results] after tuning (inner selection → retrain on 810 cases → evaluate on the 144-subject test set)
+  B1 age+sex LR               Acc=0.3819  macroF1=0.3590  macroAUC=0.5284
+  B2 structural panel LR      Acc=0.5139  macroF1=0.5058  macroAUC=0.6941
+  B3 structural panel SVM     Acc=0.4861  macroF1=0.4822  macroAUC=0.6492
+  B4 panel+demo LR            Acc=0.5139  macroF1=0.5046  macroAUC=0.7079
+  B5 panel+demo SVM           Acc=0.5417  macroF1=0.5330  macroAUC=0.7075
+
+[ensemble] Acc=0.8681  macroF1=0.8675  macroAUC=0.9630
+
+baseline (tuned)                        Acc      F1     AUC              95% CI   ΔAUC vs CNN      p(paired)
+----------------------------------------------------------------------------------------------------
+CNN 5-fold ensemble                0.8681  0.8675  0.9630
+B1 age+sex LR                      0.3819  0.3590  0.5284  [0.4610,0.5940]        +43.5     0.0005
+B2 structural panel LR             0.5139  0.5058  0.6941  [0.6275,0.7584]        +26.9     0.0005
+B3 structural panel SVM            0.4861  0.4822  0.6492  [0.5817,0.7197]        +31.4     0.0005
+B4 panel+demo LR                   0.5139  0.5046  0.7079  [0.6500,0.7648]        +25.5     0.0005
+B5 panel+demo SVM                  0.5417  0.5330  0.7075  [0.6531,0.7661]        +25.5     0.0005
+
+[head-to-head two-class subsets n=96]
+  CN vs AD   n=96  CNN=0.9822  panel=0.9002  Δ=+8.2 pp
+  CN vs MCI  n=96  CNN=0.9475  panel=0.6784  Δ=+26.9 pp
+  MCI vs AD  n=96  CNN=0.9805  panel=0.6910  Δ=+28.9 pp
+
+[5-fold nested CV] parameters selected independently inside each fold (using only that fold's 648 training cases)
+  B1 age+sex LR               AUC=0.5043±0.0383
+  B2 structural panel LR      AUC=0.6988±0.0196
+  B3 structural panel SVM     AUC=0.6883±0.0047
+  B4 panel+demo LR            AUC=0.7115±0.0099
+  B5 panel+demo SVM           AUC=0.7006±0.0034
+
+[external cohorts: zero-fine-tuning extrapolation of the structural panel (tuned B2)]
+  MIRIAD: AD vs HC  AUC=0.9395  n=69
+  OASIS-2: CN vs AD   AUC=0.9022  n=94
+
+done -> <WORKSPACE>/16_baseline_analysis_S9/results

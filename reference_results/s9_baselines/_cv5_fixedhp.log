@@ -1,0 +1,52 @@
+==============================================================================
+[A] 5-fold reproduction: hyperparameters selected once on the 810 cases, then fixed
+    (the same protocol as the main model)
+==============================================================================
+  B1 age+sex LR               AUC=0.5044±0.0381  folds 0.4821;0.4719;0.5691;0.5012;0.4978  hp={'C': 1.0}
+  B2 structural panel LR      AUC=0.6990±0.0201  folds 0.7032;0.6940;0.7316;0.6812;0.6851  hp={'C': 0.1}
+  B3 structural panel SVM     AUC=0.7016±0.0132  folds 0.6939;0.6826;0.7056;0.7140;0.7119  hp={'C': 1.0, 'gamma': 'scale'}
+  B4 panel+demo LR            AUC=0.7126±0.0110  folds 0.7168;0.7213;0.7231;0.7010;0.7007  hp={'C': 0.1}
+  B5 panel+demo SVM           AUC=0.7110±0.0090  folds 0.7135;0.7250;0.7098;0.7039;0.7027  hp={'C': 10.0, 'gamma': 0.01}
+
+==============================================================================
+[B] Control: independent per-fold parameter selection (nested, from run_baselines_tuned.py)
+==============================================================================
+  B1 age+sex LR               AUC=0.5043±0.0383
+  B2 structural panel LR      AUC=0.6988±0.0196
+  B3 structural panel SVM     AUC=0.6883±0.0047
+  B4 panel+demo LR            AUC=0.7115±0.0099
+  B5 panel+demo SVM           AUC=0.7006±0.0034
+
+==============================================================================
+[C] Untuned original values (as used in paper v57)
+==============================================================================
+  B1  0.5044±0.0381
+  B2  0.6985±0.0195
+  B3  0.7016±0.0132
+  B4  0.7126±0.0110
+  B5  0.7071±0.0148
+
+==============================================================================
+[D] Main results (144-subject test set), tuned vs untuned
+==============================================================================
+Traceback (most recent call last):
+  File "<PY_ENV>\lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'delta_vs_cnn'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<WORKSPACE>/16_baseline_analysis_S9/code/cv5_tuned_fixedhp.py", line 101, in <module>
+    u["delta_vs_cnn"], r["delta_vs_cnn"],
+  File "<PY_ENV>\lib\site-packages\pandas\core\series.py", line 1130, in __getitem__
+    return self._get_value(key)
+  File "<PY_ENV>\lib\site-packages\pandas\core\series.py", line 1246, in _get_value
+    loc = self.index.get_loc(label)
+  File "<PY_ENV>\lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'delta_vs_cnn'

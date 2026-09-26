@@ -1,0 +1,722 @@
+{
+  "ADNI-2025_S_P83F6BB_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 126,
+    "donor_file_id": "ADNI-1850_S_PDBC760_MCI_F_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-0432_S_P3FCB90_MCI_F_Sagittal_3D_Accelerated_0_angle_MPRAGE_ws": {
+    "donor_index": 61,
+    "donor_file_id": "ADNI-0129_S_P80F747_CN_F_CS_Sagittal_MPRAGE_(MSV22)_ws",
+    "donor_label": 0
+  },
+  "ADNI-1040_S_PB8AEC4_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 47,
+    "donor_file_id": "ADNI-1243_S_P35A748_AD_M_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-1039_S_PED2F66_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 10,
+    "donor_file_id": "ADNI-1990_S_P641B98_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-0979_S_P5A257D_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 6,
+    "donor_file_id": "ADNI-1608_S_PCDBC60_AD_F_MPRAGE_SENSE2_ws",
+    "donor_label": 2
+  },
+  "ADNI-2005_S_PAF6724_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 125,
+    "donor_file_id": "ADNI-0767_S_PC48471_CN_M_MPRAGE_GRAPPA2_ws",
+    "donor_label": 0
+  },
+  "ADNI-1608_S_PCDBC60_AD_F_MPRAGE_SENSE2_ws": {
+    "donor_index": 17,
+    "donor_file_id": "ADNI-0628_S_P7C2101_CN_F_Accelerated_Sagittal_IR-FSPGR_ws",
+    "donor_label": 0
+  },
+  "ADNI-1423_S_P93D8A1_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 95,
+    "donor_file_id": "ADNI-1456_S_P24037A_CN_M_CS_Sagittal_MPRAGE_(MSV22)_ws",
+    "donor_label": 0
+  },
+  "ADNI-1644_S_PCCA39A_MCI_M_Sagittal_3D_Accelerated_MPRAGE_ws": {
+    "donor_index": 107,
+    "donor_file_id": "ADNI-0880_S_P12C834_AD_M_MPRAGE_GRAPPA2_ws",
+    "donor_label": 2
+  },
+  "ADNI-0477_S_PDA6FD4_CN_M_Accelerated_Sag_IR-FSPGR_ws": {
+    "donor_index": 111,
+    "donor_file_id": "ADNI-0733_S_P4647E4_AD_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 2
+  },
+  "ADNI-1990_S_P641B98_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 80,
+    "donor_file_id": "ADNI-0694_S_P218393_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 0
+  },
+  "ADNI-1180_S_P831F5B_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 6,
+    "donor_file_id": "ADNI-1608_S_PCDBC60_AD_F_MPRAGE_SENSE2_ws",
+    "donor_label": 2
+  },
+  "ADNI-0125_S_P8BC2C7_AD_M_MPRAGE_ws": {
+    "donor_index": 56,
+    "donor_file_id": "ADNI-0229_S_P1EFCEA_CN_M_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 0
+  },
+  "ADNI-1400_S_PA12117_CN_F_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 47,
+    "donor_file_id": "ADNI-1243_S_P35A748_AD_M_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-0164_S_P56B01A_AD_M_Sag_IR-SPGR_ws": {
+    "donor_index": 5,
+    "donor_file_id": "ADNI-2005_S_PAF6724_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-2043_S_P2F75A8_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 81,
+    "donor_file_id": "ADNI-1225_S_P962B85_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 0
+  },
+  "ADNI-2033_S_P26CA6E_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 45,
+    "donor_file_id": "ADNI-0401_S_PC01846_CN_F_Sagittal_3D_Accelerated_MPRAGE_(MSV21)_ws",
+    "donor_label": 0
+  },
+  "ADNI-0628_S_P7C2101_CN_F_Accelerated_Sagittal_IR-FSPGR_ws": {
+    "donor_index": 68,
+    "donor_file_id": "ADNI-1956_S_P8B016D_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-0156_S_PB43C7E_MCI_M_Accelerated_SAG_IR-SPGR_ws": {
+    "donor_index": 73,
+    "donor_file_id": "ADNI-0209_S_P78C607_CN_F_MPRAGE_ws",
+    "donor_label": 0
+  },
+  "ADNI-1437_S_P08AC7C_CN_M_MPRAGE_GRAPPA2_ws": {
+    "donor_index": 1,
+    "donor_file_id": "ADNI-0432_S_P3FCB90_MCI_F_Sagittal_3D_Accelerated_0_angle_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-1260_S_PF8C0C8_AD_M_Sag_IR-SPGR_ws": {
+    "donor_index": 1,
+    "donor_file_id": "ADNI-0432_S_P3FCB90_MCI_F_Sagittal_3D_Accelerated_0_angle_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-1612_S_P2EB126_AD_F_MPRAGE_ws": {
+    "donor_index": 113,
+    "donor_file_id": "ADNI-0716_S_PBA675D_MCI_F_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-0199_S_PF3479B_MCI_M_HS_Sagittal_MPRAGE_(MSV22)_ws": {
+    "donor_index": 103,
+    "donor_file_id": "ADNI-1345_S_P50EA9B_CN_F_MPRAGE_SENSE_ws",
+    "donor_label": 0
+  },
+  "ADNI-1308_S_P34E65D_MCI_M_Sag_Accel_IR-FSPGR_ws": {
+    "donor_index": 21,
+    "donor_file_id": "ADNI-1612_S_P2EB126_AD_F_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-0127_S_P57D71F_AD_M_MPRAGE_SENSE2_ws": {
+    "donor_index": 51,
+    "donor_file_id": "ADNI-0306_S_P4F5CDF_CN_M_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 0
+  },
+  "ADNI-0291_S_PF9E504_AD_M_MPRAGE_GRAPPA2_ws": {
+    "donor_index": 30,
+    "donor_file_id": "ADNI-1242_S_P84AF8F_CN_M_MPRAGE_GRAPPA2_ws",
+    "donor_label": 0
+  },
+  "ADNI-1601_S_P2899E7_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 64,
+    "donor_file_id": "ADNI-2100_S_P486D6C_CN_M_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 0
+  },
+  "ADNI-0734_S_PD83B9D_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 113,
+    "donor_file_id": "ADNI-0716_S_PBA675D_MCI_F_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-1276_S_P7F0142_AD_M_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 54,
+    "donor_file_id": "ADNI-0736_S_PBEDFB5_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 0
+  },
+  "ADNI-1498_S_PD906AD_AD_M_Accelerated_Sagittal_IR-FSPGR_ws": {
+    "donor_index": 30,
+    "donor_file_id": "ADNI-1242_S_P84AF8F_CN_M_MPRAGE_GRAPPA2_ws",
+    "donor_label": 0
+  },
+  "ADNI-1242_S_P84AF8F_CN_M_MPRAGE_GRAPPA2_ws": {
+    "donor_index": 83,
+    "donor_file_id": "ADNI-0206_S_PECB8D5_AD_M_MPRAGE_SENSE2_ws",
+    "donor_label": 2
+  },
+  "ADNI-1232_S_PC600BF_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 6,
+    "donor_file_id": "ADNI-1608_S_PCDBC60_AD_F_MPRAGE_SENSE2_ws",
+    "donor_label": 2
+  },
+  "ADNI-0833_S_P415B9A_AD_F_Accelerated_Sagittal_MPRAGE_Phase_A-P_ws": {
+    "donor_index": 42,
+    "donor_file_id": "ADNI-0583_S_PB4566D_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 0
+  },
+  "ADNI-0676_S_P26375E_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 8,
+    "donor_file_id": "ADNI-1644_S_PCCA39A_MCI_M_Sagittal_3D_Accelerated_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-1624_S_P450BE4_AD_F_Sagittal_3D_Accelerated_MPRAGE_ws": {
+    "donor_index": 70,
+    "donor_file_id": "ADNI-1365_S_P8D2FCB_CN_M_Sag_IR-SPGR_ws",
+    "donor_label": 0
+  },
+  "ADNI-0422_S_PDC863B_AD_M_MPRAGE_SENSE2_ws": {
+    "donor_index": 57,
+    "donor_file_id": "ADNI-1016_S_P6F605B_MCI_F_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-0893_S_P73CF14_MCI_M_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 62,
+    "donor_file_id": "ADNI-0578_S_PA0EE2B_AD_F_MPRAGE_GRAPPA2_ws",
+    "donor_label": 2
+  },
+  "ADNI-1037_S_P63037C_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 84,
+    "donor_file_id": "ADNI-0286_S_PE822CC_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 0
+  },
+  "ADNI-0891_S_P223C27_MCI_F_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 130,
+    "donor_file_id": "ADNI-0857_S_PA98C80_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 2
+  },
+  "ADNI-0685_S_P26B71B_AD_F_MPRAGE_SENSE2_ws": {
+    "donor_index": 119,
+    "donor_file_id": "ADNI-0742_S_P5D78F5_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 0
+  },
+  "ADNI-0729_S_P1A792C_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 29,
+    "donor_file_id": "ADNI-1498_S_PD906AD_AD_M_Accelerated_Sagittal_IR-FSPGR_ws",
+    "donor_label": 2
+  },
+  "ADNI-1488_S_P5F4EA8_MCI_M_Accelerated_Sagittal_IR-FSPGR_(MSV21)_ws": {
+    "donor_index": 107,
+    "donor_file_id": "ADNI-0880_S_P12C834_AD_M_MPRAGE_GRAPPA2_ws",
+    "donor_label": 2
+  },
+  "ADNI-0583_S_PB4566D_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 105,
+    "donor_file_id": "ADNI-1074_S_P2EFDE9_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-1401_S_P441C34_AD_M_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 140,
+    "donor_file_id": "ADNI-1526_S_P688808_CN_F_Accelerated_Sagittal_IR-FSPGR_ws",
+    "donor_label": 0
+  },
+  "ADNI-1701_S_P42D5B7_AD_F_MPRAGE_ws": {
+    "donor_index": 92,
+    "donor_file_id": "ADNI-0029_S_PADB525_CN_M_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 0
+  },
+  "ADNI-0401_S_PC01846_CN_F_Sagittal_3D_Accelerated_MPRAGE_(MSV21)_ws": {
+    "donor_index": 77,
+    "donor_file_id": "ADNI-1816_S_PBF3ACA_MCI_M_CS_Sagittal_MPRAGE_(MSV22)_ws",
+    "donor_label": 1
+  },
+  "ADNI-1073_S_P46EAC0_MCI_F_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 87,
+    "donor_file_id": "ADNI-0617_S_P2E894C_AD_F_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-1243_S_P35A748_AD_M_MPRAGE_ws": {
+    "donor_index": 75,
+    "donor_file_id": "ADNI-0141_S_P3D4447_MCI_M_Sagittal_3D_Accelerated_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-2000_S_P766DD6_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 39,
+    "donor_file_id": "ADNI-0685_S_P26B71B_AD_F_MPRAGE_SENSE2_ws",
+    "donor_label": 2
+  },
+  "ADNI-1192_S_PA90059_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 53,
+    "donor_file_id": "ADNI-1930_S_PB325E0_MCI_M_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-1077_S_P41274D_MCI_M_MPRAGE_ws": {
+    "donor_index": 34,
+    "donor_file_id": "ADNI-1624_S_P450BE4_AD_F_Sagittal_3D_Accelerated_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-0306_S_P4F5CDF_CN_M_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 35,
+    "donor_file_id": "ADNI-0422_S_PDC863B_AD_M_MPRAGE_SENSE2_ws",
+    "donor_label": 2
+  },
+  "ADNI-0417_S_PB5AE2F_AD_F_MPRAGE_SENSE2_ws": {
+    "donor_index": 127,
+    "donor_file_id": "ADNI-1672_S_P573B4C_MCI_F_MPRAGE_repeat_ws",
+    "donor_label": 1
+  },
+  "ADNI-1930_S_PB325E0_MCI_M_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 87,
+    "donor_file_id": "ADNI-0617_S_P2E894C_AD_F_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-0736_S_PBEDFB5_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 38,
+    "donor_file_id": "ADNI-0891_S_P223C27_MCI_F_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-0282_S_PD1DD2C_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 143,
+    "donor_file_id": "ADNI-0728_S_P984BA9_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-0229_S_P1EFCEA_CN_M_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 75,
+    "donor_file_id": "ADNI-0141_S_P3D4447_MCI_M_Sagittal_3D_Accelerated_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-1016_S_P6F605B_MCI_F_MPRAGE_ws": {
+    "donor_index": 9,
+    "donor_file_id": "ADNI-0477_S_PDA6FD4_CN_M_Accelerated_Sag_IR-FSPGR_ws",
+    "donor_label": 0
+  },
+  "ADNI-0725_S_P3A31C6_MCI_M_MPRAGE_Repeat_ws": {
+    "donor_index": 27,
+    "donor_file_id": "ADNI-0734_S_PD83B9D_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 2
+  },
+  "ADNI-0232_S_PB05672_AD_F_MPRAGE_ws": {
+    "donor_index": 18,
+    "donor_file_id": "ADNI-0156_S_PB43C7E_MCI_M_Accelerated_SAG_IR-SPGR_ws",
+    "donor_label": 1
+  },
+  "ADNI-0452_S_P814F44_CN_F_Accelerated_Sag_IR-FSPGR_(MSV21)_ws": {
+    "donor_index": 120,
+    "donor_file_id": "ADNI-1252_S_P7A5A2B_AD_F_Accelerated_Sagittal_MPRAGE_ND_ws",
+    "donor_label": 2
+  },
+  "ADNI-0129_S_P80F747_CN_F_CS_Sagittal_MPRAGE_(MSV22)_ws": {
+    "donor_index": 7,
+    "donor_file_id": "ADNI-1423_S_P93D8A1_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-0578_S_PA0EE2B_AD_F_MPRAGE_GRAPPA2_ws": {
+    "donor_index": 119,
+    "donor_file_id": "ADNI-0742_S_P5D78F5_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 0
+  },
+  "ADNI-0227_S_P521621_CN_F_MPRAGE_GRAPPA2_ws": {
+    "donor_index": 41,
+    "donor_file_id": "ADNI-1488_S_P5F4EA8_MCI_M_Accelerated_Sagittal_IR-FSPGR_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-2100_S_P486D6C_CN_M_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 1,
+    "donor_file_id": "ADNI-0432_S_P3FCB90_MCI_F_Sagittal_3D_Accelerated_0_angle_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-0482_S_PD5ED61_CN_M_Accelerated_Sag_IR-FSPGR_(MSV21)_ws": {
+    "donor_index": 85,
+    "donor_file_id": "ADNI-0195_S_PB60296_MCI_M_HS_Sagittal_MPRAGE_(MSV22)_ws",
+    "donor_label": 1
+  },
+  "ADNI-1587_S_P35CB75_AD_F_MPRAGE_SENSE_repeat_ws": {
+    "donor_index": 121,
+    "donor_file_id": "ADNI-0843_S_PD7474E_CN_F_Accelerated_Sagittal_MPRAGE_Phase_A-P_ws",
+    "donor_label": 0
+  },
+  "ADNI-0231_S_PEF0BC0_AD_F_MPRAGE_GRAPPA2_ws": {
+    "donor_index": 108,
+    "donor_file_id": "ADNI-1662_S_P0A0AD9_CN_M_Sagittal_3D_Accelerated_MPRAGE_ws",
+    "donor_label": 0
+  },
+  "ADNI-1956_S_P8B016D_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 72,
+    "donor_file_id": "ADNI-1693_S_P15E6CF_AD_M_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-0570_S_P5D780C_MCI_F_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 0,
+    "donor_file_id": "ADNI-2025_S_P83F6BB_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 2
+  },
+  "ADNI-1365_S_P8D2FCB_CN_M_Sag_IR-SPGR_ws": {
+    "donor_index": 46,
+    "donor_file_id": "ADNI-1073_S_P46EAC0_MCI_F_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-0218_S_P724FD5_AD_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 22,
+    "donor_file_id": "ADNI-0199_S_PF3479B_MCI_M_HS_Sagittal_MPRAGE_(MSV22)_ws",
+    "donor_label": 1
+  },
+  "ADNI-1693_S_P15E6CF_AD_M_MPRAGE_ws": {
+    "donor_index": 100,
+    "donor_file_id": "ADNI-0497_S_P783FA4_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 0
+  },
+  "ADNI-0209_S_P78C607_CN_F_MPRAGE_ws": {
+    "donor_index": 85,
+    "donor_file_id": "ADNI-0195_S_PB60296_MCI_M_HS_Sagittal_MPRAGE_(MSV22)_ws",
+    "donor_label": 1
+  },
+  "ADNI-0701_S_PAE1EB3_CN_M_MPRAGE_ws": {
+    "donor_index": 38,
+    "donor_file_id": "ADNI-0891_S_P223C27_MCI_F_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-0141_S_P3D4447_MCI_M_Sagittal_3D_Accelerated_MPRAGE_ws": {
+    "donor_index": 71,
+    "donor_file_id": "ADNI-0218_S_P724FD5_AD_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 2
+  },
+  "ADNI-0722_S_P96C86C_AD_F_MPRAGE_Repeat_ws": {
+    "donor_index": 68,
+    "donor_file_id": "ADNI-1956_S_P8B016D_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-1816_S_PBF3ACA_MCI_M_CS_Sagittal_MPRAGE_(MSV22)_ws": {
+    "donor_index": 59,
+    "donor_file_id": "ADNI-0232_S_PB05672_AD_F_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-0556_S_PB0BA8B_AD_M_MPRAGE_ws": {
+    "donor_index": 121,
+    "donor_file_id": "ADNI-0843_S_PD7474E_CN_F_Accelerated_Sagittal_MPRAGE_Phase_A-P_ws",
+    "donor_label": 0
+  },
+  "ADNI-1220_S_PB32196_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 108,
+    "donor_file_id": "ADNI-1662_S_P0A0AD9_CN_M_Sagittal_3D_Accelerated_MPRAGE_ws",
+    "donor_label": 0
+  },
+  "ADNI-0694_S_P218393_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 15,
+    "donor_file_id": "ADNI-2043_S_P2F75A8_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 2
+  },
+  "ADNI-1225_S_P962B85_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 58,
+    "donor_file_id": "ADNI-0725_S_P3A31C6_MCI_M_MPRAGE_Repeat_ws",
+    "donor_label": 1
+  },
+  "ADNI-1131_S_P779760_MCI_M_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 99,
+    "donor_file_id": "ADNI-1872_S_PA4A69B_CN_M_Sagittal_3D_Accelerated_MPRAGE_ws",
+    "donor_label": 0
+  },
+  "ADNI-0206_S_PECB8D5_AD_M_MPRAGE_SENSE2_ws": {
+    "donor_index": 97,
+    "donor_file_id": "ADNI-0122_S_PB71484_CN_F_MPRAGE_ws",
+    "donor_label": 0
+  },
+  "ADNI-0286_S_PE822CC_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 31,
+    "donor_file_id": "ADNI-1232_S_PC600BF_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-0195_S_PB60296_MCI_M_HS_Sagittal_MPRAGE_(MSV22)_ws": {
+    "donor_index": 110,
+    "donor_file_id": "ADNI-0787_S_P5EB172_AD_F_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-1533_S_PC589AB_CN_F_Accelerated_Sagittal_IR-FSPGR_ws": {
+    "donor_index": 89,
+    "donor_file_id": "ADNI-1996_S_P715C0B_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-0617_S_P2E894C_AD_F_MPRAGE_ws": {
+    "donor_index": 128,
+    "donor_file_id": "ADNI-1020_S_P195EED_MCI_M_MPRAGE_Repeat_ws",
+    "donor_label": 1
+  },
+  "ADNI-0761_S_P919B0B_AD_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 140,
+    "donor_file_id": "ADNI-1526_S_P688808_CN_F_Accelerated_Sagittal_IR-FSPGR_ws",
+    "donor_label": 0
+  },
+  "ADNI-1996_S_P715C0B_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 76,
+    "donor_file_id": "ADNI-0722_S_P96C86C_AD_F_MPRAGE_Repeat_ws",
+    "donor_label": 2
+  },
+  "ADNI-0267_S_PED0AC3_CN_M_MPRAGE_ND_ws": {
+    "donor_index": 83,
+    "donor_file_id": "ADNI-0206_S_PECB8D5_AD_M_MPRAGE_SENSE2_ws",
+    "donor_label": 2
+  },
+  "ADNI-0633_S_PC654CB_CN_M_Accelerated_Sagittal_MPRAGE_(MSV22)_ws": {
+    "donor_index": 37,
+    "donor_file_id": "ADNI-1037_S_P63037C_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-0029_S_PADB525_CN_M_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 109,
+    "donor_file_id": "ADNI-1554_S_P058441_AD_F_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-0790_S_PD0482C_CN_M_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 68,
+    "donor_file_id": "ADNI-1956_S_P8B016D_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-1604_S_P2924FC_CN_M_MPRAGE_SENSE2_ws": {
+    "donor_index": 15,
+    "donor_file_id": "ADNI-2043_S_P2F75A8_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 2
+  },
+  "ADNI-1456_S_P24037A_CN_M_CS_Sagittal_MPRAGE_(MSV22)_ws": {
+    "donor_index": 127,
+    "donor_file_id": "ADNI-1672_S_P573B4C_MCI_F_MPRAGE_repeat_ws",
+    "donor_label": 1
+  },
+  "ADNI-1474_S_P096BAE_CN_F_MPRAGE_ws": {
+    "donor_index": 18,
+    "donor_file_id": "ADNI-0156_S_PB43C7E_MCI_M_Accelerated_SAG_IR-SPGR_ws",
+    "donor_label": 1
+  },
+  "ADNI-0122_S_PB71484_CN_F_MPRAGE_ws": {
+    "donor_index": 110,
+    "donor_file_id": "ADNI-0787_S_P5EB172_AD_F_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-1942_S_PC8948D_AD_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 80,
+    "donor_file_id": "ADNI-0694_S_P218393_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 0
+  },
+  "ADNI-1872_S_PA4A69B_CN_M_Sagittal_3D_Accelerated_MPRAGE_ws": {
+    "donor_index": 139,
+    "donor_file_id": "ADNI-1500_S_PF9E854_MCI_M_Accelerated_Sagittal_IR-FSPGR_ws",
+    "donor_label": 1
+  },
+  "ADNI-0497_S_P783FA4_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 10,
+    "donor_file_id": "ADNI-1990_S_P641B98_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-1285_S_P1A0040_CN_F_HS_Sagittal_MPRAGE_(MSV22)_ws": {
+    "donor_index": 124,
+    "donor_file_id": "ADNI-2026_S_P179EF4_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-1266_S_P6A479D_AD_F_Accelerated_SAG_IR-SPGR_ws": {
+    "donor_index": 99,
+    "donor_file_id": "ADNI-1872_S_PA4A69B_CN_M_Sagittal_3D_Accelerated_MPRAGE_ws",
+    "donor_label": 0
+  },
+  "ADNI-1345_S_P50EA9B_CN_F_MPRAGE_SENSE_ws": {
+    "donor_index": 137,
+    "donor_file_id": "ADNI-1974_S_P9BD378_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-1064_S_PB35FC6_MCI_M_Accelerated_Sag_IR-FSPGR_ws": {
+    "donor_index": 106,
+    "donor_file_id": "ADNI-0423_S_P7FD945_AD_F_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-1074_S_P2EFDE9_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 45,
+    "donor_file_id": "ADNI-0401_S_PC01846_CN_F_Sagittal_3D_Accelerated_MPRAGE_(MSV21)_ws",
+    "donor_label": 0
+  },
+  "ADNI-0423_S_P7FD945_AD_F_MPRAGE_ws": {
+    "donor_index": 86,
+    "donor_file_id": "ADNI-1533_S_PC589AB_CN_F_Accelerated_Sagittal_IR-FSPGR_ws",
+    "donor_label": 0
+  },
+  "ADNI-0880_S_P12C834_AD_M_MPRAGE_GRAPPA2_ws": {
+    "donor_index": 92,
+    "donor_file_id": "ADNI-0029_S_PADB525_CN_M_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 0
+  },
+  "ADNI-1662_S_P0A0AD9_CN_M_Sagittal_3D_Accelerated_MPRAGE_ws": {
+    "donor_index": 14,
+    "donor_file_id": "ADNI-0164_S_P56B01A_AD_M_Sag_IR-SPGR_ws",
+    "donor_label": 2
+  },
+  "ADNI-1554_S_P058441_AD_F_MPRAGE_ws": {
+    "donor_index": 26,
+    "donor_file_id": "ADNI-1601_S_P2899E7_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-0787_S_P5EB172_AD_F_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 1,
+    "donor_file_id": "ADNI-0432_S_P3FCB90_MCI_F_Sagittal_3D_Accelerated_0_angle_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-0733_S_P4647E4_AD_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 86,
+    "donor_file_id": "ADNI-1533_S_PC589AB_CN_F_Accelerated_Sagittal_IR-FSPGR_ws",
+    "donor_label": 0
+  },
+  "ADNI-1436_S_PD1E127_AD_M_MPRAGE_ws": {
+    "donor_index": 9,
+    "donor_file_id": "ADNI-0477_S_PDA6FD4_CN_M_Accelerated_Sag_IR-FSPGR_ws",
+    "donor_label": 0
+  },
+  "ADNI-0716_S_PBA675D_MCI_F_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 94,
+    "donor_file_id": "ADNI-1604_S_P2924FC_CN_M_MPRAGE_SENSE2_ws",
+    "donor_label": 0
+  },
+  "ADNI-1148_S_PA72C1E_AD_F_MPRAGE_ws": {
+    "donor_index": 26,
+    "donor_file_id": "ADNI-1601_S_P2899E7_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-1982_S_P3EA484_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 43,
+    "donor_file_id": "ADNI-1401_S_P441C34_AD_M_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-0514_S_P49FA74_AD_F_Sagittal_3D_Accelerated_MPRAGE_ws": {
+    "donor_index": 58,
+    "donor_file_id": "ADNI-0725_S_P3A31C6_MCI_M_MPRAGE_Repeat_ws",
+    "donor_label": 1
+  },
+  "ADNI-0621_S_PA2127C_AD_M_Sag_IR-FSPGR_ws": {
+    "donor_index": 131,
+    "donor_file_id": "ADNI-0845_S_PE1D211_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-0135_S_P242AB9_MCI_M_Sagittal_3D_Accelerated_MPRAGE_ws": {
+    "donor_index": 0,
+    "donor_file_id": "ADNI-2025_S_P83F6BB_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 2
+  },
+  "ADNI-0742_S_P5D78F5_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 82,
+    "donor_file_id": "ADNI-1131_S_P779760_MCI_M_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-1252_S_P7A5A2B_AD_F_Accelerated_Sagittal_MPRAGE_ND_ws": {
+    "donor_index": 68,
+    "donor_file_id": "ADNI-1956_S_P8B016D_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-0843_S_PD7474E_CN_F_Accelerated_Sagittal_MPRAGE_Phase_A-P_ws": {
+    "donor_index": 72,
+    "donor_file_id": "ADNI-1693_S_P15E6CF_AD_M_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-1218_S_P0B32F5_CN_M_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 44,
+    "donor_file_id": "ADNI-1701_S_P42D5B7_AD_F_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-2053_S_PB6601B_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 110,
+    "donor_file_id": "ADNI-0787_S_P5EB172_AD_F_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-2026_S_P179EF4_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 73,
+    "donor_file_id": "ADNI-0209_S_P78C607_CN_F_MPRAGE_ws",
+    "donor_label": 0
+  },
+  "ADNI-0767_S_PC48471_CN_M_MPRAGE_GRAPPA2_ws": {
+    "donor_index": 41,
+    "donor_file_id": "ADNI-1488_S_P5F4EA8_MCI_M_Accelerated_Sagittal_IR-FSPGR_(MSV21)_ws",
+    "donor_label": 1
+  },
+  "ADNI-1850_S_PDBC760_MCI_F_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 90,
+    "donor_file_id": "ADNI-0267_S_PED0AC3_CN_M_MPRAGE_ND_ws",
+    "donor_label": 0
+  },
+  "ADNI-1672_S_P573B4C_MCI_F_MPRAGE_repeat_ws": {
+    "donor_index": 130,
+    "donor_file_id": "ADNI-0857_S_PA98C80_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 2
+  },
+  "ADNI-1020_S_P195EED_MCI_M_MPRAGE_Repeat_ws": {
+    "donor_index": 101,
+    "donor_file_id": "ADNI-1285_S_P1A0040_CN_F_HS_Sagittal_MPRAGE_(MSV22)_ws",
+    "donor_label": 0
+  },
+  "ADNI-0202_S_PFB539C_MCI_F_HS_Sagittal_MPRAGE_(MSV22)_ws": {
+    "donor_index": 98,
+    "donor_file_id": "ADNI-1942_S_PC8948D_AD_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 2
+  },
+  "ADNI-0857_S_PA98C80_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 53,
+    "donor_file_id": "ADNI-1930_S_PB325E0_MCI_M_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-0845_S_PE1D211_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 103,
+    "donor_file_id": "ADNI-1345_S_P50EA9B_CN_F_MPRAGE_SENSE_ws",
+    "donor_label": 0
+  },
+  "ADNI-0438_S_P8E90D9_CN_M_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 71,
+    "donor_file_id": "ADNI-0218_S_P724FD5_AD_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "donor_label": 2
+  },
+  "ADNI-1804_S_P316C4D_AD_M_MPRAGE_ws": {
+    "donor_index": 129,
+    "donor_file_id": "ADNI-0202_S_PFB539C_MCI_F_HS_Sagittal_MPRAGE_(MSV22)_ws",
+    "donor_label": 1
+  },
+  "ADNI-1581_S_P3D60F1_MCI_M_Accelerated_Sag_IR-FSPGR_ws": {
+    "donor_index": 47,
+    "donor_file_id": "ADNI-1243_S_P35A748_AD_M_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-1752_S_P029B32_AD_F_MPRAGE_GRAPPA2_ws": {
+    "donor_index": 30,
+    "donor_file_id": "ADNI-1242_S_P84AF8F_CN_M_MPRAGE_GRAPPA2_ws",
+    "donor_label": 0
+  },
+  "ADNI-0355_S_P649726_MCI_M_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 107,
+    "donor_file_id": "ADNI-0880_S_P12C834_AD_M_MPRAGE_GRAPPA2_ws",
+    "donor_label": 2
+  },
+  "ADNI-1974_S_P9BD378_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 109,
+    "donor_file_id": "ADNI-1554_S_P058441_AD_F_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-0538_S_P951D74_CN_M_MPRAGE_ws": {
+    "donor_index": 32,
+    "donor_file_id": "ADNI-0833_S_P415B9A_AD_F_Accelerated_Sagittal_MPRAGE_Phase_A-P_ws",
+    "donor_label": 2
+  },
+  "ADNI-1500_S_PF9E854_MCI_M_Accelerated_Sagittal_IR-FSPGR_ws": {
+    "donor_index": 61,
+    "donor_file_id": "ADNI-0129_S_P80F747_CN_F_CS_Sagittal_MPRAGE_(MSV22)_ws",
+    "donor_label": 0
+  },
+  "ADNI-1526_S_P688808_CN_F_Accelerated_Sagittal_IR-FSPGR_ws": {
+    "donor_index": 75,
+    "donor_file_id": "ADNI-0141_S_P3D4447_MCI_M_Sagittal_3D_Accelerated_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-1393_S_PC7CD8E_MCI_F_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 114,
+    "donor_file_id": "ADNI-1148_S_PA72C1E_AD_F_MPRAGE_ws",
+    "donor_label": 2
+  },
+  "ADNI-0448_S_PEE2753_CN_F_Accelerated_Sagittal_MPRAGE_ws": {
+    "donor_index": 113,
+    "donor_file_id": "ADNI-0716_S_PBA675D_MCI_F_Accelerated_Sagittal_MPRAGE_ws",
+    "donor_label": 1
+  },
+  "ADNI-0728_S_P984BA9_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws": {
+    "donor_index": 29,
+    "donor_file_id": "ADNI-1498_S_PD906AD_AD_M_Accelerated_Sagittal_IR-FSPGR_ws",
+    "donor_label": 2
+  }
+}

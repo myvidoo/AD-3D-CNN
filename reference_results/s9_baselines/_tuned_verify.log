@@ -1,0 +1,35 @@
+======================================================================
+[1] Exact macro-average AUC of the ensemble model
+======================================================================
+  macro-AUC to 6 decimal places = 0.96296296
+  0.9630 formatted as -> 0.9630
+  per-class AUC: CN 0.952908 | MCI 0.954210 | AD 0.981771
+  → the paper body uses 0.9629; the S9 markdown writes 0.9630. The values above are authoritative.
+
+======================================================================
+[2] Table 4 head-to-head (structural panel + demographics = 8 features) reproduction check
+======================================================================
+
+(a) Untuned B4 (LR C=1.0) — expected to reproduce paper Table 4: 0.9006 / 0.6819 / 0.6918
+    CN vs AD   CNN=0.982205  panel=0.900608  Δ=+8.2 pp
+    CN vs MCI  CNN=0.947483  panel=0.681858  Δ=+26.6 pp
+    MCI vs AD  CNN=0.980469  panel=0.691840  Δ=+28.9 pp
+
+(b) Tuned B4 (LR C=0.1) — new values
+    CN vs AD   CNN=0.982205  panel=0.900174  Δ=+8.2 pp
+    CN vs MCI  CNN=0.947483  panel=0.678385  Δ=+26.9 pp
+    MCI vs AD  CNN=0.980469  panel=0.690972  Δ=+28.9 pp
+
+(c) Tuned B5 (SVM C=10, gamma=0.01) — for reference
+    CN vs AD   CNN=0.982205  panel=0.901910  Δ=+8.0 pp
+    CN vs MCI  CNN=0.947483  panel=0.682943  Δ=+26.5 pp
+    MCI vs AD  CNN=0.980469  panel=0.676215  Δ=+30.4 pp
+
+======================================================================
+[3] Main baseline results after tuning (6 decimal places)
+======================================================================
+  B1 age+sex LR              untuned 0.528356 → tuned 0.528356  | Acc 0.3819  F1 0.3590  CI [0.4610, 0.5940]  Δ+43.5 p=0.0005  hp={"C": 1.0}
+  B2 structural panel LR     untuned 0.693504 → tuned 0.694083  | Acc 0.5139  F1 0.5058  CI [0.6275, 0.7584]  Δ+26.9 p=0.0005  hp={"C": 0.1}
+  B3 structural panel SVM    untuned 0.649233 → tuned 0.649233  | Acc 0.4861  F1 0.4822  CI [0.5817, 0.7197]  Δ+31.4 p=0.0005  hp={"C": 1.0, "gamma": "scale"}
+  B4 panel+demo LR           untuned 0.707176 → tuned 0.707899  | Acc 0.5139  F1 0.5046  CI [0.6500, 0.7648]  Δ+25.5 p=0.0005  hp={"C": 0.1}
+  B5 panel+demo SVM          untuned 0.675130 → tuned 0.707538  | Acc 0.5417  F1 0.5330  CI [0.6531, 0.7661]  Δ+25.5 p=0.0005  hp={"C": 10.0, "gamma": 0.01}

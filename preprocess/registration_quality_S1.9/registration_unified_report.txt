@@ -1,0 +1,80 @@
+
+================================================================================
+    ADNI brain MRI batch registration quality — summary analysis report (SyN-fast strategy)
+================================================================================
+
+I. Sample overview
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Total samples: 954
+  Strategy: syn_fast (SyN-fast)
+  Transform type: SyN
+
+II. Descriptive statistics of the core metrics
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Metric Mean ± SD             Median     IQR               Range             CV
+  ─────────────────────────────────────────────────────────────────────────────
+  Dice   0.994743 ± 0.002010   0.994740   [0.9936, 0.9960]  [0.9860, 0.9997]  0.20%
+  CC     0.780220 ± 0.024262   0.783324   [0.7693, 0.7958]  [0.6410, 0.8342]  3.11%
+  MAE    635.34   ± 51.96      630.95     [599.6,  668.4]   [494.4,  869.6]   8.18%
+  MI    -0.65837  ± 0.01497   -0.65913   [-0.6683,-0.6491] [-0.6977,-0.5954]  2.27%
+
+III. Quality grading (based on CC)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Grade        Criterion        Count    Share
+  ─────────────────────────────────────────────────
+  Excellent    CC ≥ 0.85        0        0.0%
+  Good         CC ≥ 0.80        162      17.0%
+  Acceptable   CC ≥ 0.75        712      74.6%
+  Needs review CC < 0.75        80       8.4%
+
+IV. Quality grading (based on Dice)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Grade        Criterion        Count    Share
+  ─────────────────────────────────────────────────
+  Very good    Dice ≥ 0.998     58       6.1%
+  Excellent    Dice ≥ 0.995     373      39.1%
+  Good         Dice ≥ 0.990     514      53.9%
+  Needs review Dice < 0.990     9        0.9%
+
+V. Key findings
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1. Dice performs very well
+     • 99.1% of samples have Dice ≥ 0.990; the spatial overlap is extremely high
+     • mean 0.9947, indicating that rigid/non-rigid alignment is very stable
+     • only 9 samples (0.9%) have Dice < 0.990
+
+  2. CC is moderate, with room for improvement
+     • mean 0.78; no sample reaches the "Excellent" criterion (≥0.85)
+     • 74.6% of samples fall in the "Acceptable" interval [0.75, 0.80)
+     • 17.0% of samples reach "Good" (≥0.80)
+     • 8.4% of samples (80) have CC < 0.75 and need manual review
+
+  3. The Dice–CC dissociation is clear
+     • Dice is very high while CC is moderate, indicating that spatial position is well aligned
+     • but intensity-distribution matching still falls short, possibly related to the following factors:
+       - the [0.5%, 99.5%] quantile range of histogram matching is too conservative
+       - some series (IR-FSPGR) differ considerably in contrast from the MNI template
+       - N4 bias-field correction does not fully remove field inhomogeneity
+
+  4. Characteristics of the outlier samples
+     • the lowest-CC samples are mostly IR-FSPGR / Sag_IR-SPGR series
+     • the highest-MAE samples usually have both low CC and low Dice
+     • older series (MPRAGE_Repeat, SENSE2, GRAPPA2) fluctuate more in quality
+
+VI. Recommendations
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1. For the 80 samples with CC < 0.75:
+     • check the raw image quality first (motion artefacts, signal-to-noise ratio)
+     • try re-registering with syn_standard (100,70,50) or syn_precise (120,80,60)
+     • consider adjusting the histogram-matching parameters to widen the matching range
+
+  2. For IR-FSPGR series:
+     • consider building a separate within-group template
+     • or adjust the N4 correction parameters and the histogram-matching strategy
+
+  3. Overall assessment:
+     • the current registration quality is broadly acceptable for downstream analyses (e.g. segmentation, feature extraction)
+     • the very high Dice performance guarantees the accuracy of spatial position
+     • the moderate CC level means that intensity-based analyses must be interpreted with care
+
+================================================================================

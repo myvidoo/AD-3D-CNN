@@ -1,0 +1,117 @@
+====================================================================================
+Step 3  Occlusion experiment statistical analysis
+====================================================================================
+samples n = 144   conditions = 10   records = 1440
+
+[baseline re-check] acc = 0.8681 (125/144)
+
+[saturation stratification] saturated samples with top-1 > 0.999999 = 64 / 144 (80 non-saturated samples kept for the main analysis)
+  saturated samples Δ==0 fraction = 29/64
+  non-saturated samples Δ==0 fraction = 0/80  ← zero values are purely a numerical artifact
+
+====================================================================================
+M1  Δp_true = p0[true] - p_after[true] (positive = the occlusion lowers the true-class probability)
+====================================================================================
+[all n=144]
+condition                      medianΔp_true  meanΔp_true          W          p      effect r
+MTL_d100_F1const                 0.00001     0.01247     1964.0    0.00013    0.357
+MTL_d80_F1const                  0.00001     0.01070     1637.0    0.00025    0.357
+MTL_d60_F1const                  0.00001     0.01033     1888.5    0.00636    0.268
+MTL_d40_F1const                  0.00000     0.01170     1846.5    0.00922    0.258
+MTL_d25_F1const                  0.00000     0.00007     1817.0       0.21    0.131
+MTL_d100_F2noise                 0.00000     0.00488     2299.5    0.00173    0.290
+MTL_d100_F3transplant            0.00001     0.01969     1795.0   1.07e-05    0.409
+C1_cort_23_F1const              -0.00000    -0.00881     2242.5      0.417    0.082
+C2_ball_F1const                  0.00000     0.01867     1919.5     0.0262    0.221
+C3_hipp_F1const                  0.00001     0.01852     1747.0    0.00219    0.302
+
+[★ non-saturated subset n=80 — main analysis]
+condition                      medianΔp_true  meanΔp_true          W          p      effect r   n+/n-
+MTL_d100_F1const                 0.00009     0.01791     1068.0    0.00811    0.296  53/27
+MTL_d80_F1const                  0.00013     0.01404     1022.0    0.00413    0.321  54/26
+MTL_d60_F1const                  0.00003     0.01342     1195.0     0.0415    0.228  50/30
+MTL_d40_F1const                  0.00001     0.01492     1228.5     0.0604    0.210  52/28
+MTL_d25_F1const                  0.00000     0.00008     1360.5      0.283    0.121  49/30
+MTL_d100_F2noise                 0.00005     0.00713     1218.0     0.0538    0.216  51/29
+MTL_d100_F3transplant            0.00016     0.02855      985.0    0.00232    0.341  59/21
+C1_cort_23_F1const              -0.00000    -0.01104     1428.0      0.458    0.084  33/46
+C2_ball_F1const                  0.00001     0.02357     1154.0     0.0254    0.250  46/34
+C3_hipp_F1const                  0.00002     0.02385     1046.0     0.0059    0.308  47/33
+
+====================================================================================
+M2  prediction flips (argmax changes after occlusion) — all n=144 (flips are unaffected by saturation)
+====================================================================================
+condition                        flip rate    to correct (incorrect→correct)    to incorrect (correct→incorrect)       stays correct        net change
+MTL_d100_F1const               0.0694          5          5        120    +0.0000
+MTL_d80_F1const                0.0625          4          5        120    -0.0069
+MTL_d60_F1const                0.0556          3          5        120    -0.0139
+MTL_d40_F1const                0.0208          0          3        122    -0.0208
+MTL_d25_F1const                0.0069          0          1        124    -0.0069
+MTL_d100_F2noise               0.0486          3          4        121    -0.0069
+MTL_d100_F3transplant          0.0833          4          8        117    -0.0278
+C1_cort_23_F1const             0.0069          1          0        125    +0.0069
+C2_ball_F1const                0.0347          1          4        121    -0.0208
+C3_hipp_F1const                0.0486          3          4        121    -0.0069
+
+====================================================================================
+M3  dose-response (MTL inward-shrink levels, F1 constant fill)
+====================================================================================
+level                           voxels      medianΔp_true      meanΔp_true         p
+MTL_d25_F1const                7941        0.00000        0.00008     0.283
+MTL_d40_F1const               12706        0.00001        0.01492    0.0604
+MTL_d60_F1const               19058        0.00003        0.01342    0.0415
+MTL_d80_F1const               25411        0.00013        0.01404   0.00413
+MTL_d100_F1const              31764        0.00009        0.01791   0.00811
+
+  Spearman(voxels, meanΔ) ρ = 0.7000, p = 0.1881
+  Spearman(voxels, medianΔ) ρ = 0.9000, p = 0.03739
+  mean strictly monotonically increasing = False ; median strictly monotonically increasing = False
+  d100 vs d25 paired Wilcoxon: W=1081, p=0.009732
+
+====================================================================================
+M4  sample-level coupling (Spearman of Δp_true with the baseline metrics)
+====================================================================================
+  baseline confidence         ρ = -0.0709, p = 0.5323
+  cam_mean                    ρ = -0.1327, p = 0.2406
+  MTL mass fraction           ρ = +0.0118, p = 0.917
+  hippocampus mass fraction   ρ = +0.0142, p = 0.9008
+  correct vs incorrect        correct 0.07064 (n=62) vs incorrect -0.16371 (n=18)  U=872, p=0.0003038, δ=0.563
+
+====================================================================================
+M5  control comparison (paired Wilcoxon, Δp_true main mask vs control)
+====================================================================================
+control                             main mask medianΔ       control medianΔ         W         p Cliff's δ
+MTL_d80_F1const                    0.00009     0.00013      1322    0.1529    +0.008
+MTL_d60_F1const                    0.00009     0.00003      1109   0.02135    +0.079
+MTL_d40_F1const                    0.00009     0.00001      1070    0.0084    +0.124
+MTL_d25_F1const                    0.00009     0.00000      1081  0.009732    +0.196
+MTL_d100_F2noise                   0.00009     0.00005      1200   0.04422    +0.080
+MTL_d100_F3transplant              0.00009     0.00016      1619    0.9962    -0.023
+C1_cort_23_F1const                 0.00009    -0.00000      1182   0.03566    +0.257
+C2_ball_F1const                    0.00009     0.00001      1101    0.0128    +0.085
+C3_hipp_F1const                    0.00009     0.00002      1347    0.1904    +0.023
+
+====================================================================================
+M6  fill-strategy robustness (same mask d100, three fill strategies; non-saturated subset n=80)
+====================================================================================
+  MTL_d100_F1const           medianΔ=+0.00009  meanΔ=+0.01791  p=0.00811 r=0.296  flip rate=0.0694 acc=0.8681
+  MTL_d100_F2noise           medianΔ=+0.00005  meanΔ=+0.00713  p=0.0538 r=0.216  flip rate=0.0486 acc=0.8611
+  MTL_d100_F3transplant      medianΔ=+0.00016  meanΔ=+0.02855  p=0.00232 r=0.341  flip rate=0.0833 acc=0.8403
+    _F1const vs _F2noise  ρ=0.2844 (p=0.0106)
+    _F1const vs ansplant  ρ=0.4789 (p=7.01e-06)
+    _F2noise vs ansplant  ρ=0.3224 (p=0.00354)
+  three strategies agree in direction = True
+
+====================================================================================
+Pre-registered interpretation matrix (based on the non-saturated subset n=80)
+====================================================================================
+A- — MTL occlusion significantly lowers the true-class probability, significantly more than the volume-matched/random-sphere controls,
+      but **MTL has no significant advantage over the hippocampus alone** (p=0.19)
+      → supports "the medial temporal lobe carries diagnostic information", but the evidence points to **the hippocampus itself** rather than the whole MTL
+      → if the paper claims MTL (rather than hippocampal) specificity, caution is needed
+
+  controls passing correction = 2 / 3
+  MTL vs hippocampus p = 0.1904 (no significant difference)
+
+saved: <WORKSPACE>/27_occlusion_experiment/results/occlusion_stats.json
+====================================================================================

@@ -1,0 +1,8 @@
+data/fixed_data_split.json: 11e0ab041ec9c132
+data/all_training_results.csv: 213a609e3e640daa
+data/ensemble_test_predictions.csv: 96ee11a842e8b1f2
+weights/fold_1_best_geo.pth: 26c52bbd31548aa8
+weights/fold_2_best_geo.pth: 0bab738a734f29ca
+weights/fold_3_best_geo.pth: a928e637f0b4b12a
+weights/fold_4_best_geo.pth: 485478fd81ccc9ac
+weights/fold_5_best_geo.pth: 0dcba9153bdd2b22

@@ -1,0 +1,76 @@
+The three groups of data have been merged and summarised; the unified registration quality analysis for 954 samples is as follows:
+
+---
+
+## 📊 Core metric summary (n = 954)
+
+| Metric | Mean ± SD | Median | IQR | Range | CV |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Dice** | **0.9947 ± 0.0020** | 0.9947 | [0.9936, 0.9960] | [0.9860, 0.9997] | 0.20% |
+| **CC** | **0.7802 ± 0.0243** | 0.7833 | [0.7693, 0.7958] | [0.6410, 0.8342] | 3.11% |
+| **MAE** | **635.3 ± 52.0** | 630.9 | [599.6, 668.4] | [494.4, 869.6] | 8.18% |
+| **MI** | **-0.6584 ± 0.0150** | -0.6591 | [-0.6683, -0.6491] | [-0.6977, -0.5954] | 2.27% |
+
+---
+
+## 📈 Quality grading
+
+### Based on CC (correlation coefficient)
+| Grade | Criterion | Count | Share |
+|:---:|:---:|:---:|:---:|
+| Excellent | ≥ 0.85 | 0 | 0.0% |
+| Good | ≥ 0.80 | 162 | 17.0% |
+| Acceptable | ≥ 0.75 | 712 | **74.6%** |
+| **Needs review** | < 0.75 | **80** | **8.4%** |
+
+### Based on Dice (spatial overlap)
+| Grade | Criterion | Count | Share |
+|:---:|:---:|:---:|:---:|
+| Very good | ≥ 0.998 | 58 | 6.1% |
+| Excellent | ≥ 0.995 | 373 | 39.1% |
+| Good | ≥ 0.990 | 514 | 53.9% |
+| Needs review | < 0.990 | 9 | 0.9% |
+
+---
+
+## 🔍 Key findings
+
+1. **Dice performs very well**: 99.1% of samples have Dice ≥ 0.990 and spatial alignment is almost perfect, indicating that the spatial registration of the SyN-fast strategy is very stable.
+
+2. **CC is moderate, with room for improvement**: the mean is only 0.78, and no sample reaches "Excellent" (≥0.85). 74.6% fall in the acceptable interval, and 8.4% (80 samples) need review.
+
+3. **The Dice–CC dissociation is clear**: spatial position is well aligned (Dice≈0.995), but intensity-distribution matching still falls short (CC≈0.78). This means that brain-region positions are matched accurately, but the gray/white-matter intensity values still differ systematically from the MNI template.
+
+4. **Characteristics of the outlier samples**: the lowest-CC samples are mostly **IR-FSPGR / Sag_IR-SPGR** series, together with older MPRAGE (SENSE2, GRAPPA2, etc.); these series differ considerably in contrast from the MNI template.
+
+---
+
+## ⚠️ Samples requiring priority review (CC < 0.75, Top 5)
+
+| Sample ID | Dice | CC | MAE | Possible cause |
+|:---|:---:|:---:|:---:|:---|
+| ADNI-F58060_ADNI-1260 | 0.9944 | **0.6410** | 822.4 | Sag_IR-SPGR |
+| ADNI-1A7706_ADNI-0450 | 0.9951 | **0.6583** | 816.9 | Sag_IR-FSPGR |
+| ADNI-BBE9A6_ADNI-1401 | 0.9902 | **0.6598** | 867.0 | Accelerated MPRAGE |
+| ADNI-E9134A_ADNI-1767 | 0.9955 | **0.6610** | 778.3 | Accelerated MPRAGE |
+| ADNI-0B9155_ADNI-1934 | 0.9924 | **0.6648** | 814.0 | Accelerated MPRAGE |
+
+---
+
+## 💡 Recommendations
+
+| Priority | Action |
+|:---|:---|
+| **High** | For the 80 samples with CC < 0.75, check the raw image quality first and try re-registering with `syn_standard` or `syn_precise` |
+| **Medium** | For IR-FSPGR series, consider adjusting the quantile range of histogram matching or handling them separately |
+| **Low** | Overall registration quality is broadly acceptable for downstream analyses (segmentation, feature extraction); no large-scale re-run is needed |
+
+---
+
+## 📥 Download files
+
+- 📊 Comprehensive analysis figures: [registration_unified_analysis.png](<ARCHIVE_LINK>
+- 📋 Merged complete sample data (954 rows): [registration_all_samples_merged.csv](<ARCHIVE_LINK>
+- 📈 Descriptive statistics table: [registration_summary_statistics.csv](<ARCHIVE_LINK>
+- ⚠️ Low-CC outlier sample list (80 rows): [registration_low_cc_samples.csv](<ARCHIVE_LINK>
+- 📝 Text-version analysis report: [registration_unified_report.txt](<ARCHIVE_LINK>

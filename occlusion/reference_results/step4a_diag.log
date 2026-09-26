@@ -1,0 +1,58 @@
+====================================================================================
+Step 4a  full-rerun difference diagnostics
+====================================================================================
+grid: 144 samples × 10 conditions = 1440 rows | condition names and row order: identical
+
+--- A  p0 internal consistency ---
+  maximum p0 spread across the 10 conditions of the same sample:  OLD 0.000e+00 | NEW 0.000e+00
+  p0 vs baseline_p0.json        :  OLD 0.000e+00 | NEW 9.449e-04  (sample sets identical=True)
+
+--- B  sample-level / condition-level structure of the differences ---
+  p0       max|Δ| per sample: min 5.519e-16 | p25 1.841e-11 | median 1.304e-09 | p75 1.470e-06 | max 9.449e-04
+  p_after  max|Δ| per sample: min 1.806e-14 | p25 1.485e-09 | median 3.083e-07 | p75 5.325e-05 | max 1.327e-03
+  the 5 samples with the largest p0 difference:
+    ADNI-0156_S_PB43C7E_MCI_M_Accelerated_SAG_IR-SPGR_ws true class=1  max|Δp0|=9.449e-04
+    ADNI-1956_S_P8B016D_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws true class=1  max|Δp0|=6.831e-04
+    ADNI-0432_S_P3FCB90_MCI_F_Sagittal_3D_Accelerated_0_angle_MPRAGE_ws true class=1  max|Δp0|=6.695e-04
+    ADNI-1500_S_PF9E854_MCI_M_Accelerated_Sagittal_IR-FSPGR_ws true class=1  max|Δp0|=5.753e-04
+    ADNI-1232_S_PC600BF_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws true class=1  max|Δp0|=4.072e-04
+  number of samples with difference > 1e-06: p0 39/144 | p_after 61/144
+  per-condition max|Δ| vs mean Δp_true:
+    MTL_d100_F1const         max|Δp_after|=8.232e-04  Δp_true mean 0.009959 → 0.009980  (|ΔΔ|max 9.056e-04)
+    MTL_d80_F1const          max|Δp_after|=3.656e-04  Δp_true mean 0.007799 → 0.007808  (|ΔΔ|max 8.449e-04)
+    MTL_d60_F1const          max|Δp_after|=1.327e-03  Δp_true mean 0.007458 → 0.007490  (|ΔΔ|max 1.379e-03)
+    MTL_d40_F1const          max|Δp_after|=1.058e-03  Δp_true mean 0.008287 → 0.008317  (|ΔΔ|max 1.465e-03)
+    MTL_d25_F1const          max|Δp_after|=7.019e-04  Δp_true mean 0.000046 → 0.000069  (|ΔΔ|max 1.154e-03)
+    MTL_d100_F2noise         max|Δp_after|=1.092e-03  Δp_true mean 0.003962 → 0.003975  (|ΔΔ|max 1.238e-03)
+    MTL_d100_F3transplant    max|Δp_after|=6.027e-04  Δp_true mean 0.015865 → 0.015883  (|ΔΔ|max 1.071e-03)
+    C1_cort_23_F1const       max|Δp_after|=5.136e-04  Δp_true mean -0.006059 → -0.006052  (|ΔΔ|max 7.322e-04)
+    C2_ball_F1const          max|Δp_after|=8.081e-04  Δp_true mean 0.013092 → 0.013114  (|ΔΔ|max 1.383e-03)
+    C3_hipp_F1const          max|Δp_after|=9.016e-04  Δp_true mean 0.013250 → 0.013266  (|ΔΔ|max 1.099e-03)
+
+--- C  which probability range the differences concentrate in ---
+  p0∈[0,0.01)           n= 2630   mean|Δ|=3.498e-07  median|Δ|=2.155e-11  max|Δ|=1.376e-05
+  p0∈[0.01,0.1)         n=  110   mean|Δ|=5.105e-05  median|Δ|=4.456e-05  max|Δ|=1.768e-04
+  p0∈[0.1,0.5)          n=  140   mean|Δ|=3.382e-04  median|Δ|=2.087e-04  max|Δ|=9.449e-04
+  p0∈[0.5,0.9)          n=  140   mean|Δ|=3.400e-04  median|Δ|=2.087e-04  max|Δ|=9.444e-04
+  p0∈[0.9,0.99)         n=   90   mean|Δ|=6.066e-05  median|Δ|=5.275e-05  max|Δ|=1.730e-04
+  p0∈[0.99,0.999)       n=  130   mean|Δ|=4.998e-06  median|Δ|=2.205e-06  max|Δ|=1.371e-05
+  p0∈[0.999,0.999999]   n=  440   mean|Δ|=2.073e-07  median|Δ|=0.000e+00  max|Δ|=2.503e-06
+  p0∈(0.999999,1]       n=  640   mean|Δ|=0.000e+00  median|Δ|=0.000e+00  max|Δ|=0.000e+00
+
+--- D  fidelity at the Δp_true level (old vs new) ---
+  |ΔΔp_true| : mean 5.510e-05 | median 0.000e+00 | p99 9.886e-04 | max 1.465e-03
+  Spearman(Δ old, Δ new) = 0.999997  (p = 0.000e+00)
+  sign agreement rate = 1.0000  (1440 / 1440)
+
+--- E  argmax and predicted-label stability ---
+  cell-level argmax mismatches: p0 0/1440 | p_after 0/1440
+  sample-level prediction-vector mismatches across the 10 conditions: p0 0/144 | p_after 0/144
+
+--- F  saturation-stratification stability (SAT_THR = 0.999999, based only on the baseline p0) ---
+  sat n: OLD 64 / NEW 64   →  nonsat n: OLD 80 / NEW 80
+  number of samples switching stratum = 0
+  samples with baseline top1 ∈ (0.99, 0.999999] (critical band): 57 cases; their max|Δp0| = 1.376e-05
+
+====================================================================================
+saved: <WORKSPACE>/27_occlusion_experiment/results/rerun_diag.json
+====================================================================================

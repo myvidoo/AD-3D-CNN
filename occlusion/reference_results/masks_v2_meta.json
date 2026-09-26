@@ -1,0 +1,76 @@
+{
+  "shape": [
+    182,
+    218,
+    182
+  ],
+  "vox_ml": 0.001,
+  "label_mapping": "HO image label value = XML index + 1 (v45 corrected version)",
+  "brain_vox": 1735619,
+  "mtl_vox": 31764,
+  "mtl_pct_of_brain": 1.830125159957341,
+  "hipp_vox": 11263,
+  "hipp_pct_of_brain": 0.6489327438798492,
+  "paper_mtl_pct": 1.83,
+  "paper_hipp_pct": 0.649,
+  "enrichment_mtl": 1.298271862485833,
+  "enrichment_hipp": 1.3190889319009145,
+  "c1_name": "cort_23",
+  "c1_vox": 32849,
+  "n_balls": 10,
+  "ball_radius_mm": 9.118651713167813,
+  "ball_vox_total": 31910,
+  "ball_centers": [
+    [
+      43,
+      91,
+      66
+    ],
+    [
+      106,
+      105,
+      115
+    ],
+    [
+      82,
+      166,
+      57
+    ],
+    [
+      82,
+      71,
+      112
+    ],
+    [
+      42,
+      154,
+      82
+    ],
+    [
+      111,
+      49,
+      63
+    ],
+    [
+      57,
+      82,
+      133
+    ],
+    [
+      44,
+      59,
+      81
+    ],
+    [
+      148,
+      98,
+      64
+    ],
+    [
+      115,
+      76,
+      110
+    ]
+  ],
+  "seed": 42
+}

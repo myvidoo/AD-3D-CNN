@@ -1,0 +1,3 @@
+﻿cohort,n,view,baseline,AUC
+MIRIAD,69,AD vs HC (P(AD)),B2 structural panel LR (tuned),0.9395085066162571
+OASIS2,94,CN vs AD,B2 structural panel LR (tuned),0.9021526418786693

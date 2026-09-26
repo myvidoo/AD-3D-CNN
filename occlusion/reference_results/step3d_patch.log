@@ -1,0 +1,126 @@
+============================================================================================
+Step 3d  pre-registration compliance supplementary tests
+============================================================================================
+all n=144, nonsat n=80, sat n=64 (SAT_THR=0.999999, based only on the baseline p0)
+
+--------------------------------------------------------------------------------------------
+P1  effect-size definition re-labelling: rank-biserial (bounded) / Cohen's d_z / Rosenthal r (= old reporting convention)
+--------------------------------------------------------------------------------------------
+definition                               n |      medianΔ       meanΔ   rank-bis  Cohen d_z Rosenthal r
+all MTL_d100                             115 |  +0.00001  +0.01247     +0.411     +0.060      +0.357
+nonsat CN stratum MTL_d100                24 |  -0.00001  -0.05824     -0.387     -0.296      +0.335
+nonsat MCI stratum MTL_d100               30 |  +0.00001  -0.02143     +0.110     -0.080      +0.093
+nonsat AD stratum MTL_d100                26 |  +0.00739  +0.13359     +1.000     +0.550      +1.087
+nonsat all MTL_d100                       80 |  +0.00009  +0.01791     +0.341     +0.071      +0.296
+
+--------------------------------------------------------------------------------------------
+P2  Holm correction (nonsat n=80, each condition vs 0)
+--------------------------------------------------------------------------------------------
+Family A: all 10 conditions
+   MTL_d100_F3transplant    p_raw=0.0023218  p_holm=0.023218  still significant
+   MTL_d80_F1const          p_raw=0.0041284  p_holm=0.037156  still significant
+   C3_hipp_F1const          p_raw=0.0059039  p_holm=0.047231  still significant
+   MTL_d100_F1const         p_raw=0.0081077  p_holm=0.056754  → no longer significant
+   C2_ball_F1const          p_raw=0.025412  p_holm=0.15247  → no longer significant
+   MTL_d60_F1const          p_raw=0.041507  p_holm=0.20754  → no longer significant
+   MTL_d100_F2noise         p_raw=0.053842  p_holm=0.21537  → no longer significant
+   MTL_d40_F1const          p_raw=0.060415  p_holm=0.21537  → no longer significant
+   MTL_d25_F1const          p_raw=0.2834  p_holm=0.5668  → no longer significant
+   C1_cort_23_F1const       p_raw=0.45758  p_holm=0.5668  → no longer significant
+Family B: 6 main conditions (MTL×3 fill strategies + C1/C2/C3)
+   MTL_d100_F3transplant    p_raw=0.0023218  p_holm=0.013931  still significant
+   C3_hipp_F1const          p_raw=0.0059039  p_holm=0.029519  still significant
+   MTL_d100_F1const         p_raw=0.0081077  p_holm=0.032431  still significant
+   C2_ball_F1const          p_raw=0.025412  p_holm=0.076237  → no longer significant
+   MTL_d100_F2noise         p_raw=0.053842  p_holm=0.10768  → no longer significant
+   C1_cort_23_F1const       p_raw=0.45758  p_holm=0.45758  → no longer significant
+
+--------------------------------------------------------------------------------------------
+P3  direct paired comparisons (core evidence for specificity): MTL vs C1 / MTL vs C2 / MTL vs C3 / C3 vs C2
+--------------------------------------------------------------------------------------------
+pair                              n | Wilcoxon p  rank-bis       d_z mean diff    n+/n-
+MTL vs C1 non-MTL cortex              80 |   0.035661    +0.270    +0.096  +0.02882   51/29
+MTL vs C2 random sphere               80 |     0.0128    +0.320    -0.028  -0.00566   54/26
+MTL vs C3 hippocampus proper          80 |     0.1904    +0.169    -0.034  -0.00594   49/31
+C3 vs C2 hippocampus vs random sphere 79 |   0.064348    +0.240    +0.003  +0.00029   48/31
+
+Family Holm (4 paired comparisons):
+   MTL vs C2 random sphere              p_raw=0.0128  p_holm=0.051201  → no longer significant
+   MTL vs C1 non-MTL cortex             p_raw=0.035661  p_holm=0.10698  → no longer significant
+   C3 vs C2 hippocampus vs random sphere p_raw=0.064348  p_holm=0.1287  → no longer significant
+   MTL vs C3 hippocampus proper         p_raw=0.1904  p_holm=0.1904  → no longer significant
+
+--------------------------------------------------------------------------------------------
+P4  probability-destination decomposition (main mask MTL_d100_F1const; the three Δp always sum to 0, so a flow decomposition can be used)
+--------------------------------------------------------------------------------------------
+true class|definition                  n |     ΔCN(+increase)    ΔMCI(+increase)     ΔAD(+increase) |        true-class probability drop
+CN|all              48 |    +0.02912    -0.01673    -0.01239 |      -0.02912
+CN|nonsat           24 |    +0.05824    -0.03347    -0.02477 |      -0.05824
+CN|sat              24 |    -0.00000    +0.00000    -0.00000 |      +0.00000
+MCI|all             48 |    +0.02032    +0.01338    -0.03370 |      -0.01338
+MCI|nonsat          30 |    +0.03249    +0.02143    -0.05392 |      -0.02143
+MCI|sat             18 |    +0.00003    -0.00003    -0.00000 |      +0.00003
+AD|all              48 |    +0.05552    +0.01686    -0.07238 |      +0.07238
+AD|nonsat           26 |    +0.10247    +0.03112    -0.13359 |      +0.13359
+AD|sat              22 |    +0.00003    +0.00001    -0.00004 |      +0.00004
+
+AD stratum prediction destinations (rows = baseline prediction, columns = prediction after occlusion; n=48 all)
+               CN     MCI      AD
+  base CN       0       0       0
+  base MCI      0       3       0
+  base AD       3       0      42
+
+AD stratum (nonsat n=26) most probable recipient counts: CN 10 / MCI 16 / AD 0
+AD stratum (nonsat) median net change: CN +0.00017 / MCI +0.00055 / AD -0.00739
+→ share of the lost probability flowing to CN = 76.7% (flowing to MCI = 23.3%)
+AD→CN flipped samples, one by one (n=3):
+   ADNI-1587_S_P35CB75_AD_ p0=[0.1787,0.0001,0.8211] → p=[0.9002,0.0004,0.0993]  Δp_true=+0.7218
+      confidence 0.8211 → 0.9002  |  nonsat=True
+   ADNI-1608_S_PCDBC60_AD_ p0=[0.4260,0.0289,0.5450] → p=[0.9984,0.0016,0.0000]  Δp_true=+0.5450
+      confidence 0.5450 → 0.9984  |  nonsat=True
+   ADNI-0621_S_PA2127C_AD_ p0=[0.0800,0.0016,0.9184] → p=[0.9809,0.0024,0.0168]  Δp_true=+0.9017
+      confidence 0.9184 → 0.9809  |  nonsat=True
+
+AD stratum flow comparison across conditions (nonsat AD n=26):
+condition                           true-class drop   ΔCN(+increase)   ΔMCI(+increase)      CN share%     AD Δrecall
+MTL_d100_F1const           +0.13359   +0.10247   +0.03112       76.7   -0.0625
+MTL_d80_F1const            +0.10465   +0.07999   +0.02466       76.4   -0.0625
+MTL_d60_F1const            +0.08861   +0.06779   +0.02082       76.5   -0.0625
+MTL_d40_F1const            +0.04809   +0.03922   +0.00887       81.6   -0.0208
+MTL_d25_F1const            +0.02148   +0.01767   +0.00381       82.3   -0.0208
+MTL_d100_F2noise           +0.07816   +0.07593   +0.00223       97.1   -0.0625
+MTL_d100_F3transplant      +0.11562   +0.08438   +0.03123       73.0   -0.1042
+C1_cort_23_F1const         -0.05244   -0.02374   -0.02870        n/a   +0.0208
+C2_ball_F1const            +0.06561   +0.06202   +0.00359       94.5   -0.0417
+C3_hipp_F1const            +0.09068   +0.07797   +0.01271       86.0   -0.0417
+
+--------------------------------------------------------------------------------------------
+P5  Δp_true by prediction correctness × true class (nonsat n=80)
+--------------------------------------------------------------------------------------------
+true class prediction n |         medianΔ         meanΔ     n+/n-         p rank-bis
+CN     correct   17 |    +0.00000    -0.00093     9/8      0.3778   -0.255
+CN     incorrect  7 |    -0.00016    -0.19742     1/6      0.1094   -0.714
+MCI    correct   22 |    +0.00322    +0.05178    16/6     0.01409   +0.589
+MCI    incorrect  8 |    -0.08648    -0.22274     1/7     0.07812   -0.722
+AD     correct   23 |    +0.01176    +0.14157    23/0   2.384e-07   +1.000
+AD     incorrect  3 |    +0.00124    +0.07240     3/0        0.25   +1.000
+all    correct   62 |    +0.00067    +0.07064    48/14  8.099e-06   +0.652
+all    incorrect 18 |    -0.00290    -0.16371     5/13    0.04828   -0.532
+
+--------------------------------------------------------------------------------------------
+P6  dose-response: exact permutation test over 5 levels (5! = 120 permutations)
+--------------------------------------------------------------------------------------------
+dose level :       7941      12706      19058      25411      31764
+medianΔ :   +1.49e-06  +8.05e-06  +2.69e-05  +1.35e-04  +9.08e-05
+meanΔ :     +0.00008   +0.01492   +0.01342   +0.01404   +0.01791
+medianΔ : ρ_obs = 0.9000 | exact two-sided permutation p = 0.0833 (=10/120) | asymptotic t approximation p = 0.0374
+meanΔ : ρ_obs = 0.7000 | exact two-sided permutation p = 0.2333 (=28/120) | asymptotic t approximation p = 0.1881
+
+Adjacent dose-level paired Wilcoxon (nonsat n=80):
+   Δ(d40_+12706 - d25_7941): p = 0.01008  rank-bis = +0.331  54/26 (positive/negative)
+   Δ(d60_+19058 - d40_12706): p = 0.007881  rank-bis = +0.342  52/28 (positive/negative)
+   Δ(d80_+25411 - d60_19058): p = 0.06873  rank-bis = +0.234  49/31 (positive/negative)
+   Δ(d100_+31764 - d80_25411): p = 0.1529  rank-bis = +0.184  44/36 (positive/negative)
+
+saved: results/patch_stats.json
+============================================================================================

@@ -1,0 +1,89 @@
+{
+  "n_samples": 144,
+  "n_conditions": 10,
+  "conditions": [
+    {
+      "name": "MTL_d100_F1const",
+      "mask": "d100",
+      "fill": "const",
+      "mask_vox": 31764
+    },
+    {
+      "name": "MTL_d80_F1const",
+      "mask": "d80",
+      "fill": "const",
+      "mask_vox": 25411
+    },
+    {
+      "name": "MTL_d60_F1const",
+      "mask": "d60",
+      "fill": "const",
+      "mask_vox": 19058
+    },
+    {
+      "name": "MTL_d40_F1const",
+      "mask": "d40",
+      "fill": "const",
+      "mask_vox": 12706
+    },
+    {
+      "name": "MTL_d25_F1const",
+      "mask": "d25",
+      "fill": "const",
+      "mask_vox": 7941
+    },
+    {
+      "name": "MTL_d100_F2noise",
+      "mask": "d100",
+      "fill": "noise",
+      "mask_vox": 31764
+    },
+    {
+      "name": "MTL_d100_F3transplant",
+      "mask": "d100",
+      "fill": "transplant",
+      "mask_vox": 31764
+    },
+    {
+      "name": "C1_cort_23_F1const",
+      "mask": "c1",
+      "fill": "const",
+      "mask_vox": 32849
+    },
+    {
+      "name": "C2_ball_F1const",
+      "mask": "ball",
+      "fill": "const",
+      "mask_vox": 31910
+    },
+    {
+      "name": "C3_hipp_F1const",
+      "mask": "hipp",
+      "fill": "const",
+      "mask_vox": 11263
+    }
+  ],
+  "dose_vox": {
+    "d25": 7941,
+    "d40": 12706,
+    "d60": 19058,
+    "d80": 25411,
+    "d100": 31764
+  },
+  "mask_vox": {
+    "mtl": 31764,
+    "hipp": 11263,
+    "c1": 32849,
+    "ball": 31910,
+    "brain": 1735619
+  },
+  "c1_name": "cort_23",
+  "seed": 42,
+  "run_id": 128,
+  "fill_policy": {
+    "const": "whole-brain intracranial mean",
+    "noise": "region-statistics-matched Gaussian noise",
+    "transplant": "same-region voxels from a subject with a different true label"
+  },
+  "note": "p0 is the repeated-inference re-check and must be exactly identical to step0_baseline.json"
+}

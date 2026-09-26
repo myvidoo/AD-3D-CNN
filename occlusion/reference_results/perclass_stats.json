@@ -1,0 +1,178 @@
+{
+  "scope": {
+    "n_all": 144,
+    "n_nonsat": 80,
+    "n_sat": 64
+  },
+  "per_class_delta": {
+    "CN": {
+      "n_all": 48,
+      "n_nonsat": 24,
+      "median_nonsat": -6.6141585648438195e-06,
+      "mean_nonsat": -0.05824256260341646,
+      "n_pos": 10,
+      "n_neg": 14,
+      "W": 92.0,
+      "p": 0.10109639167785645,
+      "effect_r": 0.3346740720246216
+    },
+    "MCI": {
+      "n_all": 48,
+      "n_nonsat": 30,
+      "median_nonsat": 1.0907649993896484e-05,
+      "mean_nonsat": -0.02142764243859953,
+      "n_pos": 17,
+      "n_neg": 13,
+      "W": 207.0,
+      "p": 0.6120056137442589,
+      "effect_r": 0.09260393825667278
+    },
+    "AD": {
+      "n_all": 48,
+      "n_nonsat": 26,
+      "median_nonsat": 0.007393509149551392,
+      "mean_nonsat": 0.1335922638909684,
+      "n_pos": 26,
+      "n_neg": 0,
+      "W": 0.0,
+      "p": 2.9802322387695312e-08,
+      "effect_r": 1.0869921252561772
+    },
+    "_KW": {
+      "H": 24.43923670465341,
+      "p": 4.932728117235675e-06
+    },
+    "_pair_CN_MCI": {
+      "U": 265.0,
+      "p": 0.09996283092197991
+    },
+    "_pair_CN_AD": {
+      "U": 40.0,
+      "p": 1.3487659595508877e-07
+    },
+    "_pair_MCI_AD": {
+      "U": 223.0,
+      "p": 0.006230536153470275
+    }
+  },
+  "per_class_flip": {
+    "CN": {
+      "n": 48,
+      "recall_base": 0.8541666666666666,
+      "recall_occ": 0.8958333333333334,
+      "recall_delta": 0.04166666666666674,
+      "n_fix": 2,
+      "n_break": 0,
+      "net": 2
+    },
+    "MCI": {
+      "n": 48,
+      "recall_base": 0.8125,
+      "recall_occ": 0.8333333333333334,
+      "recall_delta": 0.02083333333333337,
+      "n_fix": 3,
+      "n_break": 2,
+      "net": 1
+    },
+    "AD": {
+      "n": 48,
+      "recall_base": 0.9375,
+      "recall_occ": 0.875,
+      "recall_delta": -0.0625,
+      "n_fix": 0,
+      "n_break": 3,
+      "net": -3
+    }
+  },
+  "ad_specificity": {
+    "ad_break": 3,
+    "ad_fix": 0,
+    "mcnemar_p": 0.25,
+    "significant": false,
+    "all_break": 5,
+    "all_fix": 5,
+    "all_mcnemar_p": 1.0
+  },
+  "controls_ad_asymmetry": {
+    "MTL_d100_F1const": {
+      "ad_delta": -0.0625,
+      "cn_delta": 0.04166666666666674,
+      "mci_delta": 0.02083333333333337,
+      "mcnemar_p": 0.25,
+      "ad_break": 3,
+      "ad_fix": 0
+    },
+    "MTL_d80_F1const": {
+      "ad_delta": -0.0625,
+      "cn_delta": 0.02083333333333337,
+      "mci_delta": 0.02083333333333337,
+      "mcnemar_p": 0.25,
+      "ad_break": 3,
+      "ad_fix": 0
+    },
+    "MTL_d60_F1const": {
+      "ad_delta": -0.0625,
+      "cn_delta": 0.0,
+      "mci_delta": 0.02083333333333337,
+      "mcnemar_p": 0.25,
+      "ad_break": 3,
+      "ad_fix": 0
+    },
+    "MTL_d40_F1const": {
+      "ad_delta": -0.02083333333333337,
+      "cn_delta": 0.0,
+      "mci_delta": -0.04166666666666663,
+      "mcnemar_p": 1.0,
+      "ad_break": 1,
+      "ad_fix": 0
+    },
+    "MTL_d25_F1const": {
+      "ad_delta": -0.02083333333333337,
+      "cn_delta": 0.0,
+      "mci_delta": 0.0,
+      "mcnemar_p": 1.0,
+      "ad_break": 1,
+      "ad_fix": 0
+    },
+    "MTL_d100_F2noise": {
+      "ad_delta": -0.0625,
+      "cn_delta": 0.0,
+      "mci_delta": 0.04166666666666663,
+      "mcnemar_p": 0.25,
+      "ad_break": 3,
+      "ad_fix": 0
+    },
+    "MTL_d100_F3transplant": {
+      "ad_delta": -0.10416666666666663,
+      "cn_delta": 0.0,
+      "mci_delta": 0.02083333333333337,
+      "mcnemar_p": 0.0625,
+      "ad_break": 5,
+      "ad_fix": 0
+    },
+    "C1_cort_23_F1const": {
+      "ad_delta": 0.02083333333333337,
+      "cn_delta": 0.0,
+      "mci_delta": 0.0,
+      "mcnemar_p": 1.0,
+      "ad_break": 0,
+      "ad_fix": 1
+    },
+    "C2_ball_F1const": {
+      "ad_delta": -0.04166666666666663,
+      "cn_delta": 0.02083333333333337,
+      "mci_delta": -0.04166666666666663,
+      "mcnemar_p": 0.5,
+      "ad_break": 2,
+      "ad_fix": 0
+    },
+    "C3_hipp_F1const": {
+      "ad_delta": -0.04166666666666663,
+      "cn_delta": 0.02083333333333337,
+      "mci_delta": 0.0,
+      "mcnemar_p": 0.5,
+      "ad_break": 2,
+      "ad_fix": 0
+    }
+  }
+}

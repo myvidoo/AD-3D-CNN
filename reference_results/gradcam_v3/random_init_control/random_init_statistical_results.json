@@ -1,0 +1,65 @@
+{
+  "n_total": 144,
+  "mtl_vol_frac_ref": 0.01830125159957341,
+  "hipp_vol_frac_ref": 0.006489327438798492,
+  "n_correct": 48,
+  "n_incorrect": 96,
+  "random_model_accuracy": 0.3333333333333333,
+  "cam_mean": {
+    "correct_mean": 0.015855571002854656,
+    "correct_std": 0.0001301021873410457,
+    "incorrect_mean": 0.015937395034901176,
+    "incorrect_std": 0.00014456401894334976,
+    "mannwhitney_u": 1580.0,
+    "p_value": 0.002168574191463071,
+    "cliffs_delta": -0.3142361111111111
+  },
+  "cam_p95": {
+    "correct_mean": 0.02364763263224934,
+    "correct_std": 0.0001686561687158267,
+    "incorrect_mean": 0.023766856724008297,
+    "incorrect_std": 0.00018693272067525353,
+    "mannwhitney_u": 1477.0,
+    "p_value": 0.0004607031199945464,
+    "cliffs_delta": -0.3589409722222222
+  },
+  "cam_peak": {
+    "correct_mean": 0.026468744579081733,
+    "correct_std": 0.00026776161199222565,
+    "incorrect_mean": 0.026594113655543577,
+    "incorrect_std": 0.0002715692344558427,
+    "mannwhitney_u": 1712.0,
+    "p_value": 0.012185857256048059,
+    "cliffs_delta": -0.2569444444444444
+  },
+  "mtl_mass_frac_overall": {
+    "mean": 0.015736808146675066,
+    "std": 0.00010474199079238048
+  },
+  "mtl_mass_frac_correct_vs_incorrect": {
+    "correct_mean": 0.015688295180571233,
+    "incorrect_mean": 0.01576106462972698,
+    "p_value": 0.00021407285860390097
+  },
+  "hipp_mass_frac_overall": {
+    "mean": 0.006257328201789573,
+    "std": 3.636134217331011e-05
+  },
+  "hipp_mass_frac_correct_vs_incorrect": {
+    "correct_mean": 0.006239754800028908,
+    "incorrect_mean": 0.006266114902669905,
+    "p_value": 0.00011602932881877415
+  },
+  "kruskal_mtl_across_groups": {
+    "H": 14.836278735632163,
+    "p_value": 0.0006002649794537655,
+    "n": 144,
+    "eta_squared": 0.10375020094847667
+  },
+  "trained_model_ref": {
+    "mtl_mass_frac_mean": 0.023720669572099454,
+    "hipp_mass_frac_mean": 0.008559929250933209,
+    "cam_mean_correct": 0.13648126140236855,
+    "cam_mean_incorrect": 0.09556970313975681
+  }
+}

@@ -1,0 +1,70 @@
+======================================================================
+Random-initialization weight control experiment — results summary (usable for the paper)
+======================================================================
+
+Model: identical architecture to the 5-fold ensemble, PyTorch default random initialisation, no trained weights loaded (5 models), evaluated on the fixed test set (n=144).
+
+[Null-hypothesis reference (Harvard-Oxford, voxel share in MNI152 1 mm template space)]
+  MTL volume fraction of the whole brain  = 1.830%
+  hippocampus volume fraction             = 0.649%
+
+[Basic performance]
+  Accuracy 48/144 (33.3%, three-class chance level 33.3%)
+  -> random weights have no diagnostic capability
+
+[CAM intensity vs correctness]
+  cam_mean: correct 0.015856 vs incorrect 0.015937, absolute difference -0.00008
+         Mann-Whitney U=1580, p=0.00216857, Cliff's delta=-0.314
+  cam_p95: correct 0.023648 vs incorrect 0.023767, absolute difference -0.00012
+         Mann-Whitney U=1477, p=0.000460703, Cliff's delta=-0.359
+  cam_peak: correct 0.026469 vs incorrect 0.026594, absolute difference -0.00013
+         Mann-Whitney U=1712, p=0.0121859, Cliff's delta=-0.257
+  trained-model reference: cam_mean correct 0.1365 vs incorrect 0.0956, absolute difference +0.0409,
+         U=1802, p=0.000290, Cliff's delta=+0.517
+  -> the random model's effect points in the opposite direction, and the absolute difference
+     is only 8e-05 (trained model 4.09e-02, about 500 times larger); its statistical
+     significance is due solely to the extremely small between-subject variation of the
+     random model (SD 1.5e-04) and is negligible in magnitude.
+
+[Anatomical localisation: MTL / hippocampus mass fraction]
+  random model  MTL mass fraction        : 1.57% +- 0.01% (between-subject SD only 0.011%)
+  random model  hippocampus mass fraction: 0.626% +- 0.004%
+  trained model MTL mass fraction        : 2.37% +- 0.40% (between-subject SD 0.40%)
+  trained model hippocampus mass fraction: 0.856%
+  volume-fraction null hypothesis        : MTL 1.83% / hippocampus 0.649%
+
+  Enrichment (mass fraction / volume fraction):
+    trained model MTL  = 2.372 / 1.830 = 1.30x
+    trained model hipp = 0.856 / 0.649 = 1.32x
+    random model  MTL  = 1.57  / 1.83  = 0.86x (below the volume fraction: relative under-sampling)
+    random model  hipp = 0.626 / 0.649 = 0.96x (approximately equal to the volume fraction)
+
+  Between-subject variation (SD): random 0.011% vs trained 0.40%, i.e. about 38 times larger for the trained model
+  -> under random weights the CAM is nearly uniform and carries no sample-specific localisation.
+
+[Between-group differences in MTL mass fraction]
+  random model : CN 1.58% / MCI 1.57% / AD 1.57% (range 0.008 pp)
+                 Kruskal-Wallis H=14.84, p=0.000600265, eta^2=0.104
+  trained model: CN 2.239% / MCI 2.503% / AD 2.375% (CN-MCI difference 0.265 pp)
+                 Kruskal-Wallis H=11.14, p=0.00381534, eta^2=0.078
+
+  The random model's between-group difference reaches significance in the statistical
+  test only because its between-subject variation is extremely small, but the range of
+  the three group means is only about 0.01 pp, negligible in magnitude. The trained
+  model's CN-MCI difference is 0.265 pp, about 31 times larger, and is accompanied by about
+  38 times greater between-subject variation, constituting a sample-specific differentiated
+  localisation pattern that random initialisation cannot produce.
+
+[Conclusion]
+  The model's medial-temporal-lobe enrichment (1.30x), sample-specific
+  spatial localisation (between-subject SD 0.40% vs random 0.011%), and the
+  'correct -> strong attention' coupling (delta=+0.52 vs random delta=-0.31)
+  together constitute training-acquired disease-related features, ruling out the alternative
+  explanations of architectural inductive bias or centre preference.
+
+----------------------------------------------------------------------
+Data files (this directory):
+  random_init_per_sample_results.csv      - per-sample metrics of the random model
+  random_init_statistical_results.json    - random-control statistics (full values)
+  random_init_summary.txt                 - this file
+----------------------------------------------------------------------

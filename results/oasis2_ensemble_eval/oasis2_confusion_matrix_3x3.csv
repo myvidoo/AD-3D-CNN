@@ -1,0 +1,4 @@
+,Pred_CN,Pred_MCI,Pred_AD
+True_CN,25,29,19
+True_MCI,13,24,16
+True_AD,1,9,11

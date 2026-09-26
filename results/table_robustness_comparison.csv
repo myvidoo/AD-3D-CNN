@@ -1,0 +1,4 @@
+Metric,Mean (All 256),Std (All 256),Mean (Excl 1e-5),Std (Excl 1e-5),Mean Change,Std Change
+Validation AUC,0.9471,0.0094,0.9500,0.0083,+0.0029,-0.0011
+Validation F1,0.8519,0.0204,0.8573,0.0190,+0.0054,-0.0014
+Validation Accuracy,0.8525,0.0203,0.8578,0.0190,+0.0053,-0.0013

@@ -1,0 +1,63 @@
+From the statistical test results, there **is indeed a significant difference** between the three groups (p < 0.001), but the key question is: **how large is the actual magnitude of this difference (the effect size)? Is it large enough to affect the downstream classification?** Let me compute more detailed effect-size measures to answer this question.
+Based on the effect-size analysis, the answers to the three questions are as follows:
+
+---
+
+### I. Is the difference between the three groups significant?
+
+**Statistically significant, but the actual difference is very small.**
+
+| Metric | F value | p value | Effect size eta² | Effect magnitude |
+|:---:|:---:|:---:|:---:|:---:|
+| **Dice** | 21.94 | **4.85×10⁻¹⁰** | 0.0441 | **small effect** |
+| **CC** | 16.21 | **1.20×10⁻⁷** | 0.0330 | **small effect** |
+| **MAE** | 19.49 | **5.07×10⁻⁹** | 0.0394 | **small effect** |
+
+Although p < 0.001 (highly significant), **eta² is only about 0.03–0.04**, far below the medium-effect threshold (0.06). This means: **group can explain only 3–4% of the variance; the remaining 96% or more comes from within-group individual differences.**
+
+---
+
+### II. Is the difference large? Is there an obvious effect?
+
+**The difference is not large, and there is no clinically/practically meaningful obvious effect.**
+
+| Comparison | Dice difference | CC difference | Cohen's d |
+|:---:|:---:|:---:|:---:|
+| MCI vs CN | 0.0006 | 0.0071 | 0.28 (small) |
+| MCI vs AD | 0.0001 | 0.0027 | 0.11 (negligible) |
+| CN vs AD | 0.0007 | 0.0101 | 0.42 (small) |
+
+- **Dice**: the largest between-group difference is only **0.0009** (about 0.47 within-group SDs), which has almost no practical impact on spatial alignment.
+- **CC**: the largest between-group difference is only **0.010** (about 0.41 within-group SDs), while the within-group SD itself is as high as 0.024, so the three distributions overlap substantially.
+
+The variance decomposition in the bottom-right figure shows this directly: **the red share (between groups) is very small, whereas the blue share (within groups) is absolutely dominant.**
+
+---
+
+### III. Does it have an obvious impact on the downstream classification?
+
+**Almost no impact; the risk is very low.**
+
+| Assessment dimension | Conclusion |
+|:---|:---|
+| Spatial alignment | the Dice difference is only 0.09%; brain-region spatial positions are almost completely identical |
+| Intensity matching | the CC difference is only 0.7%, far smaller than individual differences |
+| Confounding risk | even if the classifier wrongly learned CC, it could not distinguish the groups on that basis (e.g. at CC≥0.8: MCI 10.1% / CN 18.9% / AD 22.0%, no discriminative power) |
+| Distribution overlap | the three CC violin plots overlap almost completely, making it hard for the classifier to "cheat" using registration quality |
+
+**Therefore: the current differences in registration quality will not become a confounder for the downstream classification task.**
+
+---
+
+### Recommendations
+
+1. **No need to tune the registration strategy separately for each group** — the between-group difference is too small to justify the extra effort.
+2. **Only the outlier samples need to be handled** — focus on the 80 samples with CC < 0.75 (8.4% of all samples); they may be caused by motion artefacts, a low signal-to-noise ratio, or series differences.
+3. **Optional: covariate adjustment** — if the downstream classification model is sensitive to registration quality, Dice/CC can be included as covariates in a regression model to further remove residual confounding.
+
+---
+
+### Download files
+
+- 📊 Between-group differences and effect sizes: [group_difference_effect_size_v2.png)
+- 📊 Variance decomposition and distribution overlap: [variance_decomposition.png)

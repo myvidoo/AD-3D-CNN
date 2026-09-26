@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the archived release (below) and the accompanying paper."
+title: "AD-3D-CNN: CN/MCI/AD Classification of Alzheimer's Disease from Single-Modality Structural MRI Alone"
+abstract: >-
+  3D DenseNet-169 with axial spatial gating for three-class CN/MCI/AD classification from a single
+  T1-weighted structural MRI, using zero clinical information. The release includes the controlled
+  baselines (demographic floor and structural-measurement panel), Grad-CAM interpretability evidence,
+  occlusion and tissue-transplant perturbation analysis, and cross-cohort external validation.
+type: software
+version: 1.0.0
+date-released: "2026-09-26"
+license: MIT
+authors:
+  - family-names: Tan
+    given-names: Zeru
+    affiliation: "Xinyang Central Hospital"
+    # first author and corresponding author
+  - family-names: Li
+    given-names: Hao
+    affiliation: "Xinyang Central Hospital"
+  - family-names: Zhang
+    given-names: Qin
+    affiliation: "Xinyang Central Hospital"
+  - family-names: Wu
+    given-names: Yisong
+    affiliation: "Xinyang Central Hospital"
+keywords:
+  - Alzheimer's disease
+  - mild cognitive impairment
+  - structural MRI
+  - deep learning
+  - 3D DenseNet
+  - Grad-CAM
+  - external validation
+  - reproducibility
+# Uncomment and fill in after creating the repository:
+# repository-code: "https://github.com/<user>/<repo>"
+# Uncomment and fill in after archiving on Zenodo:
+# doi: "10.5281/zenodo.XXXXXXX"

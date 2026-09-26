@@ -1,0 +1,9 @@
+Metric,Value
+AUC_CN_vs_AD,0.7566862361382909
+Accuracy,0.6595744680851063
+Bootstrap_CI_low,0.6327462491846054
+Bootstrap_CI_high,0.8728147423352902
+MannWhitney_U,1160.0
+MannWhitney_p_one_sided,0.00018024355827490836
+N_bootstrap,2000.0
+Seed,42.0

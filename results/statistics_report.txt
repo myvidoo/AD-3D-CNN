@@ -1,0 +1,45 @@
+================================================================================
+                    Summary 2 — sex and age distribution statistics report
+================================================================================
+
+Report generated at: 2026-09-23 23:11:49.274137
+Total samples: 954
+
+I. Sample size
+----------------------------------------
+  AD: 318 subjects
+  CN: 318 subjects
+  MCI: 318 subjects
+
+II. Sex distribution
+----------------------------------------
+  AD: M=166, F=152
+  CN: M=166, F=152
+  MCI: M=166, F=152
+
+  three-group chi-square test: χ²=0.00, p=1.0000
+
+III. Age distribution
+----------------------------------------
+  AD: 74.55 ± 8.30 years (range: 55-91)
+  CN: 73.11 ± 8.40 years (range: 55-95)
+  MCI: 73.66 ± 8.24 years (range: 56-94)
+
+  between-group age-difference test: p=0.0694
+
+  Effect sizes (vs AD):
+    Cohen's d:
+      AD vs CN:  d=0.1717 (negligible)
+      AD vs MCI: d=0.1076 (negligible)
+    Rank-Biserial r:
+      AD vs CN:  r=0.1020 (small effect)
+      AD vs MCI: r=0.0726 (negligible)
+
+IV. Paper-quality assessment
+----------------------------------------
+  Overall score: 100/100
+
+V. Conclusion
+----------------------------------------
+  The dataset quality is good and it is suitable for statistical analysis.
+  Report the matching procedure above and the statistical results in the Methods section of the paper.

@@ -1,0 +1,2882 @@
+[
+  {
+    "file_id": "ADNI-2025_S_P83F6BB_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-2025_S_P83F6BB_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      1.0681182079572273e-16,
+      1.7390293849048333e-12,
+      1.0
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0432_S_P3FCB90_MCI_F_Sagittal_3D_Accelerated_0_angle_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-0432_S_P3FCB90_MCI_F_Sagittal_3D_Accelerated_0_angle_MPRAGE_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 2,
+    "correct": 0,
+    "p0": [
+      1.4052387697915947e-08,
+      0.17995285987854004,
+      0.82004714012146
+    ],
+    "confidence": 0.82004714012146,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1040_S_PB8AEC4_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1040_S_PB8AEC4_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      1.1160464552517624e-08,
+      3.1750223596907275e-24
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1039_S_PED2F66_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1039_S_PED2F66_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      6.168270894058026e-10,
+      1.0700978991806664e-09
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0979_S_P5A257D_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0979_S_P5A257D_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      7.205849632263561e-12,
+      9.835952496928257e-09
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-2005_S_PAF6724_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-2005_S_PAF6724_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      0.000267410883679986,
+      0.9997325539588928,
+      3.615133149434402e-12
+    ],
+    "confidence": 0.9997325539588928,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1608_S_PCDBC60_AD_F_MPRAGE_SENSE2_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1608_S_PCDBC60_AD_F_MPRAGE_SENSE2_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      0.42604270577430725,
+      0.02891314961016178,
+      0.5450441837310791
+    ],
+    "confidence": 0.5450441837310791,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1423_S_P93D8A1_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1423_S_P93D8A1_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      2.1618855328142672e-07,
+      0.9999997615814209,
+      8.21648360460614e-10
+    ],
+    "confidence": 0.9999997615814209,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1644_S_PCCA39A_MCI_M_Sagittal_3D_Accelerated_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1644_S_PCCA39A_MCI_M_Sagittal_3D_Accelerated_MPRAGE_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      2.0812381990253925e-05,
+      0.9999791383743286,
+      4.925543706235658e-08
+    ],
+    "confidence": 0.9999791383743286,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0477_S_PDA6FD4_CN_M_Accelerated_Sag_IR-FSPGR_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0477_S_PDA6FD4_CN_M_Accelerated_Sag_IR-FSPGR_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      4.195641840139437e-14,
+      8.640091138205352e-13
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1990_S_P641B98_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1990_S_P641B98_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      9.770662577623934e-12,
+      1.0,
+      3.2700027130516673e-09
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1180_S_P831F5B_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1180_S_P831F5B_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      1.1858138602993673e-11,
+      1.0,
+      1.4864257047442209e-10
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0125_S_P8BC2C7_AD_M_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0125_S_P8BC2C7_AD_M_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      0.0020093361381441355,
+      9.458079830437782e-07,
+      0.9979897737503052
+    ],
+    "confidence": 0.9979897737503052,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1400_S_PA12117_CN_F_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1400_S_PA12117_CN_F_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      6.651993539330547e-11,
+      1.3714167301781544e-10
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0164_S_P56B01A_AD_M_Sag_IR-SPGR_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0164_S_P56B01A_AD_M_Sag_IR-SPGR_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      2.607589522085618e-07,
+      1.4391926924872678e-05,
+      0.9999853372573853
+    ],
+    "confidence": 0.9999853372573853,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-2043_S_P2F75A8_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-2043_S_P2F75A8_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      0.024494778364896774,
+      0.04200210049748421,
+      0.9335030913352966
+    ],
+    "confidence": 0.9335030913352966,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-2033_S_P26CA6E_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-2033_S_P26CA6E_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      1.482348410686285e-10,
+      0.002109352732077241,
+      0.9978906512260437
+    ],
+    "confidence": 0.9978906512260437,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0628_S_P7C2101_CN_F_Accelerated_Sagittal_IR-FSPGR_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0628_S_P7C2101_CN_F_Accelerated_Sagittal_IR-FSPGR_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      6.638381511159253e-11,
+      2.4430592097945958e-12
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0156_S_PB43C7E_MCI_M_Accelerated_SAG_IR-SPGR_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-0156_S_PB43C7E_MCI_M_Accelerated_SAG_IR-SPGR_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      0.4537953734397888,
+      0.5437988042831421,
+      0.0024058439303189516
+    ],
+    "confidence": 0.5437988042831421,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1437_S_P08AC7C_CN_M_MPRAGE_GRAPPA2_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1437_S_P08AC7C_CN_M_MPRAGE_GRAPPA2_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9959200620651245,
+      0.004079737234860659,
+      1.030114731292997e-07
+    ],
+    "confidence": 0.9959200620651245,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1260_S_PF8C0C8_AD_M_Sag_IR-SPGR_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1260_S_PF8C0C8_AD_M_Sag_IR-SPGR_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      1.1367309525667224e-05,
+      0.00015505481860600412,
+      0.9998335838317871
+    ],
+    "confidence": 0.9998335838317871,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1612_S_P2EB126_AD_F_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1612_S_P2EB126_AD_F_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 1,
+    "correct": 0,
+    "p0": [
+      1.1455018693595775e-06,
+      0.9999988079071045,
+      1.9518580529620522e-08
+    ],
+    "confidence": 0.9999988079071045,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0199_S_PF3479B_MCI_M_HS_Sagittal_MPRAGE_(MSV22)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-0199_S_PF3479B_MCI_M_HS_Sagittal_MPRAGE_(MSV22)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      0.00013681335258297622,
+      0.999535322189331,
+      0.00032787752570584416
+    ],
+    "confidence": 0.999535322189331,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1308_S_P34E65D_MCI_M_Sag_Accel_IR-FSPGR_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1308_S_P34E65D_MCI_M_Sag_Accel_IR-FSPGR_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      1.2252173497984131e-08,
+      0.9999934434890747,
+      6.521309842355549e-06
+    ],
+    "confidence": 0.9999934434890747,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0127_S_P57D71F_AD_M_MPRAGE_SENSE2_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0127_S_P57D71F_AD_M_MPRAGE_SENSE2_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      2.9249020983002083e-08,
+      2.090255468711888e-10,
+      1.0
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0291_S_PF9E504_AD_M_MPRAGE_GRAPPA2_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0291_S_PF9E504_AD_M_MPRAGE_GRAPPA2_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      2.3560875472838916e-09,
+      1.0340402241126867e-06,
+      0.999998927116394
+    ],
+    "confidence": 0.999998927116394,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1601_S_P2899E7_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1601_S_P2899E7_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      9.669710365756146e-09,
+      1.0,
+      3.0893102203992384e-13
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0734_S_PD83B9D_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0734_S_PD83B9D_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      8.220197439401389e-11,
+      9.209121798470221e-10,
+      1.0
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1276_S_P7F0142_AD_M_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1276_S_P7F0142_AD_M_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      5.261791558019979e-10,
+      7.700103332730635e-10,
+      1.0
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1498_S_PD906AD_AD_M_Accelerated_Sagittal_IR-FSPGR_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1498_S_PD906AD_AD_M_Accelerated_Sagittal_IR-FSPGR_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      1.3031325352130807e-08,
+      1.1610923138505314e-06,
+      0.9999988079071045
+    ],
+    "confidence": 0.9999988079071045,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1242_S_P84AF8F_CN_M_MPRAGE_GRAPPA2_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1242_S_P84AF8F_CN_M_MPRAGE_GRAPPA2_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      3.2201854030522448e-12,
+      2.429298429085236e-10
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1232_S_PC600BF_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1232_S_PC600BF_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 2,
+    "correct": 0,
+    "p0": [
+      1.2602818969753571e-05,
+      0.31463727355003357,
+      0.6853501796722412
+    ],
+    "confidence": 0.6853501796722412,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0833_S_P415B9A_AD_F_Accelerated_Sagittal_MPRAGE_Phase_A-P_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0833_S_P415B9A_AD_F_Accelerated_Sagittal_MPRAGE_Phase_A-P_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      4.263699156581424e-05,
+      1.1012691174983047e-05,
+      0.9999463558197021
+    ],
+    "confidence": 0.9999463558197021,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0676_S_P26375E_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0676_S_P26375E_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.999993085861206,
+      6.877698979224078e-06,
+      2.5405064718597714e-09
+    ],
+    "confidence": 0.999993085861206,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1624_S_P450BE4_AD_F_Sagittal_3D_Accelerated_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1624_S_P450BE4_AD_F_Sagittal_3D_Accelerated_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 1,
+    "correct": 0,
+    "p0": [
+      4.06177576905975e-07,
+      0.7134264707565308,
+      0.2865731120109558
+    ],
+    "confidence": 0.7134264707565308,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0422_S_PDC863B_AD_M_MPRAGE_SENSE2_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0422_S_PDC863B_AD_M_MPRAGE_SENSE2_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      0.0037002041935920715,
+      3.508273532792927e-11,
+      0.9962998032569885
+    ],
+    "confidence": 0.9962998032569885,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0893_S_P73CF14_MCI_M_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-0893_S_P73CF14_MCI_M_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      1.666979407158667e-13,
+      0.9999991655349731,
+      7.840246212253987e-07
+    ],
+    "confidence": 0.9999991655349731,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1037_S_P63037C_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1037_S_P63037C_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      0.0031837557908147573,
+      0.9968070983886719,
+      9.139274879998993e-06
+    ],
+    "confidence": 0.9968070983886719,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0891_S_P223C27_MCI_F_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-0891_S_P223C27_MCI_F_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      5.454606366583903e-08,
+      1.0,
+      1.8913262622710647e-10
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0685_S_P26B71B_AD_F_MPRAGE_SENSE2_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0685_S_P26B71B_AD_F_MPRAGE_SENSE2_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      0.11291318386793137,
+      1.1743428451893578e-08,
+      0.887086808681488
+    ],
+    "confidence": 0.887086808681488,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0729_S_P1A792C_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-0729_S_P1A792C_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      4.2168103675521706e-08,
+      1.0,
+      4.217950433371698e-09
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1488_S_P5F4EA8_MCI_M_Accelerated_Sagittal_IR-FSPGR_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1488_S_P5F4EA8_MCI_M_Accelerated_Sagittal_IR-FSPGR_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      7.901028880041849e-07,
+      0.9999637603759766,
+      3.539298995747231e-05
+    ],
+    "confidence": 0.9999637603759766,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0583_S_PB4566D_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0583_S_PB4566D_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9999474287033081,
+      5.2580424380721524e-05,
+      6.15741336583653e-18
+    ],
+    "confidence": 0.9999474287033081,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1401_S_P441C34_AD_M_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1401_S_P441C34_AD_M_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      8.400319728707473e-08,
+      9.032797265717818e-07,
+      0.999998927116394
+    ],
+    "confidence": 0.999998927116394,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1701_S_P42D5B7_AD_F_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1701_S_P42D5B7_AD_F_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      1.5351814264263908e-10,
+      1.1552765410982602e-09,
+      1.0
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0401_S_PC01846_CN_F_Sagittal_3D_Accelerated_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0401_S_PC01846_CN_F_Sagittal_3D_Accelerated_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9999986886978149,
+      1.3324904557521222e-06,
+      1.7389822153605364e-18
+    ],
+    "confidence": 0.9999986886978149,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1073_S_P46EAC0_MCI_F_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1073_S_P46EAC0_MCI_F_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      4.514896500040777e-05,
+      0.9999547004699707,
+      9.026383196442112e-08
+    ],
+    "confidence": 0.9999547004699707,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1243_S_P35A748_AD_M_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1243_S_P35A748_AD_M_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      3.785970875469502e-06,
+      1.0547415740802535e-06,
+      0.9999951124191284
+    ],
+    "confidence": 0.9999951124191284,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-2000_S_P766DD6_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-2000_S_P766DD6_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      2.0332238115372547e-09,
+      1.0,
+      4.4168759361779e-13
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1192_S_PA90059_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1192_S_PA90059_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      1.2574300489731627e-09,
+      1.603460580085821e-15
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1077_S_P41274D_MCI_M_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1077_S_P41274D_MCI_M_MPRAGE_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 0,
+    "correct": 0,
+    "p0": [
+      0.9999998807907104,
+      1.0725018739776715e-07,
+      2.533914778142878e-19
+    ],
+    "confidence": 0.9999998807907104,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0306_S_P4F5CDF_CN_M_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0306_S_P4F5CDF_CN_M_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      1.547490607878288e-10,
+      1.9709555168501147e-11
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0417_S_PB5AE2F_AD_F_MPRAGE_SENSE2_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0417_S_PB5AE2F_AD_F_MPRAGE_SENSE2_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      7.128430752345594e-06,
+      2.384180106673739e-06,
+      0.9999904632568359
+    ],
+    "confidence": 0.9999904632568359,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1930_S_PB325E0_MCI_M_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1930_S_PB325E0_MCI_M_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      2.1616190781781341e-10,
+      1.0,
+      3.494596376597131e-13
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0736_S_PBEDFB5_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0736_S_PBEDFB5_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.999885082244873,
+      0.00011490028555272147,
+      3.786842801140056e-12
+    ],
+    "confidence": 0.999885082244873,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0282_S_PD1DD2C_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0282_S_PD1DD2C_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      2.6785075490920462e-08,
+      7.770092902426029e-10,
+      1.0
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0229_S_P1EFCEA_CN_M_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0229_S_P1EFCEA_CN_M_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9999998807907104,
+      1.560807021405708e-07,
+      7.398047063844615e-09
+    ],
+    "confidence": 0.9999998807907104,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1016_S_P6F605B_MCI_F_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1016_S_P6F605B_MCI_F_MPRAGE_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      6.274840889941569e-12,
+      0.9999967813491821,
+      3.2596258279227186e-06
+    ],
+    "confidence": 0.9999967813491821,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0725_S_P3A31C6_MCI_M_MPRAGE_Repeat_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-0725_S_P3A31C6_MCI_M_MPRAGE_Repeat_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 0,
+    "correct": 0,
+    "p0": [
+      0.8195971250534058,
+      0.18040280044078827,
+      3.046922089633419e-11
+    ],
+    "confidence": 0.8195971250534058,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0232_S_PB05672_AD_F_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0232_S_PB05672_AD_F_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      5.932906753771186e-14,
+      8.517512389838444e-11,
+      1.0
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0452_S_P814F44_CN_F_Accelerated_Sag_IR-FSPGR_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0452_S_P814F44_CN_F_Accelerated_Sag_IR-FSPGR_(MSV21)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      6.269450019899536e-13,
+      4.512221272384503e-16
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0129_S_P80F747_CN_F_CS_Sagittal_MPRAGE_(MSV22)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0129_S_P80F747_CN_F_CS_Sagittal_MPRAGE_(MSV22)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.996036946773529,
+      0.003963077440857887,
+      5.253304280472548e-08
+    ],
+    "confidence": 0.996036946773529,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0578_S_PA0EE2B_AD_F_MPRAGE_GRAPPA2_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0578_S_PA0EE2B_AD_F_MPRAGE_GRAPPA2_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      4.2481174133968125e-09,
+      0.00013662848505191505,
+      0.9998633861541748
+    ],
+    "confidence": 0.9998633861541748,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0227_S_P521621_CN_F_MPRAGE_GRAPPA2_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0227_S_P521621_CN_F_MPRAGE_GRAPPA2_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9992721676826477,
+      0.0007278617122210562,
+      5.69039537712257e-11
+    ],
+    "confidence": 0.9992721676826477,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-2100_S_P486D6C_CN_M_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-2100_S_P486D6C_CN_M_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      2.79651342083298e-08,
+      4.401188094527164e-11
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0482_S_PD5ED61_CN_M_Accelerated_Sag_IR-FSPGR_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0482_S_PD5ED61_CN_M_Accelerated_Sag_IR-FSPGR_(MSV21)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9999998807907104,
+      1.1387233200821356e-07,
+      1.825984163872363e-08
+    ],
+    "confidence": 0.9999998807907104,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1587_S_P35CB75_AD_F_MPRAGE_SENSE_repeat_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1587_S_P35CB75_AD_F_MPRAGE_SENSE_repeat_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      0.17873609066009521,
+      0.00014658419240731746,
+      0.8211172819137573
+    ],
+    "confidence": 0.8211172819137573,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0231_S_PEF0BC0_AD_F_MPRAGE_GRAPPA2_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0231_S_PEF0BC0_AD_F_MPRAGE_GRAPPA2_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      2.9064137208045793e-10,
+      8.518719063488334e-10,
+      1.0
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1956_S_P8B016D_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1956_S_P8B016D_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      0.3219367563724518,
+      0.6778812408447266,
+      0.00018202820501755923
+    ],
+    "confidence": 0.6778812408447266,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0570_S_P5D780C_MCI_F_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-0570_S_P5D780C_MCI_F_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      0.10180848091840744,
+      0.8981915712356567,
+      7.400957328707835e-24
+    ],
+    "confidence": 0.8981915712356567,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1365_S_P8D2FCB_CN_M_Sag_IR-SPGR_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1365_S_P8D2FCB_CN_M_Sag_IR-SPGR_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 1,
+    "correct": 0,
+    "p0": [
+      1.0394633136456832e-06,
+      0.999998927116394,
+      6.050733525331253e-11
+    ],
+    "confidence": 0.999998927116394,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0218_S_P724FD5_AD_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0218_S_P724FD5_AD_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      1.1117594692078292e-11,
+      5.80239294112328e-11,
+      1.0
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1693_S_P15E6CF_AD_M_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1693_S_P15E6CF_AD_M_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      4.659657642375192e-12,
+      7.725637490851867e-11,
+      1.0
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0209_S_P78C607_CN_F_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0209_S_P78C607_CN_F_MPRAGE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      3.232908935674704e-14,
+      7.397655404917103e-12
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0701_S_PAE1EB3_CN_M_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0701_S_PAE1EB3_CN_M_MPRAGE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 2,
+    "correct": 0,
+    "p0": [
+      0.022591954097151756,
+      2.5200990876328433e-06,
+      0.9774054884910583
+    ],
+    "confidence": 0.9774054884910583,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0141_S_P3D4447_MCI_M_Sagittal_3D_Accelerated_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-0141_S_P3D4447_MCI_M_Sagittal_3D_Accelerated_MPRAGE_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 0,
+    "correct": 0,
+    "p0": [
+      0.9409893751144409,
+      0.0059518772177398205,
+      0.05305878445506096
+    ],
+    "confidence": 0.9409893751144409,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0722_S_P96C86C_AD_F_MPRAGE_Repeat_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0722_S_P96C86C_AD_F_MPRAGE_Repeat_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      4.3003367977689777e-07,
+      2.671000531861978e-09,
+      0.9999995231628418
+    ],
+    "confidence": 0.9999995231628418,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1816_S_PBF3ACA_MCI_M_CS_Sagittal_MPRAGE_(MSV22)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1816_S_PBF3ACA_MCI_M_CS_Sagittal_MPRAGE_(MSV22)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      9.62519834502018e-07,
+      0.9999990463256836,
+      1.16638176981404e-12
+    ],
+    "confidence": 0.9999990463256836,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0556_S_PB0BA8B_AD_M_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0556_S_PB0BA8B_AD_M_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      9.95033133222023e-07,
+      7.973147390526094e-15,
+      0.9999990463256836
+    ],
+    "confidence": 0.9999990463256836,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1220_S_PB32196_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1220_S_PB32196_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      0.009945714846253395,
+      0.9900542497634888,
+      1.0078350654030288e-10
+    ],
+    "confidence": 0.9900542497634888,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0694_S_P218393_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0694_S_P218393_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9995537400245667,
+      0.00044621346751227975,
+      3.3211801211094043e-17
+    ],
+    "confidence": 0.9995537400245667,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1225_S_P962B85_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1225_S_P962B85_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 1,
+    "correct": 0,
+    "p0": [
+      0.39228442311286926,
+      0.6077155470848083,
+      8.051173616685503e-11
+    ],
+    "confidence": 0.6077155470848083,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1131_S_P779760_MCI_M_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1131_S_P779760_MCI_M_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      1.1938620446017012e-05,
+      0.9999880790710449,
+      1.4434684558750632e-09
+    ],
+    "confidence": 0.9999880790710449,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0206_S_PECB8D5_AD_M_MPRAGE_SENSE2_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0206_S_PECB8D5_AD_M_MPRAGE_SENSE2_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      5.130108888806717e-07,
+      1.2895190470985085e-09,
+      0.9999995231628418
+    ],
+    "confidence": 0.9999995231628418,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0286_S_PE822CC_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0286_S_PE822CC_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9999990463256836,
+      9.843479347182438e-07,
+      2.0080318701223843e-13
+    ],
+    "confidence": 0.9999990463256836,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0195_S_PB60296_MCI_M_HS_Sagittal_MPRAGE_(MSV22)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-0195_S_PB60296_MCI_M_HS_Sagittal_MPRAGE_(MSV22)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 0,
+    "correct": 0,
+    "p0": [
+      0.948269784450531,
+      0.051730189472436905,
+      1.2988815578651725e-10
+    ],
+    "confidence": 0.948269784450531,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1533_S_PC589AB_CN_F_Accelerated_Sagittal_IR-FSPGR_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1533_S_PC589AB_CN_F_Accelerated_Sagittal_IR-FSPGR_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      1.967780539208208e-12,
+      1.151556199572093e-13
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0617_S_P2E894C_AD_F_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0617_S_P2E894C_AD_F_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      3.052522817847958e-11,
+      3.537094244165928e-07,
+      0.9999996423721313
+    ],
+    "confidence": 0.9999996423721313,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0761_S_P919B0B_AD_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0761_S_P919B0B_AD_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      4.175997769806372e-09,
+      0.0002532968937885016,
+      0.9997467398643494
+    ],
+    "confidence": 0.9997467398643494,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1996_S_P715C0B_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1996_S_P715C0B_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      0.0002745763922575861,
+      0.9997254014015198,
+      4.052402302612279e-10
+    ],
+    "confidence": 0.9997254014015198,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0267_S_PED0AC3_CN_M_MPRAGE_ND_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0267_S_PED0AC3_CN_M_MPRAGE_ND_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9999994039535522,
+      6.689097276080247e-09,
+      5.488241185958032e-07
+    ],
+    "confidence": 0.9999994039535522,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0633_S_PC654CB_CN_M_Accelerated_Sagittal_MPRAGE_(MSV22)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0633_S_PC654CB_CN_M_Accelerated_Sagittal_MPRAGE_(MSV22)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 1,
+    "correct": 0,
+    "p0": [
+      0.11331894248723984,
+      0.8866151571273804,
+      6.595464947167784e-05
+    ],
+    "confidence": 0.8866151571273804,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0029_S_PADB525_CN_M_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0029_S_PADB525_CN_M_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9998031258583069,
+      0.00019691673514898866,
+      2.39007924562884e-10
+    ],
+    "confidence": 0.9998031258583069,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0790_S_PD0482C_CN_M_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0790_S_PD0482C_CN_M_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9829338192939758,
+      0.017066216096282005,
+      1.1674460294428153e-14
+    ],
+    "confidence": 0.9829338192939758,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1604_S_P2924FC_CN_M_MPRAGE_SENSE2_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1604_S_P2924FC_CN_M_MPRAGE_SENSE2_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9967967867851257,
+      0.003202859777957201,
+      3.403090147457988e-07
+    ],
+    "confidence": 0.9967967867851257,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1456_S_P24037A_CN_M_CS_Sagittal_MPRAGE_(MSV22)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1456_S_P24037A_CN_M_CS_Sagittal_MPRAGE_(MSV22)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      2.026260756404774e-11,
+      8.466873048722614e-16
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1474_S_P096BAE_CN_F_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1474_S_P096BAE_CN_F_MPRAGE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      2.4952468476863165e-13,
+      8.501546133743432e-10
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0122_S_PB71484_CN_F_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0122_S_PB71484_CN_F_MPRAGE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 2,
+    "correct": 0,
+    "p0": [
+      4.007862662547268e-05,
+      0.0005722263595089316,
+      0.9993877410888672
+    ],
+    "confidence": 0.9993877410888672,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1942_S_PC8948D_AD_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1942_S_PC8948D_AD_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      2.3164921370000258e-11,
+      0.0012138045858591795,
+      0.9987861514091492
+    ],
+    "confidence": 0.9987861514091492,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1872_S_PA4A69B_CN_M_Sagittal_3D_Accelerated_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1872_S_PA4A69B_CN_M_Sagittal_3D_Accelerated_MPRAGE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9999948740005493,
+      5.167690687812865e-06,
+      2.5168502264943937e-12
+    ],
+    "confidence": 0.9999948740005493,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0497_S_P783FA4_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0497_S_P783FA4_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      1.2369605340012413e-09,
+      8.30761190227661e-15
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1285_S_P1A0040_CN_F_HS_Sagittal_MPRAGE_(MSV22)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1285_S_P1A0040_CN_F_HS_Sagittal_MPRAGE_(MSV22)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 1,
+    "correct": 0,
+    "p0": [
+      0.004666296765208244,
+      0.9952948689460754,
+      3.881346492562443e-05
+    ],
+    "confidence": 0.9952948689460754,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1266_S_P6A479D_AD_F_Accelerated_SAG_IR-SPGR_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1266_S_P6A479D_AD_F_Accelerated_SAG_IR-SPGR_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      2.9803999495925382e-05,
+      0.024211520329117775,
+      0.9757586717605591
+    ],
+    "confidence": 0.9757586717605591,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1345_S_P50EA9B_CN_F_MPRAGE_SENSE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1345_S_P50EA9B_CN_F_MPRAGE_SENSE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 1,
+    "correct": 0,
+    "p0": [
+      5.466612926219305e-11,
+      0.9991031885147095,
+      0.0008968551410362124
+    ],
+    "confidence": 0.9991031885147095,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1064_S_PB35FC6_MCI_M_Accelerated_Sag_IR-FSPGR_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1064_S_PB35FC6_MCI_M_Accelerated_Sag_IR-FSPGR_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 2,
+    "correct": 0,
+    "p0": [
+      6.3849361140455585e-06,
+      0.09219470620155334,
+      0.9077988862991333
+    ],
+    "confidence": 0.9077988862991333,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1074_S_P2EFDE9_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1074_S_P2EFDE9_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      4.705845088603944e-11,
+      1.0,
+      3.272009885257887e-10
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0423_S_P7FD945_AD_F_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0423_S_P7FD945_AD_F_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 1,
+    "correct": 0,
+    "p0": [
+      0.08270040154457092,
+      0.9159772992134094,
+      0.0013223316054791212
+    ],
+    "confidence": 0.9159772992134094,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0880_S_P12C834_AD_M_MPRAGE_GRAPPA2_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0880_S_P12C834_AD_M_MPRAGE_GRAPPA2_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      1.3494519390810922e-10,
+      8.729125278508776e-13,
+      1.0
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1662_S_P0A0AD9_CN_M_Sagittal_3D_Accelerated_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1662_S_P0A0AD9_CN_M_Sagittal_3D_Accelerated_MPRAGE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9999964237213135,
+      3.5601922263595043e-06,
+      4.9313949869152565e-14
+    ],
+    "confidence": 0.9999964237213135,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1554_S_P058441_AD_F_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1554_S_P058441_AD_F_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      1.5054317259455274e-07,
+      9.380823939864058e-07,
+      0.999998927116394
+    ],
+    "confidence": 0.999998927116394,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0787_S_P5EB172_AD_F_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0787_S_P5EB172_AD_F_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      4.0005784796015575e-10,
+      4.85459727972426e-10,
+      1.0
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0733_S_P4647E4_AD_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0733_S_P4647E4_AD_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      1.1677945366272979e-07,
+      2.4741834181440936e-07,
+      0.9999996423721313
+    ],
+    "confidence": 0.9999996423721313,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1436_S_PD1E127_AD_M_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1436_S_PD1E127_AD_M_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      2.827312300723861e-06,
+      9.790124977371306e-07,
+      0.9999961853027344
+    ],
+    "confidence": 0.9999961853027344,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0716_S_PBA675D_MCI_F_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-0716_S_PBA675D_MCI_F_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      7.743405205928866e-08,
+      0.999955415725708,
+      4.449852349353023e-05
+    ],
+    "confidence": 0.999955415725708,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1148_S_PA72C1E_AD_F_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1148_S_PA72C1E_AD_F_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      2.7950982257607393e-06,
+      3.916457002456353e-12,
+      0.9999972581863403
+    ],
+    "confidence": 0.9999972581863403,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1982_S_P3EA484_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1982_S_P3EA484_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      1.0380442461155326e-07,
+      0.9999998807907104,
+      2.1893542534456856e-09
+    ],
+    "confidence": 0.9999998807907104,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0514_S_P49FA74_AD_F_Sagittal_3D_Accelerated_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0514_S_P49FA74_AD_F_Sagittal_3D_Accelerated_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      3.467318793193286e-11,
+      1.2509368812075455e-14,
+      1.0
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0621_S_PA2127C_AD_M_Sag_IR-FSPGR_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0621_S_PA2127C_AD_M_Sag_IR-FSPGR_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      0.07997512072324753,
+      0.001586023485288024,
+      0.9184388518333435
+    ],
+    "confidence": 0.9184388518333435,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0135_S_P242AB9_MCI_M_Sagittal_3D_Accelerated_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-0135_S_P242AB9_MCI_M_Sagittal_3D_Accelerated_MPRAGE_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 0,
+    "correct": 0,
+    "p0": [
+      0.7373944520950317,
+      0.26184675097465515,
+      0.0007588246371597052
+    ],
+    "confidence": 0.7373944520950317,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0742_S_P5D78F5_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0742_S_P5D78F5_CN_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9999998807907104,
+      1.113631284965777e-07,
+      7.214450662307997e-14
+    ],
+    "confidence": 0.9999998807907104,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1252_S_P7A5A2B_AD_F_Accelerated_Sagittal_MPRAGE_ND_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1252_S_P7A5A2B_AD_F_Accelerated_Sagittal_MPRAGE_ND_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      1.1156912199661306e-11,
+      2.05970323463589e-07,
+      0.9999997615814209
+    ],
+    "confidence": 0.9999997615814209,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0843_S_PD7474E_CN_F_Accelerated_Sagittal_MPRAGE_Phase_A-P_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0843_S_PD7474E_CN_F_Accelerated_Sagittal_MPRAGE_Phase_A-P_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9999980926513672,
+      1.9390697616472607e-06,
+      5.6309423270006764e-12
+    ],
+    "confidence": 0.9999980926513672,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1218_S_P0B32F5_CN_M_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1218_S_P0B32F5_CN_M_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      1.0752485707365977e-11,
+      8.353774761150606e-18
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-2053_S_PB6601B_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-2053_S_PB6601B_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      2.2263121901566763e-11,
+      1.0,
+      4.00750543860795e-10
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-2026_S_P179EF4_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-2026_S_P179EF4_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      0.0008154449169524014,
+      0.9991845488548279,
+      1.969477914087747e-09
+    ],
+    "confidence": 0.9991845488548279,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0767_S_PC48471_CN_M_MPRAGE_GRAPPA2_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0767_S_PC48471_CN_M_MPRAGE_GRAPPA2_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9966475367546082,
+      0.003285591723397374,
+      6.687895074719563e-05
+    ],
+    "confidence": 0.9966475367546082,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1850_S_PDBC760_MCI_F_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1850_S_PDBC760_MCI_F_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      4.754382380411232e-15,
+      1.0,
+      2.4594874205828565e-13
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1672_S_P573B4C_MCI_F_MPRAGE_repeat_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1672_S_P573B4C_MCI_F_MPRAGE_repeat_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      0.0006247201235964894,
+      0.9978444576263428,
+      0.001530843204818666
+    ],
+    "confidence": 0.9978444576263428,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1020_S_P195EED_MCI_M_MPRAGE_Repeat_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1020_S_P195EED_MCI_M_MPRAGE_Repeat_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 2,
+    "correct": 0,
+    "p0": [
+      1.4671041048686106e-09,
+      2.473939093761146e-05,
+      0.9999752044677734
+    ],
+    "confidence": 0.9999752044677734,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0202_S_PFB539C_MCI_F_HS_Sagittal_MPRAGE_(MSV22)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-0202_S_PFB539C_MCI_F_HS_Sagittal_MPRAGE_(MSV22)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      1.0140248463130774e-07,
+      0.9999996423721313,
+      2.8336856416899536e-07
+    ],
+    "confidence": 0.9999996423721313,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0857_S_PA98C80_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-0857_S_PA98C80_AD_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      3.4861677988828887e-09,
+      1.8942365898055868e-07,
+      0.9999997615814209
+    ],
+    "confidence": 0.9999997615814209,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0845_S_PE1D211_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-0845_S_PE1D211_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      7.366239151451737e-05,
+      0.9999263286590576,
+      1.175062269709315e-10
+    ],
+    "confidence": 0.9999263286590576,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0438_S_P8E90D9_CN_M_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0438_S_P8E90D9_CN_M_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      1.0,
+      3.5107461826555664e-08,
+      1.597879585875481e-15
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1804_S_P316C4D_AD_M_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1804_S_P316C4D_AD_M_MPRAGE_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      2.519431774317127e-09,
+      1.5254624278170092e-13,
+      1.0
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1581_S_P3D60F1_MCI_M_Accelerated_Sag_IR-FSPGR_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1581_S_P3D60F1_MCI_M_Accelerated_Sag_IR-FSPGR_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      5.06909643149811e-08,
+      0.9999996423721313,
+      3.605997278555151e-07
+    ],
+    "confidence": 0.9999996423721313,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1752_S_P029B32_AD_F_MPRAGE_GRAPPA2_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\1\\ADNI-1752_S_P029B32_AD_F_MPRAGE_GRAPPA2_ws.nii.gz",
+    "true_label": 2,
+    "pred_label": 2,
+    "correct": 1,
+    "p0": [
+      2.4139287561334886e-16,
+      5.5345596161604504e-11,
+      1.0
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0355_S_P649726_MCI_M_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-0355_S_P649726_MCI_M_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      1.5341899972654005e-09,
+      1.0,
+      1.935334026370583e-08
+    ],
+    "confidence": 1.0,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1974_S_P9BD378_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1974_S_P9BD378_MCI_M_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      1.14567101465457e-13,
+      0.9999725818634033,
+      2.7438676625024527e-05
+    ],
+    "confidence": 0.9999725818634033,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0538_S_P951D74_CN_M_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0538_S_P951D74_CN_M_MPRAGE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9999921321868896,
+      2.66517673708222e-07,
+      7.64853393775411e-06
+    ],
+    "confidence": 0.9999921321868896,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1500_S_PF9E854_MCI_M_Accelerated_Sagittal_IR-FSPGR_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1500_S_PF9E854_MCI_M_Accelerated_Sagittal_IR-FSPGR_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      0.17037303745746613,
+      0.8295530676841736,
+      7.39438328309916e-05
+    ],
+    "confidence": 0.8295530676841736,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1526_S_P688808_CN_F_Accelerated_Sagittal_IR-FSPGR_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-1526_S_P688808_CN_F_Accelerated_Sagittal_IR-FSPGR_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9999998807907104,
+      3.6828054494897344e-11,
+      1.3208048699198116e-07
+    ],
+    "confidence": 0.9999998807907104,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-1393_S_PC7CD8E_MCI_F_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-1393_S_PC7CD8E_MCI_F_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      6.643775122938678e-05,
+      0.9999336004257202,
+      1.0984885001619205e-08
+    ],
+    "confidence": 0.9999336004257202,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0448_S_PEE2753_CN_F_Accelerated_Sagittal_MPRAGE_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0\\ADNI-0448_S_PEE2753_CN_F_Accelerated_Sagittal_MPRAGE_ws.nii.gz",
+    "true_label": 0,
+    "pred_label": 0,
+    "correct": 1,
+    "p0": [
+      0.9999982118606567,
+      1.7554394844410126e-06,
+      5.856924389924245e-10
+    ],
+    "confidence": 0.9999982118606567,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  },
+  {
+    "file_id": "ADNI-0728_S_P984BA9_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+    "file_path": "<AUTHOR_DATA_ROOT>/datasets/ADNI\\NIfTI_organized_monailabel_mask_process_ants_20260525_fast_ws\\0.5\\ADNI-0728_S_P984BA9_MCI_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws.nii.gz",
+    "true_label": 1,
+    "pred_label": 1,
+    "correct": 1,
+    "p0": [
+      0.0013249920448288321,
+      0.9986749291419983,
+      2.6435178698824835e-11
+    ],
+    "confidence": 0.9986749291419983,
+    "input_shape": [
+      1,
+      1,
+      182,
+      218,
+      182
+    ]
+  }
+]

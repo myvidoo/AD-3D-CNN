@@ -1,0 +1,17 @@
+============================================================================================
+Step 4e  bitwise comparison of two full reruns in the same environment (run1 vs run2)
+============================================================================================
+records aligned ✅ | 144 samples × 10 conditions = 1440 rows
+  p0    max|Δ| = 0.000e+00   number of non-zero differences = 0 / 4320
+  pa    max|Δ| = 0.000e+00   number of non-zero differences = 0 / 4320
+  mv    max|Δ| = 0.000e+00   number of non-zero differences = 0 / 1440
+  argmax mismatches: p0 0 / 1440 | p_after 0 / 1440
+  sat n: run1 64 / run2 64  →  flips 0
+
+--- donor identity (donor_map.json vs donor_map_run2.json) ---
+  recipient sets identical = True | recipients 144 | per-sample mismatches = 0
+
+============================================================================================
+★ Overall verdict: ✅ the two full reruns are **bitwise completely identical** (1440×3 probabilities, masks, argmax, saturation stratification, donor identity all identical) ⟹ this pipeline is repeatable in the current environment
+============================================================================================
+saved: results/repeat_check.json

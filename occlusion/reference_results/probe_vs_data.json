@@ -1,0 +1,29 @@
+{
+  "columns": [
+    "file_id",
+    "probe_vs_old",
+    "probe_vs_new",
+    "old_vs_new"
+  ],
+  "rows": [
+    {
+      "file_id": "ADNI-0156_S_PB43C7E_MCI_M_Accelerated_SAG_IR-SPGR_ws",
+      "probe_vs_old": 0.0009449124336242676,
+      "probe_vs_new": 0.0,
+      "old_vs_new": 0.0009449124336242676
+    },
+    {
+      "file_id": "ADNI-1608_S_PCDBC60_AD_F_MPRAGE_SENSE2_ws",
+      "probe_vs_old": 0.00012612342834472656,
+      "probe_vs_new": 0.0,
+      "old_vs_new": 0.00012612342834472656
+    },
+    {
+      "file_id": "ADNI-1040_S_PB8AEC4_CN_F_Accelerated_Sagittal_MPRAGE_(MSV21)_ws",
+      "probe_vs_old": 3.7847946998681437e-11,
+      "probe_vs_new": 0.0,
+      "old_vs_new": 3.7847946998681437e-11
+    }
+  ],
+  "verdict": "✅ probe ≡ NEW (re-run today) and ≠ OLD (legacy step2 artifact)\n     ⟹ OLD comes from an **earlier runtime environment** (different torch/cuDNN/driver versions or settings),\n       not from a code difference; **the current environment is fully self-reproducible** (in-process / cross-process / re-read from disk / alternative construction path all give 0)"
+}

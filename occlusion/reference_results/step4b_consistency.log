@@ -1,0 +1,98 @@
+====================================================================================================
+Step 4b  rerun consistency: the same set of statistics × two data sources
+====================================================================================================
+sample order identical ✅ | dose-level voxel counts [7941, 12706, 19058, 25411, 31764]
+nonsat n: OLD 80 / NEW 80
+
+--- donor-identity check (truly written to disk vs rng reconstruction) ---
+  recipients truly written to disk = 144 | recipients from rng reconstruction = 144 | per-sample mismatches = 0
+  true donor distribution: {'AD<-MCI': 21, 'MCI<-CN': 18, 'CN<-AD': 17, 'CN<-MCI': 31, 'AD<-CN': 27, 'MCI<-AD': 30}
+
+====================================================================================================
+Part I  significance / verdict-flip check (decides whether the conclusions change)
+====================================================================================================
+  saturation-stratification n_sat (must = 64)                      OLD          +64  NEW          +64  |Δ| 0          ✅  (count-type must be exactly equal)
+  nonsat n (must = 80)                                             OLD          +80  NEW          +80  |Δ| 0          ✅  (count-type must be exactly equal)
+  main-definition nonsat Wilcoxon p (should be < 0.05)             OLD  +0.00810772  NEW  +0.00857963  |Δ| 0.000472   ✅  (direction of significance)
+  main-definition nonsat rank-biserial (should be in 0.2–0.5)      OLD    +0.340741  NEW    +0.338272  |Δ| 0.00247    ✅  (relative tolerance 5%% (order of magnitude / sign of the conclusion preserved))
+  AD stratum nonsat p (should be < 0.05)                           OLD +2.98023e-08  NEW +2.98023e-08  |Δ| 0          ✅  (direction of significance)
+  AD stratum rank-biserial (should be = 1.000)                     OLD           +1  NEW           +1  |Δ| 0          ✅  (relative tolerance 5%% (order of magnitude / sign of the conclusion preserved))
+  MCI stratum p (should be ≫ 0.05, negative)                       OLD    +0.612006  NEW    +0.612006  |Δ| 0          ✅  (direction of non-significance)
+  CN stratum p (should be ≫ 0.05, negative)                        OLD    +0.101096  NEW    +0.095096  |Δ| 0.006      ✅  (direction of non-significance)
+  dose-response ρ (meanΔ, about 0.70)                              OLD         +0.7  NEW         +0.7  |Δ| 0          ✅  (relative tolerance 5%% (order of magnitude / sign of the conclusion preserved))
+  dose-response exact permutation p (meanΔ, should be > 0.05)      OLD    +0.233333  NEW    +0.233333  |Δ| 0          ✅  (direction of non-significance)
+  dose-response ρ (medianΔ, about 0.90)                            OLD         +0.9  NEW         +0.9  |Δ| 0          ✅  (relative tolerance 5%% (order of magnitude / sign of the conclusion preserved))
+  dose-response exact permutation p (medianΔ, should be > 0.05)    OLD   +0.0833333  NEW   +0.0833333  |Δ| 0          ✅  (direction of non-significance)
+  MTL vs C1 upper-bound p                                          OLD   +0.0356608  NEW   +0.0369081  |Δ| 0.00125    ✅  (relative tolerance 5%% (order of magnitude / sign of the conclusion preserved))
+  MTL vs C2 upper-bound p                                          OLD   +0.0128003  NEW   +0.0129741  |Δ| 0.000174   ✅  (relative tolerance 5%% (order of magnitude / sign of the conclusion preserved))
+  MTL vs C3 upper-bound p                                          OLD    +0.190403  NEW    +0.212385  |Δ| 0.022      ★flip  (relative tolerance 5%% (order of magnitude / sign of the conclusion preserved))
+  correct-group mean Δp (about +0.071)                             OLD   +0.0706361  NEW   +0.0706686  |Δ| 3.25e-05   ✅  (relative tolerance 5%% (order of magnitude / sign of the conclusion preserved))
+  incorrect-group mean Δp (about −0.164)                           OLD   -0.163705  NEW   -0.163645  |Δ| 5.98e-05   ✅  (relative tolerance 5%% (order of magnitude / sign of the conclusion preserved))
+  correct/incorrect between-group p (should be < 0.001)            OLD +0.000303788  NEW +0.000277882  |Δ| 2.59e-05   ✅  (direction of significance)
+  net accuracy change (must = 0)                                   OLD           +5  NEW           +5  |Δ| 0          ✅  (count-type must be exactly equal)
+  net accuracy: broken-positive count (must = 5)                   OLD           +5  NEW           +5  |Δ| 0          ✅  (count-type must be exactly equal)
+  entropy: nonsat p (about 0.078, not significant)                 OLD   +0.0775581  NEW   +0.0759596  |Δ| 0.0016     ✅  (direction of non-significance)
+  entropy: flipped-sample ΔH (about −0.158)                        OLD    -0.157507  NEW    -0.157357  |Δ| 0.00015    ✅  (relative tolerance 5%% (order of magnitude / sign of the conclusion preserved))
+  E3 MCI ρ (about −0.019, negative)                                OLD   -0.0193548  NEW   -0.0193548  |Δ| 0          ✅  (relative tolerance 5%% (order of magnitude / sign of the conclusion preserved))
+  E3 MCI p (should be ≫ 0.05)                                      OLD    +0.919141  NEW    +0.919141  |Δ| 0          ✅  (direction of non-significance)
+  E3 AD ρ (about −0.448)                                           OLD    -0.448205  NEW    -0.448205  |Δ| 0          ✅  (relative tolerance 5%% (order of magnitude / sign of the conclusion preserved))
+  E3 AD p (should be < 0.05)                                       OLD   +0.0216555  NEW   +0.0216555  |Δ| 0          ✅  (direction of significance)
+  E3 AD partial-correlation p (should be > 0.05, ceiling)          OLD   +0.0768041  NEW   +0.0768041  |Δ| 0          ✅  (direction of non-significance)
+  MCI redistribution ΔAD (should be < 0, significant)              OLD   -0.0539222  NEW   -0.0539185  |Δ| 3.71e-06   ✅  (relative tolerance 5%% (order of magnitude / sign of the conclusion preserved))
+  E2 recipient CN: F3−F1 paired p (should be < 0.05)               OLD  +0.00139976  NEW  +0.00139976  |Δ| 0          ✅  (direction of significance)
+  E2 joint statistic F3 (about 0.124)                              OLD    +0.124162  NEW     +0.12422  |Δ| 5.81e-05   ✅  (relative tolerance 5%% (order of magnitude / sign of the conclusion preserved))
+  E2 permutation p (should be < 0.05)                              OLD      +0.0045  NEW      +0.0045  |Δ| 0          ✅  (direction of significance)
+  disease-axis baseline CN (about 0.177)                           OLD    +0.176629  NEW    +0.176626  |Δ| 3.31e-06   ✅  (relative tolerance 5%% (order of magnitude / sign of the conclusion preserved))
+  AD→CN flipped-sample set identical case by case (by file_id) ✅  (OLD n=3 / NEW n=3)
+
+====================================================================================================
+Part II  count/integer-valued disagreements (if any, these are genuine divergences)
+====================================================================================================
+  ★ /S1_main_all/median                                  OLD 1.01328e-05  NEW 1.00136e-05
+  ★ /S1_main_all/W                                       OLD 1964  NEW 1971.5
+  ★ /S1_main_all/p                                       OLD 0.000129953  NEW 0.000141452
+  ★ /S1_main_all/r_rb                                    OLD 0.411094  NEW 0.408846
+  ★ /S1_main_all/d_z                                     OLD 0.0596273  NEW 0.0597592
+  ★ /S1_main_all/r_ros                                   OLD 0.356827  NEW 0.354875
+  ★ /S1_main_nonsat/median                               OLD 9.08375e-05  NEW 9.07779e-05
+  ★ /S1_main_nonsat/W                                    OLD 1068  NEW 1072
+  ★ /S1_main_nonsat/p                                    OLD 0.00810772  NEW 0.00857963
+  ★ /S1_main_nonsat/r_rb                                 OLD 0.340741  NEW 0.338272
+  ★ /S1_main_nonsat/d_z                                  OLD 0.071342  NEW 0.0715002
+  ★ /S1_main_nonsat/r_ros                                OLD 0.296005  NEW 0.29386
+  count/integer-valued: 69 items in total, 12 inconsistent
+
+====================================================================================================
+Part III  largest deviations of continuous quantities, Top 25 (relative deviation)
+====================================================================================================
+  /S5_class_CN/bad_median                              OLD -0.00015869737  NEW -0.00069209933  rel 3.36
+  /S4_vs_C3_hipp_F1const/p                             OLD    +0.19040349  NEW    +0.21238479  rel 0.115
+  /S7_coupling_CN/p                                    OLD    +0.23452757  NEW    +0.25510647  rel 0.0877
+  /S5_group/p                                          OLD +0.00030378784  NEW  +0.0002778817  rel 0.0853
+  /S3_dose/step_2_3_mean                               OLD +0.00061275295  NEW +0.00057236334  rel 0.0659
+  /S2_class_CN/p                                       OLD    +0.10109639  NEW   +0.095095992  rel 0.0594
+  /S8_receptor_CN/F1_p                                 OLD    +0.10109639  NEW   +0.095095992  rel 0.0594
+  /S8_cell_rCN_dMCI/dAD                                OLD +7.8200599e-05  NEW +8.2357366e-05  rel 0.0532
+  /S4_vs_C3_hipp_F1const/r_rb                          OLD    +0.16851852  NEW    +0.16049383  rel 0.0476
+  /S7_coupling_ALL/rho                                 OLD   +0.011837787  NEW   +0.011345523  rel 0.0416
+  /S7_coupling_CN/rho                                  OLD    +0.25217391  NEW    +0.24173913  rel 0.0414
+  /S3_dose/step_2_3_p                                  OLD   +0.068729526  NEW   +0.071322758  rel 0.0377
+  /S4_vs_C1_cort_23_F1const/p                          OLD   +0.035660828  NEW   +0.036908144  rel 0.035
+  /S8_joint/p_f1                                       OLD +4.5573938e-08  NEW +4.4357127e-08  rel 0.0267
+  /S3_dose/step_0_1_p                                  OLD   +0.010075522  NEW    +0.01028704  rel 0.021
+  /S6_entropy_main/p                                   OLD   +0.077558104  NEW   +0.075959618  rel 0.0206
+  /S2_class_CN/r_ros                                   OLD    +0.33467407  NEW    +0.34070523  rel 0.018
+  /S8_daxis/MTL_d100_F3transplant/MCI                  OLD  +0.0048193649  NEW  +0.0047357765  rel 0.0173
+  /S2_class_CN/r_rb                                    OLD    -0.38666667  NEW    -0.39333333  rel 0.0172
+  /S2_class_MCI/median                                 OLD  +1.090765e-05  NEW +1.0728836e-05  rel 0.0164
+  /S3_dose/step_1_2_p                                  OLD  +0.0078805983  NEW  +0.0077690983  rel 0.0141
+  /S4_vs_C2_ball_F1const/p                             OLD   +0.012800332  NEW   +0.012974067  rel 0.0136
+  /S6_fix/mean                                         OLD   -0.023824868  NEW   -0.023548972  rel 0.0116
+  /S2_class_CN/W                                       OLD            +92  NEW            +91  rel 0.0109
+  /S8_daxis/MTL_d100_F2noise/CN                        OLD  +0.0091169788  NEW  +0.0091868946  rel 0.00767
+  continuous quantities: 204 items in total: rel median 0.000238 | rel p95 0.0408 | rel max 3.36
+
+====================================================================================================
+Overall verdict: 1 verdict flip ['MTL vs C3 upper-bound p']
+saved: results/rerun_consistency.json
+====================================================================================================

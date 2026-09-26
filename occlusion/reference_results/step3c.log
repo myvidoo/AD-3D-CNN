@@ -1,0 +1,53 @@
+====================================================================================
+Step 3c  stratification by true class + class-level directionality
+====================================================================================
+all n=144, nonsat n=80, sat n=64
+
+------------------------------------------------------------------------------------
+Q1  Δp_true stratified by true class (main mask MTL_d100_F1const)
+------------------------------------------------------------------------------------
+class    n_all  n_nonsat | nonsat medianΔ         nonsat meanΔ       |     n+/n- Wilcoxon       p       effect r
+CN       48    24 |       -0.00001       -0.05824 |   10/  14     0.1011      0.335
+MCI      48    30 |       +0.00001       -0.02143 |   17/  13      0.612      0.093
+AD       48    26 |       +0.00739       +0.13359 |   26/   0   2.98e-08      1.087
+
+Between-class differences (nonsat): Kruskal-Wallis H = 24.439, p = 4.933e-06
+  CN vs MCI : U = 265, p = 0.09996
+  CN vs AD : U = 40, p = 1.349e-07
+  MCI vs AD : U = 223, p = 0.006231
+
+------------------------------------------------------------------------------------
+Q2  class-level flip direction (all definition, flips are unaffected by saturation)
+------------------------------------------------------------------------------------
+true class n |    baseline recall     occluded recall      Δrecall |      to correct      to incorrect        net
+CN        48 |   0.8542   0.8958  +0.0417 |        2        0       +2
+MCI       48 |   0.8125   0.8333  +0.0208 |        3        2       +1
+AD        48 |   0.9375   0.8750  -0.0625 |        0        3       -3
+
+AD class McNemar exact test (correct→incorrect 3 vs incorrect→correct 0): p = 0.25
+→ ⚠️ not significant (insufficient sample size, b+c=3)
+all McNemar (correct→incorrect 5 vs incorrect→correct 5): p = 1
+
+------------------------------------------------------------------------------------
+Q3  does the AD recall change also appear in the controls (ruling out a "generalised perturbation" explanation)
+------------------------------------------------------------------------------------
+condition                          AD Δrecall      CN Δrecall     MCI Δrecall AD McNemar p
+MTL_d100_F1const          -0.0625    +0.0417    +0.0208       0.25
+MTL_d80_F1const           -0.0625    +0.0208    +0.0208       0.25
+MTL_d60_F1const           -0.0625    +0.0000    +0.0208       0.25
+MTL_d40_F1const           -0.0208    +0.0000    -0.0417          1
+MTL_d25_F1const           -0.0208    +0.0000    +0.0000          1
+MTL_d100_F2noise          -0.0625    +0.0000    +0.0417       0.25
+MTL_d100_F3transplant     -0.1042    +0.0000    +0.0208     0.0625
+C1_cort_23_F1const        +0.0208    +0.0000    +0.0000          1
+C2_ball_F1const           -0.0417    +0.0208    -0.0417        0.5
+C3_hipp_F1const           -0.0417    +0.0208    +0.0000        0.5
+
+====================================================================================
+Interpretation
+====================================================================================
+⚠️ AD class recall change (0.9375 → 0.8750, correct→incorrect 3 cases) **did not reach significance** (McNemar p=0.25, b+c=3).
+   If this claim is needed, the sample should be enlarged or it should be explicitly marked in S6 as "exploratory, insufficient sample size".
+
+saved: results/perclass_stats.json
+====================================================================================

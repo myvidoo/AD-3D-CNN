@@ -1,0 +1,67 @@
+====================================================================================
+Step 2b  Full re-run verification + donor-identity persistence
+====================================================================================
+numpy = 1.26.4 | torch = 2.13.0.dev20260418+cu132 | cuda = True
+[INFO] Locked configuration: Run 128
+[OK] device = cuda | Run 128 | densenet169 | attn = axial
+[OK] 5-fold models loaded (3.1s)
+[OK] masks: MTL=31764 hippocampus=11263 C1(cort_23)=32849 sphere=31910 brain=1735619
+[OK] dose-level volumes strictly increasing: [7941, 12706, 19058, 25411, 31764]
+[OK] 10 conditions: ['MTL_d100_F1const', 'MTL_d80_F1const', 'MTL_d60_F1const', 'MTL_d40_F1const', 'MTL_d25_F1const', 'MTL_d100_F2noise', 'MTL_d100_F3transplant', 'C1_cort_23_F1const', 'C2_ball_F1const', 'C3_hipp_F1const']
+
+[preload] loading 144 cases...
+[OK] 144 cases loaded (15.6s), shape (1, 182, 218, 182)
+  case  10/144  elapsed 18s  remaining ~242s  | this case p0 argmax=0 true label=0
+  case  20/144  elapsed 36s  remaining ~221s  | this case p0 argmax=0 true label=0
+  case  30/144  elapsed 53s  remaining ~202s  | this case p0 argmax=2 true label=2
+  case  40/144  elapsed 71s  remaining ~184s  | this case p0 argmax=2 true label=2
+  case  50/144  elapsed 88s  remaining ~166s  | this case p0 argmax=0 true label=0
+  case  60/144  elapsed 106s  remaining ~148s  | this case p0 argmax=2 true label=2
+  case  70/144  elapsed 123s  remaining ~130s  | this case p0 argmax=1 true label=1
+  case  80/144  elapsed 141s  remaining ~113s  | this case p0 argmax=1 true label=1
+  case  90/144  elapsed 159s  remaining ~95s  | this case p0 argmax=1 true label=1
+  case 100/144  elapsed 177s  remaining ~78s  | this case p0 argmax=0 true label=0
+  case 110/144  elapsed 195s  remaining ~60s  | this case p0 argmax=2 true label=2
+  case 120/144  elapsed 212s  remaining ~42s  | this case p0 argmax=0 true label=0
+  case 130/144  elapsed 230s  remaining ~25s  | this case p0 argmax=1 true label=1
+  case 140/144  elapsed 248s  remaining ~7s  | this case p0 argmax=1 true label=1
+  case 144/144  elapsed 256s  remaining ~0s  | this case p0 argmax=1 true label=1
+
+[OK] inference complete, 1440 records, 4.3 minutes
+saved: <WORKSPACE>/27_occlusion_experiment/results/occlusion_raw_rerun.npz
+saved: <WORKSPACE>/27_occlusion_experiment/results/donor_map.json (144 recipients)
+
+====================================================================================
+Bitwise comparison: occlusion_raw_rerun.npz  vs  the existing occlusion_raw.npz
+====================================================================================
+Record alignment (condition names / order / sample order / condition index): ✅ identical
+p0         max|Δ| = 9.449e-04   non-zero differences = 3420 / 4320
+p_after    max|Δ| = 1.327e-03   non-zero differences = 3501 / 4320
+mask_vox   max|Δ| = 0.000e+00   non-zero differences = 0 / 1440
+
+Per-condition maximum absolute p_after difference:
+  MTL_d100_F1const         max|Δ| = 8.232e-04   non-zero = 359/432
+  MTL_d80_F1const          max|Δ| = 3.656e-04   non-zero = 357/432
+  MTL_d60_F1const          max|Δ| = 1.327e-03   non-zero = 351/432
+  MTL_d40_F1const          max|Δ| = 1.058e-03   non-zero = 345/432
+  MTL_d25_F1const          max|Δ| = 7.019e-04   non-zero = 341/432
+  MTL_d100_F2noise         max|Δ| = 1.092e-03   non-zero = 357/432
+  MTL_d100_F3transplant    max|Δ| = 6.027e-04   non-zero = 359/432
+  C1_cort_23_F1const       max|Δ| = 5.136e-04   non-zero = 345/432
+  C2_ball_F1const          max|Δ| = 8.081e-04   non-zero = 340/432
+  C3_hipp_F1const          max|Δ| = 9.016e-04   non-zero = 347/432
+
+★ verdict: ⚠ a difference of order 1.327e-03 is present; diagnosis required
+
+Donor class distribution (the real record of this re-run; recipient class × donor class):
+  recipient  donor          n
+  AD         CN            27
+  AD         MCI           21
+  CN         AD            17
+  CN         MCI           31
+  MCI        AD            30
+  MCI        CN            18
+  total 144 cases (self-donation is impossible, so CN<-CN / MCI<-MCI / AD<-AD do not occur)
+
+saved: <WORKSPACE>/27_occlusion_experiment/results/rerun_verify.json
+====================================================================================

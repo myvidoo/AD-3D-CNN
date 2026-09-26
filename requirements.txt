@@ -1,0 +1,76 @@
+# ============================================================
+# Dependency list for the paper's code (measured in the monailabel conda environment,
+# Python 3.10.20)
+# Measurement date: 2026-08-27
+#
+# This list includes only the libraries actually imported by the paper's code.
+# Libraries installed in the environment but unused by the code (torchvision/einops/
+# nilearn/itk/SimpleITK/statsmodels/requests, etc.) are excluded.
+#
+# External command-line tools (not pip; install separately, see README):
+#   - dcm2niix   (DICOM → NIfTI conversion)
+#   - ANTs       (SyN registration; the scripts call it via subprocess)
+#   - FSL        (Harvard-Oxford probabilistic atlas, ROI overlap analysis)
+#   - MONAI Label + 3D Slicer (skull stripping, semi-automatic DeepEdit)
+# ============================================================
+
+# --- Deep learning framework ---
+# The measured training environment was PyTorch nightly: torch==2.13.0.dev20260418+cu132 (CUDA 13.2).
+# Released against the corresponding stable build: same minor version (2.13) and the same CUDA
+# generation (13.2), which keeps reproduction as close to the measured environment as a stable
+# release allows. This also satisfies MONAI 1.5.2's own requirement (torch>=2.4.1) and supports
+# RTX 50-series / Blackwell GPUs (sm_120), which need a CUDA 12.8+ build.
+#
+# Install with the CUDA wheel index, or pip will resolve to a CPU-only build:
+#   pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cu132
+# If your NVIDIA driver predates CUDA 13.2, use the same torch version on the cu130 build:
+#   pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cu130
+torch==2.13.0
+monai==1.5.2
+
+# --- Scientific computing / data handling ---
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+scikit-image==0.25.2        # skimage.filters.threshold_otsu (registration scripts)
+nibabel==5.4.2              # NIfTI I/O (Grad-CAM / preprocessing)
+openpyxl==3.1.5             # pandas .xlsx read/write engine
+PyYAML==6.0.3               # config.yaml parsing (config.py)
+antspyx==0.6.3              # Harvard-Oxford atlas reading / CAM writing to NIfTI (evaluate/gradcam_roi.py)
+
+# --- Visualisation ---
+matplotlib==3.10.8
+seaborn==0.13.2
+
+# --- Other direct dependencies ---
+tqdm==4.66.1                # training progress bar
+tensorboard==2.20.0         # SummaryWriter training logs
+Pillow==12.2.0              # Table 1 rendering / gen_raster.py
+pydicom==2.4.5              # DICOM reading (0.0.1 / 0.0.2 scripts)
+scikit-posthocs>=0.9        # Dunn post-hoc test (stats_rechecks/grid_stats_recheck.py)
+PyMuPDF>=1.24               # PDF parsing (assets/gen_raster.py, import fitz)
+reportlab>=4.0              # Table 1 PDF generation (preprocess/step6b_generate_table1.py)
+pdf2image>=1.17             # PDF→PNG (preprocess/step6b_generate_table1.py, requires system poppler)
+
+# ============================================================
+# Per-environment installation advice (see README §2):
+#   Main environment (training / inference / evaluation / plotting): just run
+#   pip install -r requirements.txt
+#   ants_env (preprocessing step3 registration / S9 structural panel extraction): build the
+#   ants environment separately,
+#       pip install ants nibabel SimpleITK scikit-learn pandas openpyxl scipy pyyaml
+#       (SimpleITK is the environment component recorded for paper S9; this package's code does
+#       not import it directly, kept here for consistency with the paper)
+#   (antspy and torch version combinations occasionally conflict under different CUDA setups;
+#   separate environments are the safest)
+#
+# When only re-checking the statistics of occlusion/ (paper §2.5/§3.3/§4.3,
+# supplementary S6), torch / monai / images / weights are not needed; only the
+# following 4 packages are required:
+#     numpy, scipy, matplotlib, PyYAML
+# One-command self-check (re-runs the whole CPU analysis chain in a temporary directory and
+# compares it field-by-field against the frozen artifacts):
+#     python occlusion/verify_occlusion.py
+# See occlusion/README.md for details.
+# ============================================================

@@ -1,0 +1,39 @@
+============================================================================
+Step 0  Frozen baseline and environment-alignment verification
+============================================================================
+[OK] Training module imported successfully
+     device = cuda
+[INFO] Locked configuration: Run 128
+[OK] Run 128 config: {'model_name': 'densenet169', 'scheduler_name': 'reduce_on_plateau', 'loss_name': 'ce', 'attention_type': 'axial', 'use_amp': False, 'dropout_rate': 0.0, 'grad_accum_steps': 2, 'augmentation_intensity': 1, 'batch_size': 5, 'learning_rate': 0.0001, 'num_epochs': 200, 'train_ratio': 0.7, 'val_ratio': 0.15, 'test_ratio': 0.15, 'a_max': 1100}
+[OK] 5-fold models loaded (2.7s)
+[OK] Test set n = 144
+
+--- Input tensor ---
+  shape = (1, 1, 182, 218, 182)
+  dtype = torch.float32  range = [0.0000, 1.0000]
+  input image  spacing=[1.0, 1.0, 1.0]  origin=[-90.0, 126.0, -72.0]
+  HO-sub    shape=(182, 218, 182)  spacing=[1.0, 1.0, 1.0]
+  HO-cort   shape=(182, 218, 182)  spacing=[1.0, 1.0, 1.0]
+  MNI template   shape=(182, 218, 182)  spacing=[1.0, 1.0, 1.0]
+  image shape = (182, 218, 182)
+
+--- Baseline inference over the full test set ---
+  completed 20/144  (5.0s)
+  completed 40/144  (9.7s)
+  completed 60/144  (14.4s)
+  completed 80/144  (19.0s)
+  completed 100/144  (23.6s)
+  completed 120/144  (28.4s)
+  completed 140/144  (32.9s)
+
+============================================================================
+Baseline result: accuracy = 0.8681  (86.81%)   n = 144
+Reported in the paper: 86.81%% (125/144)
+Verdict: ✓ reproduction consistent
+============================================================================
+  Class_0 n= 48  recall=0.8542
+  Class_1 n= 48  recall=0.8125
+  Class_2 n= 48  recall=0.9375
+
+saved: <WORKSPACE>/27_occlusion_experiment/results/baseline_p0.json
+⚠ This file has been switched to the deterministic-inference definition (cudnn.deterministic=True), consistent with Step 2.

@@ -1,0 +1,115 @@
+{
+  "cam_mean": {
+    "correct_mean": 0.13648126140236855,
+    "correct_std": 0.04625929677250282,
+    "incorrect_mean": 0.09556970313975685,
+    "incorrect_std": 0.04284693130642295,
+    "mannwhitney_u": 1802.0,
+    "p_value": 0.0002895669993458617,
+    "cliffs_delta": 0.5174736842105263,
+    "n_correct": 125,
+    "n_incorrect": 19
+  },
+  "cam_p95": {
+    "correct_mean": 0.2382615426957607,
+    "correct_std": 0.08394164366130726,
+    "incorrect_mean": 0.17280292263940758,
+    "incorrect_std": 0.0734812454693546,
+    "mannwhitney_u": 1750.0,
+    "p_value": 0.0009082642151891425,
+    "cliffs_delta": 0.47368421052631576,
+    "n_correct": 125,
+    "n_incorrect": 19
+  },
+  "cam_peak": {
+    "correct_mean": 0.2907516304850578,
+    "correct_std": 0.09777589957500155,
+    "incorrect_mean": 0.21528647487100802,
+    "incorrect_std": 0.08509262957595065,
+    "mannwhitney_u": 1771.0,
+    "p_value": 0.0005785731025542983,
+    "cliffs_delta": 0.49136842105263157,
+    "n_correct": 125,
+    "n_incorrect": 19
+  },
+  "mtl_mass_frac": {
+    "correct_mean": 0.023755793741477294,
+    "correct_std": 0.003927667811994052,
+    "incorrect_mean": 0.023489589510403513,
+    "incorrect_std": 0.004047599184160184,
+    "mannwhitney_u": 1238.0,
+    "p_value": 0.7678782408415399,
+    "cliffs_delta": 0.04252631578947368,
+    "n_correct": 125,
+    "n_incorrect": 19
+  },
+  "hipp_mass_frac": {
+    "correct_mean": 0.008562121205844889,
+    "correct_std": 0.0013575190948223403,
+    "incorrect_mean": 0.008545508494935707,
+    "incorrect_std": 0.0014850585469844794,
+    "mannwhitney_u": 1185.0,
+    "p_value": 0.9905803496310897,
+    "cliffs_delta": -0.002105263157894737,
+    "n_correct": 125,
+    "n_incorrect": 19
+  },
+  "spearman_conf_vs_cam_mean": {
+    "rho": 0.7999723306500743,
+    "p_value": 2.6396400987662044e-33,
+    "n": 144
+  },
+  "spearman_conf_vs_cam_p95": {
+    "rho": 0.7134067835246134,
+    "p_value": 1.093463394639786e-23,
+    "n": 144
+  },
+  "spearman_conf_vs_mtl_mass_frac": {
+    "rho": 0.4073109110218179,
+    "p_value": 4.050165742336767e-07,
+    "n": 144
+  },
+  "spearman_conf_vs_hipp_mass_frac": {
+    "rho": 0.36437169198933306,
+    "p_value": 7.132893367223705e-06,
+    "n": 144
+  },
+  "mtl_frac_CN": {
+    "mean": 0.02238527555828572,
+    "std": 0.004134348286358674,
+    "n": 48
+  },
+  "mtl_frac_MCI": {
+    "mean": 0.02503135529744208,
+    "std": 0.0034664455531272687,
+    "n": 48
+  },
+  "mtl_frac_AD": {
+    "mean": 0.02374537786057071,
+    "std": 0.003871764269089886,
+    "n": 48
+  },
+  "kruskal_mtl_across_groups": {
+    "H": 11.137452107279671,
+    "p_value": 0.0038153378736723643,
+    "n": 144,
+    "eta_squared": 0.0778842804704872
+  },
+  "confusion_matrix": [
+    [
+      41,
+      5,
+      2
+    ],
+    [
+      5,
+      39,
+      4
+    ],
+    [
+      0,
+      3,
+      45
+    ]
+  ]
+}

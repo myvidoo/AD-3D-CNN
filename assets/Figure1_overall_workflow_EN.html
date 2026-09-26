@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Figure 1 Overall Study Workflow: Data Processing and Training–Validation</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { background:#fff; }
+  body { font-family:'Arial','Liberation Sans',sans-serif; }
+  #canvas { position:relative; width:2400px; margin:0 auto; background:#fff; padding:52px 56px 44px; }
+
+  /* ───── Title ───── */
+  .fig-title { text-align:center; margin-bottom:40px; }
+  .fig-title .cn { font-size:54px; font-weight:700; color:#0f172a; letter-spacing:1px; }
+  .fig-title .en { font-size:34px; color:#64748b; font-weight:600; margin-top:10px; letter-spacing:.4px; }
+
+  /* ───── Panel layout ───── */
+  .panels { display:flex; gap:56px; align-items:flex-start; }
+  .stage { border-radius:28px; padding:36px 48px 44px; position:relative; }
+  .v1 { width:670px; background:#F8FAFC; border:3px solid #CBD5E1; }
+  .v2 { width:1562px; background:#F1F5F9; border:3px solid #B9C8DA; }
+  .stage-head { display:flex; align-items:baseline; gap:18px; margin-bottom:36px; justify-content:center; flex-wrap:wrap; }
+  .stage-badge { color:#fff; font-size:34px; font-weight:700; padding:8px 22px; border-radius:12px; }
+  .v1 .stage-badge { background:#64748B; }
+  .v2 .stage-badge { background:#3A5C7A; }
+  .stage-title { font-size:44px; font-weight:700; color:#1E293B; }
+  .stage-en { font-size:34px; color:#64748B; font-weight:600; }
+
+  /* ───── Nodes ───── */
+  .node { position:relative; z-index:2; border-radius:20px; padding:22px 28px 24px; text-align:center;
+          box-shadow:0 2px 4px rgba(15,23,42,.05); margin:0; }
+  .node .t { font-size:38px; font-weight:700; line-height:1.3; }
+  .node .d { font-size:34px; line-height:1.42; margin-top:8px; }
+  .tight { padding-left:14px; padding-right:14px; }
+  .blue   { background:#EEF3FB; border:3px solid #6D8FC0; color:#1F3B66; }
+  .blue .d   { color:#3E5C82; }
+  .amber  { background:#FDF3DC; border:3px solid #C8912A; color:#6B4E12; }
+  .amber .d  { color:#8A6A25; }
+  .green  { background:#E4F2EA; border:3px solid #5E9779; color:#1E4D38; }
+  .green .d  { color:#35664E; }
+  .purple { background:#EFEDF8; border:3px solid #8B7FC7; color:#3E337E; }
+  .purple .d { color:#5A4F97; }
+  .pink   { background:#FBEAE7; border:3px dashed #CE7663; color:#7E3325; }
+  .pink .d   { color:#9A4A3B; }
+  .key { position:absolute; top:-20px; right:26px; background:#5C3A0E; color:#fff;
+         font-size:34px; font-weight:700; padding:5px 18px; border-radius:16px; letter-spacing:2px; }
+  .flag { position:absolute; top:-20px; right:26px; background:#7E3325; color:#fff;
+          font-size:34px; font-weight:700; padding:5px 18px; border-radius:16px; letter-spacing:2px; }
+
+  /* ───── Stage 1 internals ───── */
+  .v1 .chain-node { width:100%; margin:0 auto; padding-left:20px; padding-right:20px; }
+  .trio { display:flex; justify-content:center; gap:30px; }
+  .mini { width:164px; padding:10px 14px 12px; }
+  .mini .t { font-size:34px; }
+  .mini .d { font-size:34px; margin-top:4px; }
+
+  /* Preprocessing group container (paper Figure 1) */
+  .pp-group { background:#E9F4EE; border:3px solid #7FAF95; border-radius:24px;
+              padding:30px 26px 26px; position:relative; z-index:1; }
+  .pp-title { text-align:center; font-size:34px; font-weight:700; color:#1E4D38; margin-bottom:22px; }
+  .pp-step { display:flex; align-items:center; gap:22px; background:#F7FBF9; border:2.5px solid #6FA287;
+             border-radius:14px; padding:9px 18px 10px; text-align:left; position:relative; z-index:2; }
+  .pp-step + .pp-step { margin-top:12px; }
+  .pp-step .txt { flex:1; min-width:0; }
+  .pp-step .t { font-size:34px; font-weight:700; color:#1E4D38; line-height:1.45; display:block; }
+  .pp-step .d { font-size:34px; color:#35664E; line-height:1.45; margin-top:2px; margin-left:0; display:block; }
+  .num { flex:none; width:52px; height:52px; border-radius:50%; background:#B98A24; color:#fff;
+         font-size:34px; font-weight:700; line-height:52px; text-align:center; z-index:3; }
+
+  /* ───── Interpretability group container (Stage 2) ───── */
+  .ix-group { background:#F3F1FA; border:3px solid #8B7FC7; border-radius:24px;
+              padding:18px 18px 18px; position:relative; z-index:1; text-align:left; }
+  .ix-title { text-align:center; font-size:36px; font-weight:700; color:#3E337E; margin-bottom:10px; }
+  .stage.v2 { padding-bottom:32px; }
+  .ix-row { display:flex; align-items:center; justify-content:center; text-align:center;
+            background:#FAF9FD; border:2.5px solid #A99BD6; border-radius:14px;
+            padding:12px 14px 13px; font-size:34px; font-weight:700; color:#3E337E; line-height:1.38; }
+  .ix-row + .ix-row { margin-top:12px; }
+
+  /* ───── Stage 2 internals (8-layer grid) ───── */
+  .g2 { display:grid; grid-template-columns:repeat(3, 1fr); gap:44px; }
+  .g2 { gap:36px; }
+  .g2 .full { grid-column:1/-1; }
+  .g2 .c1 { grid-column:1; } .g2 .c2 { grid-column:2; } .g2 .c3 { grid-column:3; }
+  .g2 .wide { grid-column:1/-1; width:660px; margin:0 auto; }
+  .g2 .node { width:100%; }
+  .g2 .full.split { width:100%; }
+
+  /* ───── Legend ───── */
+  .legend { display:flex; justify-content:center; gap:52px; margin-top:44px; flex-wrap:wrap; }
+  .lg { display:flex; align-items:center; gap:12px; font-size:34px; color:#475569; }
+  .dot { width:30px; height:30px; border-radius:8px; border:3px solid; }
+  .d-blue { background:#EEF3FB; border-color:#6D8FC0; }
+  .d-amber { background:#FDF3DC; border-color:#C8912A; }
+  .d-green { background:#E4F2EA; border-color:#5E9779; }
+  .d-purple { background:#EFEDF8; border-color:#8B7FC7; }
+  .d-pink { background:#FBEAE7; border-color:#CE7663; border-style:dashed; }
+
+  svg.wires { position:absolute; left:0; top:0; z-index:5; pointer-events:none; }
+  svg.wires text { font-family:'Arial','Liberation Sans',sans-serif; }
+</style>
+</head>
+<body>
+<div id="canvas">
+  <div class="panels">
+    <!-- ═══════════ Stage 1 ═══════════ -->
+    <div class="stage v1">
+      <div class="stage-head">
+        <span class="stage-badge">Stage 1</span>
+        <span class="stage-title">Data Processing</span>
+      </div>
+
+      <div class="node blue chain-node" data-id="adni" style="margin-bottom:26px">
+        <div class="t">ADNI Database</div>
+        <div class="d">Data conversion and cleaning</div>
+      </div>
+
+      <div class="node amber chain-node" data-id="match" style="margin-bottom:26px">
+        <div class="t">Sample Balance Matching</div>
+        <div class="d">Gender hard constraint + age soft optimization greedy matching</div>
+      </div>
+
+      <div class="trio" style="margin-bottom:26px">
+        <div class="node blue mini" data-id="cn"><div class="t">CN</div><div class="d">n = 318</div></div>
+        <div class="node blue mini" data-id="mci"><div class="t">MCI</div><div class="d">n = 318</div></div>
+        <div class="node blue mini" data-id="ad"><div class="t">AD</div><div class="d">n = 318</div></div>
+      </div>
+
+      <div class="pp-group" data-id="ppgroup" style="margin-bottom:26px">
+        <div class="pp-title">MRI Preprocessing Pipeline</div>
+        <div class="pp-step"><span class="num" data-id="b1">1</span>
+          <div class="txt"><div class="t">Interactive<br>Skull Stripping</div>
+          <div class="d">MONAI Label + 3D Slicer<br>Dice 0.96–0.98</div></div></div>
+        <div class="pp-step"><span class="num" data-id="b2">2</span>
+          <div class="txt"><div class="t">N4 Bias Field Correction</div>
+          <div class="d">RF inhomogeneity correction</div></div></div>
+        <div class="pp-step"><span class="num" data-id="b3">3</span>
+          <div class="txt"><div class="t">Quantile Histogram Matching</div>
+          <div class="d">Intensity alignment</div></div></div>
+        <div class="pp-step"><span class="num" data-id="b4">4</span>
+          <div class="txt"><div class="t">ANTs SyN Registration<br>to MNI152 (1 mm³)</div>
+          <div class="d">Dice 0.9947±0.0020<br>CC 0.7802±0.0243</div></div></div>
+        <div class="pp-step"><span class="num" data-id="b5">5</span>
+          <div class="txt"><div class="t">Intensity Normalization</div>
+          <div class="d">WhiteStripe white-matter peak mapping<br>Clip to [0, 3000]</div></div></div>
+      </div>
+
+      <div class="node blue chain-node" data-id="std" style="margin-bottom:0">
+        <div class="t">Standardized Dataset<br>(n = 954)</div>
+      </div>
+    </div>
+
+    <!-- ═══════════ Stage 2 ═══════════ -->
+    <div class="stage v2">
+      <div class="stage-head">
+        <span class="stage-badge">Stage 2</span>
+        <span class="stage-title">Model Training &amp; Validation</span>
+      </div>
+
+      <div class="g2">
+        <!-- Layer 1 -->
+        <div class="node blue full split" data-id="split" style="margin-bottom:14px">
+          <div class="t">One-time Stratified Split (random_state = 42, persistently locked)</div>
+        </div>
+
+        <!-- Layer 2: training/validation (left) | held-out test (center) | external (right) -->
+        <div class="node blue c1" data-id="tr">
+          <div class="t">Training/Validation<br>Set (n = 810)</div>
+          <div class="d">Stratified by class<br>for grid search and<br>5-fold cross-validation</div>
+        </div>
+        <div class="node pink c2" data-id="test">
+          <div class="t">Held-out Test Set<br>(n = 144)</div>
+          <div class="d">48 per class<br>Isolated throughout</div>
+        </div>
+        <div class="node blue c3" data-id="ext">
+          <div class="t">External Datasets</div>
+          <div class="d">MIRIAD (n = 69)<br>OASIS-2 (n = 94)</div>
+        </div>
+
+        <!-- Layer 3 (same width as the training/validation node) -->
+        <div class="node amber c1" data-id="search">
+          <div class="t">Grid Search</div>
+          <div class="d">256 hyperparameter combinations</div>
+        </div>
+
+        <!-- Layer 4 -->
+        <div class="node amber c1" data-id="best">
+          <div class="t">Optimal Configuration<br>(RUN128)</div>
+          <div class="d">DenseNet-169<br>+ Axial Spatial Gating</div>
+        </div>
+
+        <!-- Layer 5 -->
+        <div class="node green c1" data-id="cv">
+          <div class="t">5-Fold Stratified Cross-Validation Training</div>
+        </div>
+
+        <!-- Layer 6 -->
+        <div class="node purple c1" data-id="ens">
+          <div class="t">5-Fold Best Weights</div>
+        </div>
+        <div style="grid-column:1/-1; height:0"></div>
+
+        <!-- Layer 7: two junction nodes (weights stream into test/external data) -->
+        <div class="node purple c2" data-id="mergeA" style="margin-top:30px">
+          <div class="t">Ensemble Weights<br>+ Held-out Test Set</div>
+          <div class="d">Equal-weight Logits<br>ensemble inference</div>
+        </div>
+        <div class="node purple c3" data-id="mergeB" style="margin-top:30px">
+          <div class="t">Ensemble Weights<br>+ External Datasets</div>
+          <div class="d">Equal-weight Logits ensemble<br>(zero fine-tuning)</div>
+        </div>
+        <div style="grid-column:1/-1; height:0"></div>
+
+        <!-- Layer 8: three parallel paths -->
+        <!-- Layer 8, left column: held-out test-set evaluation + controlled-baseline comparison (comparison node: inference results enter from above, fitted data from below) -->
+        <div class="c1" style="margin-top:26px;display:flex;flex-direction:column;gap:64px">
+        <div class="node purple tight" data-id="eval">
+          <div class="t">Test Set Evaluation</div>
+          <div class="d">Accuracy / macro-F1<br>macro-AUC / Brier / ECE</div>
+        </div>
+        <div class="node amber" data-id="base">
+          <div class="t">Controlled Baselines</div>
+          <div class="d">Demographic floor<br>Structural panel</div>
+        </div>
+        </div>
+        <div class="ix-group c2" data-id="cam" style="margin-top:26px">
+          <div class="ix-title">Interpretability Analysis (n = 144)</div>
+          <div class="ix-row">5-fold ensemble<br>Grad-CAM analysis</div>
+          <div class="ix-row">Causal perturbation tests</div>
+        </div>
+        <div class="node purple c3" data-id="extval" style="margin-top:26px;align-self:start">
+          <div class="t">External Validation<br>(Zero Fine-tuning)</div>
+          <div class="d">MIRIAD &amp; OASIS-2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <svg class="wires" id="wires"></svg>
+</div>
+
+<script>
+(function(){
+  const canvas = document.getElementById('canvas');
+  const svg = document.getElementById('wires');
+  const R = {};
+  function rect(id){
+    const el = document.querySelector('[data-id="'+id+'"]');
+    const r = el.getBoundingClientRect(), c = canvas.getBoundingClientRect();
+    const o = {x:r.left-c.left, y:r.top-c.top, w:r.width, h:r.height};
+    o.cx=o.x+o.w/2; o.cy=o.y+o.h/2; o.top=o.y; o.bottom=o.y+o.h; o.left=o.x; o.right=o.x+o.w;
+    return o;
+  }
+  /* ── Stage 1 row-gap adaptation: measure the height difference between the two panels and distribute it evenly over the 4 row gaps so the bottoms align naturally ── */
+  {
+    const s1=document.querySelector('.stage.v1'), s2=document.querySelector('.stage.v2');
+    const diff=s2.offsetHeight-s1.offsetHeight;
+    if(diff>0){
+      const gaps=s1.querySelectorAll('[data-id="adni"],[data-id="match"],.trio,.pp-group');
+      const each=diff/gaps.length;
+      gaps.forEach(n=>{ n.style.marginBottom=(parseFloat(getComputedStyle(n).marginBottom)+each)+'px'; });
+    }
+  }
+  ['adni','match','cn','mci','ad','ppgroup','std','split','test','tr','ext','search','best','cv','ens',
+   'mergeA','mergeB','eval','cam','extval','base','b1','b2','b3','b4','b5'].forEach(id=>R[id]=rect(id));
+
+  const W = canvas.scrollWidth, H = canvas.scrollHeight;
+  svg.setAttribute('width',W); svg.setAttribute('height',H);
+  svg.setAttribute('viewBox','0 0 '+W+' '+H);
+
+  const NS='http://www.w3.org/2000/svg';
+  svg.innerHTML = '<defs><marker id="arr" markerWidth="15" markerHeight="13" refX="12.5" refY="6.5" orient="auto">'
+    + '<path d="M1,1 L14,6.5 L1,12 Z" fill="#8A97A8"/></marker>'
+    + '<marker id="arrRed" markerWidth="15" markerHeight="13" refX="12.5" refY="6.5" orient="auto">'
+    + '<path d="M1,1 L14,6.5 L1,12 Z" fill="#B91C1C"/></marker></defs>';
+  function P(d, arrow, dash){
+    const p=document.createElementNS(NS,'path');
+    p.setAttribute('d',d); p.setAttribute('fill','none');
+    p.setAttribute('stroke', dash ? '#8A97A8' : '#94A3B8');
+    p.setAttribute('stroke-width','3');
+    if(dash) p.setAttribute('stroke-dasharray','10 8');
+    if(arrow) p.setAttribute('marker-end','url(#arr)');
+    svg.appendChild(p); return p;
+  }
+  function dot(x,y){
+    const c=document.createElementNS(NS,'circle');
+    c.setAttribute('cx',x); c.setAttribute('cy',y); c.setAttribute('r','7'); c.setAttribute('fill','#8A97A8');
+    svg.appendChild(c);
+  }
+  function txt(x,y,s,size,color,anchor){
+    const t=document.createElementNS(NS,'text');
+    t.setAttribute('x',x); t.setAttribute('y',y); t.setAttribute('font-size',size||34);
+    t.setAttribute('fill',color||'#64748B'); t.setAttribute('text-anchor',anchor||'middle');
+    t.textContent=s; svg.appendChild(t);
+  }
+  // Vertical direct connection (when x-aligned)
+  function V(a,b){ if(Math.abs(a.cx-b.cx)<1) P(`M ${a.cx} ${a.bottom} L ${b.cx} ${b.top-2}`, true); }
+
+  /* ── Stage 1 ── */
+  V(R.adni,R.match);
+  { // matching → three classes (fan-out)
+    const kids=[R.cn,R.mci,R.ad];
+    const midY=R.match.bottom+(Math.min(...kids.map(k=>k.top))-R.match.bottom)/2;
+    P(`M ${R.match.cx} ${R.match.bottom} V ${midY}`);
+    P(`M ${kids[0].cx} ${midY} H ${kids[2].cx}`);
+    kids.forEach(k=>P(`M ${k.cx} ${midY} V ${k.top-2}`, true));
+  }
+  { // three classes → preprocessing group (merge entry)
+    const kids=[R.cn,R.mci,R.ad];
+    const maxB=Math.max(...kids.map(k=>k.bottom));
+    const midY=maxB+(R.ppgroup.top-maxB)/2;
+    kids.forEach(k=>P(`M ${k.cx} ${k.bottom} V ${midY}`));
+    P(`M ${kids[0].cx} ${midY} H ${kids[2].cx}`);
+    P(`M ${R.match.cx} ${midY} V ${R.ppgroup.top-2}`, true);
+  }
+  { // preprocessing internal timeline (badge-to-badge links, no arrowheads)
+    const bs=[R.b1,R.b2,R.b3,R.b4,R.b5];
+    for(let i=0;i<bs.length-1;i++) P(`M ${bs[i].cx} ${bs[i].bottom} L ${bs[i+1].cx} ${bs[i+1].top}`);
+  }
+  V(R.ppgroup,R.std);
+
+  /* ── Cross-panel: standardized dataset → one-time split (main data flow, emphasised in bold dark red; arrowheads scale with line width) ── */
+  {
+    const gapX=(R.std.right + R.split.left)/2;
+    const pMain=P(`M ${R.std.right} ${R.std.cy} H ${gapX} V ${R.split.cy} H ${R.split.left-2}`, true);
+    pMain.setAttribute('stroke','#B91C1C'); pMain.setAttribute('stroke-width','8');
+    pMain.setAttribute('marker-end','url(#arrRed)');
+  }
+
+  /* ── Stage 2 ── */
+  { // layer 1 → layer 2: training/validation set (left) and held-out test set (centre) (external datasets are independent sources, so no arrows)
+    [R.tr,R.test].forEach(k=>P(`M ${k.cx} ${R.split.bottom} V ${k.top}`, true));
+  }
+  V(R.tr,R.search); V(R.search,R.best); V(R.best,R.cv); V(R.cv,R.ens);
+  { // two lines leave "5-Fold Best Weights": line 1 drops into merge node A; line 2 runs right, crosses the test-set and external-dataset bypasses, then drops into merge node B
+    const busY=R.ens.bottom+(R.mergeA.top-R.ens.bottom)*0.5;
+    const drop1=R.mergeA.x+R.mergeA.w*0.30;   // line 1 entry at the top of A (clear of the test-set bypass centreline)
+    const drop2=R.mergeB.x+R.mergeB.w*0.75;   // line 2 entry at the top of B (clear of the external-dataset bypass centreline)
+    P(`M ${R.ens.cx} ${R.ens.bottom} V ${busY} H ${drop1} V ${R.mergeA.top-2}`, true);
+    P(`M ${R.ens.right} ${R.ens.cy} H ${drop2} V ${R.mergeB.top-2}`, true);
+  }
+  V(R.test,R.mergeA);   // held-out test-set bypass straight down (crosses line 2)
+  V(R.ext,R.mergeB);    // external-dataset bypass straight down (crosses line 2)
+  V(R.mergeB,R.extval); // merge B → external validation
+  { // merge A outputs downwards only: trunk straight down, branching to evaluation (left) and interpretability (centre)
+    const m8=R.mergeA.bottom+(R.cam.top-R.mergeA.bottom)*0.5;
+    P(`M ${R.mergeA.cx} ${R.mergeA.bottom} V ${R.cam.top-2}`, true);     // trunk straight down → interpretability
+    dot(R.mergeA.cx,m8);
+    P(`M ${R.mergeA.cx} ${m8} H ${R.eval.cx} V ${R.eval.top-2}`, true);  // left branch → evaluation
+  }
+  { // controlled-baseline comparison: two entries merging from opposite directions — inference results from above (bottom edge of the evaluation node), fitted data from below (the left bus routes around and enters upward at the bottom edge of the baseline node; thin dark red echoing the main flow)
+    const busX=R.split.x-26;
+    const pBase=P(`M ${R.tr.left} ${R.tr.cy} H ${busX} V ${R.base.bottom+26} H ${R.base.cx} V ${R.base.bottom-2}`, true);
+    pBase.setAttribute('stroke','#B91C1C');
+    pBase.setAttribute('marker-end','url(#arrRed)');
+    P(`M ${R.eval.cx} ${R.eval.bottom} V ${R.base.top-2}`, true);
+  }
+})();
+</script>
+</body>
+</html>

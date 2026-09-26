@@ -1,0 +1,7 @@
+# Preserve line endings exactly. The package intentionally ships a MIX of LF and CRLF
+# files; letting git normalise them would make a fresh clone differ byte-wise from the
+# released archive and would break the byte-level reproducibility claims in the README.
+* -text
+
+# Git LFS: model checkpoints (5 x 73.28 MiB). See the release guide.
+weights/*.pth filter=lfs diff=lfs merge=lfs -text

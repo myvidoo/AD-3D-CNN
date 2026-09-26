@@ -1,0 +1,94 @@
+{
+  "timestamp": "2026-08-27T21:01:27.871274",
+  "run_id": 128,
+  "config": {
+    "model_name": "densenet169",
+    "scheduler_name": "reduce_on_plateau",
+    "loss_name": "ce",
+    "attention_type": "axial",
+    "use_amp": false,
+    "dropout_rate": 0.0,
+    "grad_accum_steps": 2,
+    "augmentation_intensity": 1,
+    "batch_size": 5,
+    "learning_rate": 0.0001,
+    "num_epochs": 200,
+    "train_ratio": 0.7,
+    "val_ratio": 0.15,
+    "test_ratio": 0.15,
+    "a_max": 1100
+  },
+  "input_shape": [
+    1,
+    1,
+    182,
+    218,
+    182
+  ],
+  "protocol": {
+    "batch_size": 1,
+    "note": "only model forward computation; excludes data I/O and preprocessing"
+  },
+  "environment": {
+    "python": "3.10.20",
+    "torch": "2.13.0.dev20260418+cu132",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 5090 D",
+    "cpu": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "torch_num_threads": 24
+  },
+  "model_size": {
+    "single_model_params": 18898926,
+    "single_model_buffers": 158674,
+    "single_model_fp32_mb": 72.7,
+    "single_checkpoint_file_mb_mean": 73.28,
+    "ensemble_5fold_total_mb": 363.49
+  },
+  "cpu": {
+    "single_fold_ms": [
+      703.9,
+      689.7,
+      690.6
+    ],
+    "single_fold_mean_s": 0.695,
+    "ensemble_5fold_mean_s": 3.419
+  },
+  "gpu": {
+    "single_fold_ms_all": [
+      22.7,
+      21.4,
+      23.1,
+      21.3,
+      21.7,
+      22.0,
+      23.7,
+      22.1,
+      23.8,
+      22.0,
+      23.5,
+      20.7,
+      21.8,
+      21.2,
+      23.5,
+      21.9,
+      22.0,
+      23.6,
+      21.5,
+      23.3,
+      22.2,
+      22.1,
+      23.4,
+      23.1,
+      21.9,
+      21.9,
+      22.8,
+      22.1,
+      22.8,
+      22.5
+    ],
+    "single_fold_mean_ms": 22.4,
+    "single_fold_std_ms": 0.8,
+    "ensemble_5fold_mean_ms": 112.9,
+    "ensemble_5fold_std_ms": 1.8
+  }
+}

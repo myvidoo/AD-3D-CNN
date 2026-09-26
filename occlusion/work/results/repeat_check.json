@@ -1,0 +1,33 @@
+{
+  "p0": {
+    "max_abs_diff": 0.0,
+    "n_nonzero": 0,
+    "n_total": 4320
+  },
+  "pa": {
+    "max_abs_diff": 0.0,
+    "n_nonzero": 0,
+    "n_total": 4320
+  },
+  "mv": {
+    "max_abs_diff": 0.0,
+    "n_nonzero": 0,
+    "n_total": 1440
+  },
+  "argmax_mismatch": {
+    "p0": 0,
+    "p_after": 0,
+    "n_cells": 1440
+  },
+  "saturation": {
+    "n_sat_run1": 64,
+    "n_sat_run2": 64,
+    "n_flip": 0
+  },
+  "donor": {
+    "same_receptor_set": true,
+    "n_receptors": 144,
+    "n_mismatch": 0,
+    "mismatch_ids": []
+  }
+}

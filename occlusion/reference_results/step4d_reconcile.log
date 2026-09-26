@@ -1,0 +1,49 @@
+============================================================================================
+Step 4d  probe values × two data versions × file timeline
+============================================================================================
+probe environment fingerprint: torch=2.13.0.dev20260418+cu132 cudnn=92000 numpy=1.26.4 | CUBLAS_WORKSPACE_CONFIG=:4096:8 | NVIDIA GeForce RTX 5090 D
+
+--- (i) file timeline (results/ directory) ---
+  2026-09-16 11:54:53  baseline_p0.json                   75.4 KB
+  2026-09-16 11:59:18  occlusion_meta.json                 1.8 KB
+  2026-09-16 11:59:18  occlusion_raw.npz                  24.4 KB
+  2026-09-17 00:03:22  donor_map.json                     27.2 KB
+  2026-09-17 00:03:22  occlusion_raw_rerun.npz            24.4 KB
+  2026-09-17 00:03:22  rerun_verify.json                   1.6 KB
+  2026-09-17 00:05:08  rerun_diag.json                     5.5 KB
+  2026-09-17 00:07:37  rerun_consistency.json             22.5 KB
+  2026-09-17 00:10:19  det_probe.jsonl                     1.8 KB
+  → occlusion_raw.npz generated 0.5 days ago
+  → baseline_p0.json generated 0.5 days ago
+
+--- (ii) three-way reconciliation (3 probe samples) ---
+  file_id                                              PROBE top1       OLD top1         NEW top1
+  ADNI-0156_S_PB43C7E_MCI_M_Accelerated_SAG_IR-SPGR_ws  0.544743         0.543799         0.544743
+                                                       |Δ| PROBE-OLD 9.449e-04 | PROBE-NEW 0.000e+00 | OLD-NEW 9.449e-04
+  ADNI-1608_S_PCDBC60_AD_F_MPRAGE_SENSE2_ws             0.545170         0.545044         0.545170
+                                                       |Δ| PROBE-OLD 1.261e-04 | PROBE-NEW 0.000e+00 | OLD-NEW 1.261e-04
+  ADNI-1040_S_PB8AEC4_CN_F_Accelerated_Sagittal_MPRA 1.000000         1.000000         1.000000
+                                                       |Δ| PROBE-OLD 3.785e-11 | PROBE-NEW 0.000e+00 | OLD-NEW 3.785e-11
+
+--- (iii) verdict ---
+  probe vs OLD maximum difference = 9.449e-04
+  probe vs NEW maximum difference = 0.000e+00
+
+  ✅ probe ≡ NEW (rerun today) and ≠ OLD (old artifact from step2)
+     ⟹ OLD comes from an **earlier runtime environment** (torch/cuDNN/driver version or settings differ),
+       not a code difference; **the current environment is fully reproducible in itself** (within-process / cross-process / re-reading from disk / alternative construction path all 0)
+
+--- (iv) OLD vs NEW all-sample difference distribution (re-checking step4a) ---
+  n=144 | cases with difference=0: 0 | cases with >1e-6: 39 | max 9.449e-04
+  the 8 largest differences:
+    ADNI-0156_S_PB43C7E_MCI_M_Accelerated_SAG_IR-SPGR_ws        9.449e-04
+    ADNI-1956_S_P8B016D_MCI_M_Accelerated_Sagittal_MPRAGE_(M 6.831e-04
+    ADNI-0432_S_P3FCB90_MCI_F_Sagittal_3D_Accelerated_0_angle 6.695e-04
+    ADNI-1500_S_PF9E854_MCI_M_Accelerated_Sagittal_IR-FSPGR_ws 5.753e-04
+    ADNI-1232_S_PC600BF_MCI_F_Accelerated_Sagittal_MPRAGE_(M 4.072e-04
+    ADNI-1624_S_P450BE4_AD_F_Sagittal_3D_Accelerated_MPRAGE_ws 3.463e-04
+    ADNI-0725_S_P3A31C6_MCI_M_MPRAGE_Repeat_ws                  2.118e-04
+    ADNI-0570_S_P5D780C_MCI_F_Accelerated_Sagittal_MPRAGE_ws   2.056e-04
+
+saved: results/probe_vs_data.json
+============================================================================================

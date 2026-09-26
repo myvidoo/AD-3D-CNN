@@ -1,0 +1,17 @@
+Inference benchmark report (data source for Section 4.3 of the paper)
+============================================================
+Time: 2026-08-27T21:01:27.871274
+Model: densenet169 + axial attention, Run 128
+Input: (1, 1, 182, 218, 182) (single sample, FP32, random tensor, excluding I/O and preprocessing)
+
+Single-fold model parameter count: 18,898,926
+Single-fold model size (FP32): 72.7 MB
+5-fold ensemble total size: 363.5 MB
+
+CPU single-sample inference (single fold): 0.695 s
+CPU single-sample inference (ensemble): 3.419 s
+GPU single-sample inference (single fold): 22.4±0.8 ms
+GPU single-sample inference (ensemble): 112.9±1.8 ms
+
+GPU: NVIDIA GeForce RTX 5090 D
+torch_num_threads(CPU): 24

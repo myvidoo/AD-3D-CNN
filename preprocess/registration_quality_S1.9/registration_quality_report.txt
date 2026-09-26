@@ -1,0 +1,84 @@
+
+================================================================================
+         ADNI brain MRI batch registration quality — comprehensive analysis report (SyN-fast strategy)
+================================================================================
+
+I. Sample overview
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Total samples: 954
+  ├─ MCI (mild cognitive impairment): 318
+  ├─ CN (cognitively normal):         318
+  └─ AD (Alzheimer's disease):        318
+
+II. Core metric statistics
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Metric  Overall mean±SD     MCI             CN              AD
+  ─────────────────────────────────────────────────────────────────────
+  Dice    0.9947 ± 0.0020     0.9945±0.0021   0.9951±0.0018   0.9944±0.0020
+  CC      0.7802 ± 0.0243     0.7769±0.0257   0.7840±0.0224   0.7796±0.0243
+  MAE     635.3  ± 52.0       651.1±53.8      618.5±49.2      636.3±50.5
+  MI      -0.6584 ± 0.0150    -0.656±0.015    -0.662±0.014    -0.657±0.015
+
+III. Quality grading (based on CC)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Grade         Criterion        Count    Share    Comment
+  ─────────────────────────────────────────────────────────────
+  Excellent     CC ≥ 0.85        0        0.0%     no sample reached
+  Good          CC ≥ 0.80        162      17.0%    room for improvement
+  Acceptable    CC ≥ 0.75        874      91.6%    the vast majority meet it
+  Needs review  CC < 0.75        80       8.4%     recommend re-checking
+
+  Dice ≥ 0.995: 431 (45.2%)  |  Dice ≥ 0.990: 945 (99.1%)
+
+IV. Between-group differences (one-way ANOVA + Tukey HSD)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Metric  F value     p value       Conclusion
+  ─────────────────────────────────────────────────────────────
+  Dice    21.94       4.85e-10      highly significant difference among the three groups
+  CC      16.21       1.20e-07      highly significant difference among the three groups
+  MAE     19.49       5.07e-09      highly significant difference among the three groups
+
+  Tukey HSD post-hoc test (CC):
+  • MCI vs CN:  p=4.16e-07  (CN significantly better than MCI)
+  • MCI vs AD:  p=2.98e-05  (AD significantly better than MCI)
+  • CN  vs AD:  p=0.662     (no significant difference)
+
+  → Registration quality in the MCI group is significantly lower than in the CN and AD
+    groups, possibly related to moderate atrophy and to larger gray/white-matter contrast
+    variation.
+
+V. Samples requiring priority review (CC < 0.75, n=80)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Lowest-CC samples:
+    • ADNI-BB2F2B_AD_M_Sag_IR-SPGR          CC=0.6410  MAE=822.4
+    • ADNI-8CF1E0_CN_M_Accelerated_Sag_IR-FSPGR  CC=0.6583  MAE=816.9
+    • ADNI-7BC96A_AD_M_Accelerated_Sagittal_MPRAGE  CC=0.6598  MAE=867.0
+
+  Series-type distribution characteristics:
+    - IR-FSPGR / Sag_IR-SPGR series are over-represented
+    - Some older MPRAGE series (e.g. MPRAGE_Repeat, MPRAGE_SENSE2, etc.)
+    - These series usually have a lower signal-to-noise ratio, or their contrast differs
+      considerably from the MNI template
+
+VI. Overall assessment and recommendations
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✓ Strengths:
+    1. The Dice coefficient is very high (0.9947±0.002), indicating very good spatial overlap
+    2. 99.1% of samples have Dice≥0.990; rigid alignment is essentially perfect
+    3. 91.6% of samples meet the acceptable criterion (CC≥0.75)
+
+  ⚠ Shortcomings:
+    1. CC is low overall (mean 0.78); no sample reaches the "Excellent" criterion (≥0.85)
+    2. 8.4% of samples (80) have CC<0.75 and need manual review
+    3. MCI-group quality is significantly worse than the other two groups, possibly
+       related to pathological change
+
+  💡 Recommendations for improvement:
+    1. For the 80 samples with CC<0.75, check the raw image quality or try re-registering
+       with the syn_standard/syn_precise strategy
+    2. For IR-FSPGR series, consider building a separate template or adjusting the
+       histogram-matching parameters
+    3. For the MCI group, consider a SyN strategy with a higher number of iterations
+    4. The Dice–CC dissociation is clear: spatial position is well aligned (high Dice),
+       but intensity-distribution matching still has room for improvement (moderate CC)
+================================================================================

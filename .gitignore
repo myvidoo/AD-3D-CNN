@@ -1,0 +1,45 @@
+# ============================================================
+# AD-3D-CNN repository ignore rules
+# ============================================================
+
+# --- Python runtime caches ---
+__pycache__/
+*.py[cod]
+
+# --- Occlusion sub-experiment working directory ---
+# Set by work_dir in occlusion/occlusion_config.py (the occlusion node of config.yaml) or by the
+# AD3DCNN_OCC_WORK environment variable; masks/ results/ figures/ all live under it.
+# It is deliberately **NOT** ignored: as documented in occlusion/README.md §4.2, its results/
+# subdirectory ships the *frozen inputs* that the CPU statistics chain reads, so the chain runs
+# out of the box. Re-running that chain overwrites those files — the same convention as
+# results/ and reference_results/, which are tracked and also get overwritten by re-runs
+# (see results/README.md §5). occlusion/reference_results/ remains the authoritative archive.
+
+# --- Runtime output of the evaluation / preprocessing scripts ---
+# Note: results/gradcam_aggregate_v3/per_sample_results_final.csv is an input to the occlusion
+#       sub-experiment, so results/ is not ignored as a whole — only the usual temporary files.
+*.tmp
+*.log.tmp
+
+# Training runtime artifacts: every grid search / smoke test creates a new Grid_SEARCH_*
+# directory (checkpoints and TensorBoard events; a single one can reach hundreds of MB), which
+# must not enter the repository.
+results/Grid_SEARCH_*/
+events.out.tfevents.*
+# Temporary output directories of evaluate/ and figures/. An early revision also carried an
+# ignore rule for a Chinese-named temporary directory produced by the scripts of that time;
+# the translated scripts now write English paths only, so that legacy rule has been dropped.
+figures/output/
+
+# --- Virtual environments / tool caches ---
+venv/
+.venv/
+env/
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+
+# --- Operating-system clutter ---
+.DS_Store
+Thumbs.db
+desktop.ini

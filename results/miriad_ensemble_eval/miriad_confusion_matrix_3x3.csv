@@ -1,0 +1,4 @@
+,Pred_CN,Pred_MCI,Pred_AD
+True_HC,20,0,3
+True_MCI(N/A),0,0,0
+True_AD,11,1,34

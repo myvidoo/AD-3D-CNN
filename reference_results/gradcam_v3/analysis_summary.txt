@@ -1,0 +1,105 @@
+======================================================================
+Text material for the paper: quantitative analysis of confusion-matrix-aggregated Grad-CAM
+[v45 comprehensive corrected version · 2026-09-12]
+======================================================================
+
+[★P0 correction note: Harvard-Oxford atlas label misalignment]
+All ROI-derived values for v41 and earlier versions in this directory were based on an atlas mask that was **shifted by 1 position overall**.
+Cause: the label **value** in the Harvard-Oxford atlas NIfTI file = the index of the same-named XML + 1
+(XML index 0 = "Left Cerebral White Matter", whereas image value 0 = background).
+The old code used the XML index directly as the image value, which resulted in:
+  - the "hippocampus mask" (value 8/18) being in fact the **brainstem + right globus pallidus** (40728 mm³)
+  - the "amygdala mask" (value 9/19) being in fact the **bilateral hippocampus** (11263 mm³)
+  - the "parahippocampal gyrus mask" (cortex 33/34) being in fact the frontal orbital cortex + anterior parahippocampal gyrus
+The code has been corrected (`AD-3D-CNN/evaluate/gradcam_roi.py`, with an added anatomical centroid self-check), and the analysis was rerun for
+the 144 samples × 5 folds Grad-CAM ROI analysis. All the values below are the **corrected** results.
+Correct mapping: hippocampus 9/19, amygdala 10/20, anterior parahippocampal gyrus 34 / posterior 35, lateral ventricle 3/14, brainstem 8.
+
+[Mask-correctness self-check (MNI centroid)]
+   Hippocampus: (  1.0, -21.4, -14.4)  ✓ medial temporal lobe
+   Amygdala: (  1.8,  -4.3, -18.0)  ✓ medial/deep temporal lobe
+   Parahippocampal gyrus: (  0.5, -16.9, -25.4)  ✓ medial temporal lobe
+
+[Note on the normalisation definition]
+The "CAM intensity" cited in the main text (Sections 3.3/4.2 and the conclusion) refers throughout to the sample-level mean CAM over in-brain voxels
+(cam_mean) definition: correct vs incorrect Mann-Whitney U=1802, p=0.00029, Cliff's δ=0.52;
+correct mean 0.1365 vs incorrect 0.0956 (see the "cam_mean" entry in statistical_results.json).
+The [CAM intensity (95th percentile…)] section below uses the cam_p95 definition (U=1750,
+0.2383 vs 0.1728), and serves only as a robustness reference; do not use it directly as a main-text figure.
+
+[Sample size] correct predictions n=125, incorrect predictions n=19 (test set N=144)
+
+[CAM intensity (95th percentile, in-brain voxels)]
+  Correct predictions: 0.2383 ± 0.0839
+  Incorrect predictions: 0.1728 ± 0.0735
+  Mann-Whitney U = 1750.0, p = 0.0009083
+  Cliff's delta = 0.474
+
+[CAM intensity (peak, in-brain voxels) — robustness reference]
+  Correct predictions: 0.2908 ± 0.0978
+  Incorrect predictions: 0.2153 ± 0.0851
+  Mann-Whitney U = 1771.0, p = 0.0005786
+  Cliff's delta = 0.491
+
+[MTL mass fraction (proportion of the total CAM intensity falling within the medial temporal lobe ROI)]
+  Correct predictions: 2.376% ± 0.393%
+  Incorrect predictions: 2.349% ± 0.405%
+  Mann-Whitney U = 1238.0, p = 0.7679
+  Cliff's delta = 0.043
+  → localisation is stable; no significant difference between correct and incorrect predictions (the difference lies in intensity, not location)
+
+[Hippocampus mass fraction]
+  Correct predictions: 0.856% ± 0.136%
+  Incorrect predictions: 0.855% ± 0.149%
+  Mann-Whitney U = 1185.0, p = 0.9906
+  Cliff's delta = -0.002
+
+[ROI enrichment factor (key newly added definition)]
+  MTL         : mass fraction 2.376% ÷ volume fraction 1.83%  = 1.30× (weights outside the MTL account for 97.6%)
+  Hippocampus : mass fraction 0.856% ÷ volume fraction 0.649% = 1.32×
+  → the model shows about 1.3-fold relative enrichment for the MTL: a bias is present, but it is not "exclusive"
+
+[Spearman correlation]
+  Confidence vs cam_mean:       ρ=0.800, p=2.640e-33, n=144
+  Confidence vs cam_p95:        ρ=0.713, p=1.093e-23, n=144
+  Confidence vs mtl_mass_frac:  ρ=0.407, p=4.050e-07, n=144
+  Confidence vs hipp_mass_frac: ρ=0.364, p=7.133e-06, n=144
+
+[Comparison of MTL scores across the three groups] the whole test set grouped by true label, n=144, n=48 per group
+  CN : 2.239% ± 0.413%
+  MCI: 2.503% ± 0.347%   ← highest
+  AD : 2.375% ± 0.387%
+  Kruskal-Wallis H=11.1375, p=0.0038153, η²=0.0779
+
+[★Dunn post-hoc pairwise comparisons (Bonferroni correction, k=3)]
+  CN vs MCI: mean difference -0.265pp, z=3.328, p_raw=0.000876, p_bonf=0.002628  ✔significant
+  CN vs AD : mean difference -0.136pp, z=1.884, p_raw=0.05957,  p_bonf=0.1787    n.s.
+  MCI vs AD: mean difference +0.129pp, z=1.444, p_raw=0.1489,   p_bonf=0.4466    n.s.
+  (Reference: paired Mann-Whitney U — CN vs MCI p_bonf=0.0046; CN vs AD
+   p_bonf=0.1283; MCI vs AD p_bonf=0.3379; the direction of the conclusion agrees)
+  ⚠ After correction, only CN vs MCI passes the multiple-comparison correction. The MCI vs AD difference that was significant in the old (incorrect-mask) version
+    no longer holds. The wording in Section 3.3 of the main text must accordingly be rewritten as "only the difference between CN and MCI
+    remains significant after correction".
+
+[ROI overlap of the aggregate CAM (50% peak-threshold Dice)]
+  AD2AD  (n=45): MTL mass=2.36%, hippocampus mass=0.887%, Dice(MTL,50%)=0.0487
+  MCI2AD (n=4) : MTL mass=2.42%, hippocampus mass=0.922%, Dice(MTL,50%)=0.0522
+  CN2CN  (n=41): MTL mass=2.26%, hippocampus mass=0.801%, Dice(MTL,50%)=0.0592
+  MCI2MCI(n=39): MTL mass=2.53%, hippocampus mass=0.888%, Dice(MTL,50%)=0.0658
+  AD2MCI (n=3) : MTL mass=2.55%, hippocampus mass=0.909%, Dice(MTL,50%)=0.0652
+  MCI2CN (n=5) : MTL mass=2.31%, hippocampus mass=0.812%, Dice(MTL,50%)=0.0491
+  CN2MCI (n=5) : MTL mass=2.48%, hippocampus mass=0.896%, Dice(MTL,50%)=0.0541
+  CN2AD  (n=2) : MTL mass=1.78%, hippocampus mass=0.683%, Dice(MTL,50%)=0.0394
+  The three diagonal cells (cited in the main text): MTL mass 2.26%–2.53%, hippocampus mass 0.80%–0.89%,
+  Dice(MTL) 0.049–0.066
+
+[Confusion matrix] [[41,5,2],[5,39,4],[0,3,45]] (rows = true CN/MCI/AD, columns = predicted)
+
+[Computation and result files]
+  statistical_results.json          — all values of the group-level quantitative statistics (n=144)
+  roi_overlap_results.json          — ROI overlap of the aggregate CAM for the 8 confusion cells
+  posthoc_dunn_mtl_results.json     — Dunn post-hoc test (after correction)
+  per_sample_results_final.csv      — per-sample metrics for 144 samples
+  code/verify_Dunn_posthoc_pairwise_test_MTL_three-group_mass_fraction.py
+  code/verify_KW_effect_size_eta2_recompute.py
+======================================================================

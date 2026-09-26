@@ -33,7 +33,6 @@ keywords:
   - Grad-CAM
   - external validation
   - reproducibility
-# Uncomment and fill in after creating the repository:
-# repository-code: "https://github.com/<user>/<repo>"
+repository-code: "https://github.com/myvidoo/AD-3D-CNN"
 # Uncomment and fill in after archiving on Zenodo:
 # doi: "10.5281/zenodo.XXXXXXX"

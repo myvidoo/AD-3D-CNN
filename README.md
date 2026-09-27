@@ -468,9 +468,9 @@ the manuscript and from these artifacts.
 **Software.** If you use this code, please cite the archived release:
 
 > Tan Z, Li H, Zhang Q, Wu Y. AD-3D-CNN: CN/MCI/AD Classification of Alzheimer's Disease from
-> Single-Modality Structural MRI Alone — 3D Convolutional Neural Network, Controlled Baselines,
-> and the Cross-Cohort Generalization Boundary. Zenodo; 2026. doi:10.5281/zenodo.XXXXXXX
+> Single-Modality Structural MRI Alone. Zenodo; 2026. doi:10.5281/zenodo.22980035
 
+Concept DOI (all versions): 10.5281/zenodo.22980034
 A machine-readable record ships as `CITATION.cff` (GitHub renders a "Cite this repository" button
 from it). The corresponding author is **Zeru Tan** (Xinyang Central Hospital).
 

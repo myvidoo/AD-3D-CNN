@@ -1,6 +1,6 @@
 # AD_CNN_code — Reproduction Code Package
 
-Corresponding paper: **"CN/MCI/AD Classification of Alzheimer's Disease from Single-Modality Structural MRI Alone: 3D Convolutional Neural Network, Controlled Baselines, and the Cross-Cohort Generalization Boundary"**.
+Corresponding paper: **"CN/MCI/AD Classification of Alzheimer's Disease from Single-Modality Structural MRI Alone: 3D Convolutional Neural Network, Controlled Baselines, and the Limits of Cross-Cohort Generalization"**.
 
 This package is organised to SCI reproducibility standards and covers **all training, preprocessing, inference, statistics, and plotting** stages:
 

@@ -3,7 +3,7 @@
 # Reproducers only need to edit this file to run on any machine.
 # Corresponding paper: "CN/MCI/AD Classification of Alzheimer's Disease from
 #   Single-Modality Structural MRI Alone: 3D Convolutional Neural Network,
-#   Controlled Baselines, and the Cross-Cohort Generalization Boundary"
+#   Controlled Baselines, and the Limits of Cross-Cohort Generalization"
 #
 # Notes:
 #   - Training images (NIfTI from ADNI / MIRIAD / OASIS-2) are subject to the

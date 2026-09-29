@@ -7,8 +7,8 @@ abstract: >-
   baselines (demographic floor and structural-measurement panel), Grad-CAM interpretability evidence,
   occlusion and tissue-transplant perturbation analysis, and cross-cohort external validation.
 type: software
-version: 1.0.0
-date-released: "2026-09-26"
+version: 1.0.1
+date-released: "2026-09-29"
 license: MIT
 authors:
   - family-names: Tan
@@ -34,4 +34,4 @@ keywords:
   - external validation
   - reproducibility
 repository-code: "https://github.com/myvidoo/AD-3D-CNN"
-doi: "10.5281/zenodo.22980035"
+doi: "10.5281/zenodo.22980034"

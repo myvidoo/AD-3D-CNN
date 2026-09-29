@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Model definition module: 3D DenseNet-169 + switchable feature recalibration modules
-(CBAM / ECA / axial spatial gating)
+(CBAM / ECA / axis spatial gating)
 
 Source: extracted verbatim from cnn_model_v3_7_d169_group_comparison.py (lines 251-489),
      with two harmless changes only:
@@ -13,7 +13,7 @@ Source: extracted verbatim from cnn_model_v3_7_d169_group_comparison.py (lines 2
 This module has zero file-path dependencies and depends only on torch and monai, so it can be
 imported and used standalone.
 
-Best model (Run 128) configuration: attention_type='axial' (axial spatial gating,
+Best model (Run 128) configuration: attention_type='axial' (axis spatial gating,
 AxisSpatialGating3D), dropout_rate=0.0.
 """
 
@@ -98,7 +98,7 @@ class AxisSpatialGating3D(nn.Module):
     """3D axis spatial gating: channel compression followed by per-axis (D/H/W)
     mean pooling and sigmoid gating, applied multiplicatively to the input.
 
-    Note: this module implements "axial spatial gating" rather than axial self-attention.
+    Note: this module implements "axis spatial gating" rather than axial self-attention.
     Its mechanism is: first compress the channels with a 1×1×1 convolution, then perform
     spatial mean pooling along each of the depth/height/width axes to obtain per-axis
     descriptors, produce per-axis gating weights via a 1×1×1 convolution and a sigmoid, and
@@ -170,7 +170,7 @@ class densenet169WithAttention(nn.Module):
         if attention_type == 'axial':
             # The parameter string 'axial' is a historical name (kept consistent with the
             # config field in all_training_results.csv and in the weight checkpoints); the
-            # actual module is axial spatial gating.
+            # actual module is axis spatial gating.
             return AxisSpatialGating3D(in_channels=channels, reduction_ratio=32)
         raise ValueError(f"Unsupported attention type: {attention_type}")
 

@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite both the archived release (below) and the accompanying paper."
 title: "AD-3D-CNN: CN/MCI/AD Classification of Alzheimer's Disease from Single-Modality Structural MRI Alone"
 abstract: >-
-  3D DenseNet-169 with axial spatial gating for three-class CN/MCI/AD classification from a single
+  3D DenseNet-169 with axis spatial gating for three-class CN/MCI/AD classification from a single
   T1-weighted structural MRI, using zero clinical information. The release includes the controlled
   baselines (demographic floor and structural-measurement panel), Grad-CAM interpretability evidence,
   occlusion and tissue-transplant perturbation analysis, and cross-cohort external validation.

@@ -72,7 +72,7 @@ weights_dir: weights
 # for comparison)
 output_dir: results
 
-# Run ID of the best configuration reported in the paper (axial spatial gating + lr=1e-4 +
+# Run ID of the best configuration reported in the paper (axis spatial gating + lr=1e-4 +
 # bs=5 + grad_accum=2 + aug=1 + dropout=0.0).
 # To reproduce the final model, use this configuration together with the distributed weights
 # (weights/) directly; do not rely on re-running the grid search to re-select the best — because

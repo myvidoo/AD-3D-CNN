@@ -53,7 +53,7 @@ N_ALL = 144
 L = []
 A = L.append
 A("# Occlusion experiment report (MTL causality evidence)\n")
-A("**Date**: 2026-09-16  **Model**: Run 128 (3D DenseNet-169 + axial spatial gating, 5-fold equal-weight ensemble)")
+A("**Date**: 2026-09-16  **Model**: Run 128 (3D DenseNet-169 + axis spatial gating, 5-fold equal-weight ensemble)")
 A("**Samples**: ADNI fixed test set n = 144  **Main mask**: MTL (same convention as the paper's T3, 31,764 voxels = 1.830%)")
 A("**Inference convention**: deterministic (`cudnn.deterministic=True` + `benchmark=False` + "
   "`use_deterministic_algorithms(warn_only=True)`), bitwise identical to the Step 0 baseline (max|Δp| = 0.00e+00)\n")

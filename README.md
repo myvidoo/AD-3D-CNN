@@ -188,7 +188,7 @@ python train/train_5fold.py
 python inference/predict_ensemble.py
 ```
 
-> **About Run 128 (important)**: Run 128 (axial spatial gating + lr=1e-4, validation AUC
+> **About Run 128 (important)**: Run 128 (axis spatial gating + lr=1e-4, validation AUC
 > 0.9665) is the best combination observed in this run, and sits in the same performance tier as
 > ranks 2–8 (0.963–0.966). GPU floating-point non-determinism means a re-run of the grid search
 > may place any of the top few first (three independent retrainings of the same configuration

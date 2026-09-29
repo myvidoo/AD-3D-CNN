@@ -68,8 +68,11 @@ def plot_roc_pr():
         fpr_i, tpr_i, _ = roc_curve(y_bin[:, i], y_proba[:, i])
         mean_tpr += np.interp(all_fpr, fpr_i, tpr_i)
     mean_tpr /= 3
+    # Legend AUC = arithmetic mean of the three per-class AUCs (paper macro-AUC, 0.9630),
+    # not the integral of the averaged curve (0.9683) -- consistent with Table 2. (fixed 2026-09-29)
+    macro_auc_mean = float(np.mean([auc(*roc_curve(y_bin[:, i], y_proba[:, i])[:2]) for i in range(3)]))
     ax.plot(all_fpr, mean_tpr, color='darkgreen', linestyle='-.', linewidth=1.2,
-            label=f'Macro-avg (AUC={auc(all_fpr, mean_tpr):.3f})')
+            label=f'Macro-avg (AUC={macro_auc_mean:.3f})')
     ax.plot([0, 1], [0, 1], 'k--', linewidth=0.8, alpha=0.5)
     # optimal operating point (Youden index)
     for i, cls in enumerate(CLASS_NAMES):
